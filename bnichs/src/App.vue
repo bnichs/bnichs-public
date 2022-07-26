@@ -23,6 +23,19 @@ import HelloWorld from './components/HelloWorld.vue'
   <RouterView />
 </template>
 
+
+<script lang="ts">
+import CONFIG from "./config"
+
+
+export default {
+  name: "App",
+  mounted() {
+    document.title = `${CONFIG.PAGE_TITLE}`;
+  },
+};
+</script>
+
 <style scoped>
 
 
