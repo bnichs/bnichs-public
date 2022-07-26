@@ -2,31 +2,34 @@
 </script>
 
 <template>
-  <h1>
-    Contact Info
-  </h1>
+  <main>
+    <h1>
+      Contact Info
+    </h1>
 
-  <hr>
-  <ul class="contact no-bullets">
-    <li>
-      <a href="https://www.linkedin.com/in/ben-j-nichols/" target="_blank">
-        <i class="bi bi-linkedin"></i>
-        <span class="text">
+    <hr>
+
+    <ul class="contact no-bullets">
+      <li>
+        <a href="https://www.linkedin.com/in/ben-j-nichols/" target="_blank">
+          <i class="bi bi-linkedin"></i>
+          <span class="text">
         https://www.linkedin.com/in/ben-j-nichols/
         </span>
-      </a>
-    </li>
-    <li>
-      <a href="mailto:mail@ben-nichols.net" target="_blank">
-        <i class="bi bi-envelope"></i>
-        <span class="text">
+        </a>
+      </li>
+      <li>
+        <a href="mailto:mail@ben-nichols.net" target="_blank">
+          <i class="bi bi-envelope"></i>
+          <span class="text">
         mail@ben-nichols.net
         </span>
-      </a>
-    </li>
-  </ul>
+        </a>
+      </li>
+    </ul>
 
-  <hr>
+    <hr>
+  </main>
 </template>
 
 <style>
