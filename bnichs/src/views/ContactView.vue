@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import WelcomeItem from '../components/WelcomeItem.vue'
 </script>
 
 <template>
@@ -9,24 +10,39 @@
 
     <hr>
 
-    <ul class="contact no-bullets">
-      <li>
-        <a href="https://www.linkedin.com/in/ben-j-nichols/" target="_blank">
-          <i class="bi bi-linkedin"></i>
+    <div class="contact">
+      <a href="https://www.linkedin.com/in/ben-j-nichols/" target="_blank">
+        <WelcomeItem>
+          <template #icon>
+            <i class="bi bi-linkedin"></i>
+          </template>
+          <template #heading>
+            LinkedIn
+          </template>
+
           <span class="text">
-        https://www.linkedin.com/in/ben-j-nichols/
-        </span>
-        </a>
-      </li>
-      <li>
-        <a href="mailto:mail@ben-nichols.net" target="_blank">
-          <i class="bi bi-envelope"></i>
+            https://www.linkedin.com/in/ben-j-nichols/
+          </span>
+
+        </WelcomeItem>
+      </a>
+
+      <a href="mailto:mail@ben-nichols.net" target="_blank">
+        <WelcomeItem>
+          <template #icon>
+            <i class="bi bi-envelope"></i>
+          </template>
+          <template #heading>
+            Email
+          </template>
+
           <span class="text">
-        mail@ben-nichols.net
-        </span>
-        </a>
-      </li>
-    </ul>
+            mail@ben-nichols.net
+          </span>
+        </WelcomeItem>
+      </a>
+
+    </div>
 
     <hr>
   </main>
@@ -35,10 +51,10 @@
 <style>
 
 .contact .text {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-60%);
+  /*margin: 0;*/
+  /*position: absolute;*/
+  /*top: 50%;*/
+  /*transform: translateY(-60%);*/
 }
 .contact {
   list-style: none;
@@ -60,6 +76,6 @@
 
 
 .contact a i {
-  margin-right: 20px;
+  /*margin-right: 20px;*/
 }
 </style>
