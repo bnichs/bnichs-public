@@ -1,0 +1,52 @@
+<script setup lang="ts">
+</script>
+
+
+<template>
+  <div class="team-box">
+    <div class="row">
+      <div class="col">
+        <h4 class="team">
+          <slot name="team-name"></slot>
+        </h4>
+        <h5 class="team-subtitle">
+          <slot name="team-subtitle"></slot>
+        </h5>
+        <h4 class="role">
+          <slot name="role"></slot>
+        </h4>
+      </div>
+
+      <div class="col-md-4 where-and-when">
+        <span class="dates">
+          <slot name="dates"></slot>
+        </span>
+      </div>
+
+    </div>
+    <ul class="project-list">
+      <slot name="projects"></slot>
+    </ul>
+  </div>
+
+</template>
+
+<style scoped>
+.team-box{
+  border: 1px solid green;
+  margin: 30px 5px 30px 5px;
+
+  border: 1px solid var(--color-border);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.25);
+  padding: 10px;
+}
+
+.project-list{
+  margin: 0 10px 0 10px;
+}
+
+
+.where-and-when {
+  text-align: right;
+}
+</style>
