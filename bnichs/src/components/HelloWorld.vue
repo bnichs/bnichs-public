@@ -5,17 +5,22 @@ defineProps<{
 </script>
 
 <template>
-  <div class="greetings">
+  <div class="greetings row">
+    <div class="col-md-1">
 
     <div class="bn-logo logo">
       <span class='flip_H letter-1'>B</span>
       <span class="letter-2">N</span>
     </div>
+    </div>
 
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      System development and Automation
-    </h3>
+    <div class="col vertical-center">
+
+      <h1 class="green">{{ msg }}</h1>
+      <h3>
+        System Development and Automation
+      </h3>
+    </div>
   </div>
 </template>
 
@@ -76,5 +81,14 @@ h3 {
   .greetings h3 {
     text-align: left;
   }
+}
+
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 </style>
