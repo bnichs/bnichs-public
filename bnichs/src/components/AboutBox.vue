@@ -1,10 +1,9 @@
-<script setup lang="ts">
-import AboutBox from '../components/AboutBox.vue'
-</script>
-
 <template>
   <main>
-    <AboutBox></AboutBox>
+    <div class="about">
+      <h1>This is an about page</h1>
+      Ben Nichols is the fucking man
+    </div>
   </main>
 </template>
 
