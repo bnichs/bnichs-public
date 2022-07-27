@@ -10,6 +10,21 @@ import WelcomeItem from '../components/WelcomeItem.vue'
 
     <hr>
 
+    <a href="mailto:mail@ben-nichols.net" target="_blank">
+      <WelcomeItem>
+        <template #icon>
+          <i class="bi bi-envelope"></i>
+        </template>
+        <template #heading>
+          Email
+        </template>
+
+        <span class="text">
+            mail@ben-nichols.net
+          </span>
+      </WelcomeItem>
+    </a>
+
     <div class="contact">
       <a href="https://www.linkedin.com/in/ben-j-nichols/" target="_blank">
         <WelcomeItem>
@@ -27,17 +42,17 @@ import WelcomeItem from '../components/WelcomeItem.vue'
         </WelcomeItem>
       </a>
 
-      <a href="mailto:mail@ben-nichols.net" target="_blank">
+      <a href="https://github.com/bnichs" target="_blank">
         <WelcomeItem>
           <template #icon>
-            <i class="bi bi-envelope"></i>
+            <i class="bi bi-github"></i>
           </template>
           <template #heading>
-            Email
+            GitHub
           </template>
 
           <span class="text">
-            mail@ben-nichols.net
+            https://github.com/bnichs
           </span>
         </WelcomeItem>
       </a>
