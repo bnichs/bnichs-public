@@ -6,18 +6,21 @@ defineProps<{
 
 <template>
   <div class="greetings row">
-    <div class="col-md-1">
+    <div class="col">
 
-    <div class="bn-logo logo">
-      <span class='flip_H letter-1'>B</span>
-      <span class="letter-2">N</span>
+      <div class="bn-logo logo strikethrough">
+
+        <div class="logo-letter-wrapper">
+          <span class='flip_H letter-1'>B</span>
+          <span class="letter-2">N</span>
+        </div>
+      </div>
     </div>
-    </div>
 
-    <div class="col vertical-center">
+    <div class="col title-box">
 
-      <h1 class="green">{{ msg }}</h1>
-      <h3>
+      <h1 class="the-name green">{{ msg }}</h1>
+      <h3 class="the-subtitle">
         System Development and Automation
       </h3>
     </div>
@@ -26,25 +29,60 @@ defineProps<{
 
 <style scoped>
 
+.strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 47%;
+  right: 0;
+  border-top: 6px solid;
+  border-color: inherit;
+
+  /*-webkit-transform:rotate(-5deg);*/
+  /*-moz-transform:rotate(-5deg);*/
+  /*-ms-transform:rotate(-5deg);*/
+  /*-o-transform:rotate(-5deg);*/
+  /*transform:rotate(-5deg);*/
+}
+
+.logo-letter-wrapper{
+  background-color: white;
+  width: fit-content;
+  margin: 0 auto 0 auto;
+
+}
+
+.title-box {
+  padding: 4vh 0 0 0;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 2rem;
+}
+
 .bn-logo {
   /*color: green;*/
   font-size: 100px;
   /*font-kerning: none;*/
   letter-spacing: -1px;
-  width: 200px;
+  width: 300px;
 }
 
 .bn-logo .letter-1{
-
+  margin: 0 auto 0 3vh;
 }
 
 .bn-logo .letter-2{
-  margin-left: -6px;
-  margin-top: 1px;
+  margin: 1px 3vh 0 -2vh;
 }
 
 .bn-logo span{
   display: inline-block;
+  /*background-color: white;*/
 }
 
 .flip_H{
@@ -55,10 +93,6 @@ defineProps<{
   color:green;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
 
 h1 {
   font-weight: 500;
