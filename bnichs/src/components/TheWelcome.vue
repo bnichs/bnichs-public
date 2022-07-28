@@ -32,19 +32,10 @@ import WelcomeItem from './WelcomeItem.vue'
           <i class="bi bi-file-earmark-person"></i>
         </template>
         <template #heading>Resume</template>
-        See an official looking resume with past employers
+        See an official looking resume with past employers and skills
       </WelcomeItem>
     </RouterLink>
 
-    <RouterLink to="/skills">
-      <WelcomeItem>
-        <template #icon>
-          <i class="bi bi-brush"></i>
-        </template>
-        <template #heading>Skills</template>
-        All the skills available
-      </WelcomeItem>
-    </RouterLink>
 
   </div>
 </template>

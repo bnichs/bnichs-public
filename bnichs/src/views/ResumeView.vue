@@ -348,7 +348,7 @@ export default {
 }
 
 .resume-nav{
-  width: 30%;
+  width: fit-content;
   float: left;
   padding: 5px 0 0 0;
 }
