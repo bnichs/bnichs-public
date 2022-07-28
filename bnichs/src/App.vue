@@ -11,19 +11,6 @@ import TitleBox from './components/HelloWorld.vue'
     <div class="wrapper">
       <TitleBox msg="Ben Nichols" />
 
-<!--      <div class="greetings">-->
-
-<!--        <div class="bn-logo logo">-->
-<!--          <span class='flip_H letter-1'>B</span>-->
-<!--          <span class="letter-2">N</span>-->
-<!--        </div>-->
-
-<!--        <h1 class="green">{{ msg }}</h1>-->
-<!--        <h3>-->
-<!--          System Development and Automation-->
-<!--        </h3>-->
-<!--      </div>-->
-
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/resume">Résumé</RouterLink>
