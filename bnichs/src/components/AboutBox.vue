@@ -1,7 +1,20 @@
 <template>
     <div class="about">
-      <h1>This is an about page</h1>
+      <h2>About Me</h2>
       Ben Nichols is the fucking man
+      I specialize in bringing enterprise knowledge to small/medium sized business/
+
+
+      <h3>Bio</h3>
+
+      <h3>
+        In my free time I enjoy:
+      </h3>
+        <ul>
+          <li>Being in nature, preferably with my dog</li>
+          <li>Reading: I love SciFi, existential fiction, and anything with a good twist.</li>
+          <li>Travelling. I'd like to road trip through every state in the USA.</li>
+        </ul>
     </div>
 </template>
 
