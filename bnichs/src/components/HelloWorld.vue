@@ -45,7 +45,6 @@ defineProps<{
 
 .bn-logo span{
   display: inline-block;
-  #margin:1em;
 }
 
 .flip_H{
