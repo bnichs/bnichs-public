@@ -1,16 +1,39 @@
 <script setup lang="ts">
 import JobBox from '@/components/JobBox.vue'
 import TeamBox from '@/components/TeamBox.vue'
+import SkillsBox from '@/components/SkillsBox.vue'
 </script>
 
 
 
 <template>
   <main>
-    <h2>
+    <hr>
+    <h2 id="ResumeHeader">
       Resume
     </h2>
+    <ul class="resume-nav">
+      <a href="/#/resume/#ResumeJobs">
+        <li>
+          Jobs
+        </li>
+      </a>
+      <a href="/#/resume/#ResumeSkills">
+        <li>
+          Skills
+        </li>
+      </a>
+      <a href="/#/resume/#ResumeEducation">
+        <li>
+          Education
+        </li>
+      </a>
+    </ul>
 
+    <div style="clear:both;"></div>
+
+    <hr>
+    <h3 id="ResumeJobs">Jobs</h3>
     <JobBox>
       <template #company>
         Oracle
@@ -33,7 +56,7 @@ import TeamBox from '@/components/TeamBox.vue'
         <li>Golang</li>
       </template>
 
-        <template #teams>
+      <template #teams>
         <TeamBox>
           <template #team-name>
             Working for the Security org
@@ -160,6 +183,9 @@ import TeamBox from '@/components/TeamBox.vue'
     <a class="" @click="toggleMore">
       Show older jobs....
     </a>
+    <div v-html="goToTop"/>
+
+    <div style="clear:both;"></div>
 
     <div class="extra-jobs" v-if="showMoreJobs">
       <JobBox>
@@ -230,6 +256,54 @@ import TeamBox from '@/components/TeamBox.vue'
         </template>
       </JobBox>
     </div>
+
+    <hr>
+    <h3 class="resumeHeading" id="ResumeSkills">Skills</h3>
+    <div v-html="goToTop"/>
+    <div style="clear:both;"></div>
+    <SkillsBox></SkillsBox>
+
+    <hr>
+    <h3 class="resumeHeading" id="ResumeEducation">Education</h3>
+    <div v-html="goToTop"/>
+    <div style="clear:both;"></div>
+    <JobBox>
+      <template #company>
+        Boston University
+      </template>
+      <template #role>
+        Bachelors of Science (BS) in Computer Engineering
+      </template>
+      <template #dates>
+        2010 - 2014
+      </template>
+      <template #location>
+        Boston, MA
+      </template>
+      <template #job-description>
+        Studied Computer Engineering which focused on a mix of Electrical Engineering, Computer Architecture, and Programming.
+      </template>
+    </JobBox>
+
+    <JobBox>
+      <template #company>
+        Phillips Academy Andover
+      </template>
+      <template #role>
+        Highschool Degree
+      </template>
+      <template #dates>
+        2006 - 2010
+      </template>
+      <template #location>
+        Andover, MA
+      </template>
+      <template #job-description>
+      </template>
+    </JobBox>
+
+    <div v-html="goToTop"/>
+    <div style="clear:both;"></div>
   </main>
 </template>
 
@@ -238,6 +312,7 @@ import TeamBox from '@/components/TeamBox.vue'
 export default {
   data() {
     return {
+      goToTop: '<div class="foo goToTop"><p>Go to\n      <a href="/#/resume/#ResumeHeader">top</a>.\n    </p></div>',
       showMoreJobs: true,
     };
   },
@@ -255,14 +330,31 @@ export default {
 
 
 
-<style scoped>
+<style>
 
-/*.job {*/
-/*  border: 1px solid blue;*/
-/*}*/
-
-.company {
-  /*font-size: 20px;*/
+.goToTop {
+  margin: 5px 0 0 30px;
+  float: left;
 }
 
+#ResumeHeader {
+  float: left;
+  width: 30%;
+}
+
+.resumeHeading{
+  width: fit-content;
+  float: left
+}
+
+.resume-nav{
+  width: 30%;
+  float: left;
+  padding: 5px 0 0 0;
+}
+
+.resume-nav li {
+  display: inline;
+  margin: 10px;
+ }
 </style>
