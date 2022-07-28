@@ -70,6 +70,7 @@ defineProps<{
   /*font-kerning: none;*/
   letter-spacing: -1px;
   width: 300px;
+  margin: 0 2vh 0 4vh;
 }
 
 .bn-logo .letter-1{
@@ -96,7 +97,7 @@ defineProps<{
 
 h1 {
   font-weight: 500;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   top: -10px;
 }
 
