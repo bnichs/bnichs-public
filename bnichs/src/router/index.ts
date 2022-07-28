@@ -34,7 +34,12 @@ const router = createRouter({
       name: 'skills',
       component: () => import('../views/SkillsView.vue')
     },
-  ]
+    {
+      path: '/services',
+      name: 'services',
+      component: () => import('../views/ServicesView.vue')
+    },
+  ],
 })
 
 export default router

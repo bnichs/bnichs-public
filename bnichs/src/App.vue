@@ -14,6 +14,7 @@ import TitleBox from './components/HelloWorld.vue'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/resume">Resume/CV & Skills</RouterLink>
+        <RouterLink to="/services">Services</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/blog">Blog</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
