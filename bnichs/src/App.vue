@@ -23,6 +23,11 @@ import TitleBox from './components/HelloWorld.vue'
   </header>
 
   <RouterView />
+  <div style="clear:both;"></div>
+
+  <footer>
+    Copyright Ben Nichols
+  </footer>
 </template>
 
 
@@ -40,6 +45,9 @@ export default {
 
 <style scoped>
 
+footer{
+  float: right;
+}
 
 header {
   line-height: 1.5;
