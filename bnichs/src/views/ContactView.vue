@@ -10,6 +10,7 @@ import WelcomeItem from '../components/WelcomeItem.vue'
 
     <hr>
 
+    <div class="contact">
     <a href="mailto:mail@ben-nichols.net" target="_blank">
       <WelcomeItem>
         <template #icon>
@@ -24,6 +25,7 @@ import WelcomeItem from '../components/WelcomeItem.vue'
           </span>
       </WelcomeItem>
     </a>
+    </div>
 
     <div class="contact">
       <a href="https://www.linkedin.com/in/ben-j-nichols/" target="_blank">
