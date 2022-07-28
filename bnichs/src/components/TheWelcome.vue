@@ -1,37 +1,57 @@
 <script setup lang="ts">
 import WelcomeItem from './WelcomeItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
-import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
 </script>
 
 <template>
-  <WelcomeItem>
-    <template #icon>
-      <DocumentationIcon />
-    </template>
-    <template #heading>Resume</template>
-    See an official looking resume with past employers
-  </WelcomeItem>
 
-  <WelcomeItem>
-    <template #icon>
-      <DocumentationIcon />
-    </template>
-    <template #heading>Skills</template>
-    All the skills available
-  </WelcomeItem>
+  <div class="welcome-items">
+    <RouterLink to="/services">
+      <WelcomeItem>
+        <template #icon>
+          <i class="bi bi-bricks"></i>
+        </template>
+        <template #heading>Services</template>
+        See the wide array of services that I can bring to your business.
+      </WelcomeItem>
+    </RouterLink>
 
-  <WelcomeItem>
-    <template #icon>
-      <DocumentationIcon />
-    </template>
-    <template #heading>Contact</template>
-    Connect with me
-  </WelcomeItem>
+    <RouterLink to="/contact">
+      <WelcomeItem>
+        <template #icon>
+          <i class="bi bi-telephone"></i>
+        </template>
+        <template #heading>Contact</template>
+        Connect with me
+      </WelcomeItem>
+    </RouterLink>
 
 
+    <RouterLink to="/resume">
+      <WelcomeItem>
+        <template #icon>
+          <i class="bi bi-file-earmark-person"></i>
+        </template>
+        <template #heading>Resume</template>
+        See an official looking resume with past employers
+      </WelcomeItem>
+    </RouterLink>
 
+    <RouterLink to="/skills">
+      <WelcomeItem>
+        <template #icon>
+          <i class="bi bi-brush"></i>
+        </template>
+        <template #heading>Skills</template>
+        All the skills available
+      </WelcomeItem>
+    </RouterLink>
+
+  </div>
 </template>
+
+
+<style scoped>
+.welcome-items a {
+  display: block;
+}
+</style>
