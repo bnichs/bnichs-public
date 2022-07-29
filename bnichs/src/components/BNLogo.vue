@@ -38,11 +38,6 @@ export default {
   border-color: inherit;
   margin: 22% 0 0 0;
 
-  /*-webkit-transform:rotate(-5deg);*/
-  /*-moz-transform:rotate(-5deg);*/
-  /*-ms-transform:rotate(-5deg);*/
-  /*-o-transform:rotate(-5deg);*/
-  /*transform:rotate(-5deg);*/
 }
 
 .logo-letter-wrapper{
