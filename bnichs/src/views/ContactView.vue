@@ -54,6 +54,15 @@ import MainBox from '../components/MainBox.vue'
   margin: 0 0 1vh 1vw;
 }
 
+.contact .text {
+  font-size: 15px;
+}
+
+.contact h3{
+  font-size: 20px;
+}
+
+
 .contact a i {
   /*margin-right: 20px;*/
 }
