@@ -5,33 +5,35 @@ import TitleBox from './components/TitleBox.vue'
 
 <template>
 
-<!--  {{ this.bare }}-->
-<!--  <div v-if="bare">-->
-<!--    <RouterView />-->
-<!--  </div>-->
-<!--  <div v-else>-->
-    <header>
-      <div class="wrapper">
+  <!--  {{ this.bare }}-->
+  <!--  <div v-if="bare">-->
+  <!--    <RouterView />-->
+  <!--  </div>-->
+  <!--  <div v-else>-->
+  <header>
+    <div class="wrapper">
+      <RouterLink to="/">
         <TitleBox msg="Ben Nichols" />
+        <!--                    Home-->
+      </RouterLink>
 
-        <nav>
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/resume">Resume/CV & Skills</RouterLink>
-          <RouterLink to="/services">Services</RouterLink>
-          <RouterLink to="/about">About</RouterLink>
-          <RouterLink to="/blog">Blog</RouterLink>
-          <RouterLink to="/contact">Contact</RouterLink>
-        </nav>
-      </div>
-    </header>
+      <nav>
+        <RouterLink to="/resume">Resume/CV & Skills</RouterLink>
+        <RouterLink to="/services">Services</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/blog">Blog</RouterLink>
+        <RouterLink to="/contact">Contact</RouterLink>
+      </nav>
+    </div>
+  </header>
 
-    <RouterView />
-    <div style="clear:both;"></div>
+  <RouterView />
+  <div style="clear:both;"></div>
 
-    <footer>
-      Copyright Ben Nichols
-    </footer>
-<!--  </div>-->
+  <footer>
+    Copyright Ben Nichols
+  </footer>
+  <!--  </div>-->
 </template>
 
 
