@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import WelcomeItem from '../components/WelcomeItem.vue'
+import ContactLinks from '../components/ContactLinks.vue'
 </script>
 
 <template>
@@ -8,91 +8,18 @@ import WelcomeItem from '../components/WelcomeItem.vue'
       Contact Info
     </h1>
 
+    <hr>
+
+    <ContactLinks>
+    </ContactLinks>
 
     <hr>
 
-    <div class="contact">
-    <a href="mailto:mail@ben-nichols.net" target="_blank">
-      <WelcomeItem>
-        <template #icon>
-          <i class="bi bi-envelope"></i>
-        </template>
-        <template #heading>
-          Email
-        </template>
-
-        <span class="text">
-            mail@ben-nichols.net
-          </span>
-      </WelcomeItem>
-    </a>
-    </div>
-
-    <div class="contact">
-      <a href="https://www.linkedin.com/in/ben-j-nichols/" target="_blank">
-        <WelcomeItem>
-          <template #icon>
-            <i class="bi bi-linkedin"></i>
-          </template>
-          <template #heading>
-            LinkedIn
-          </template>
-
-          <span class="text">
-            https://www.linkedin.com/in/ben-j-nichols/
-          </span>
-
-        </WelcomeItem>
-      </a>
-
-      <a href="https://github.com/bnichs" target="_blank">
-        <WelcomeItem>
-          <template #icon>
-            <i class="bi bi-github"></i>
-          </template>
-          <template #heading>
-            GitHub
-          </template>
-
-          <span class="text">
-            https://github.com/bnichs
-          </span>
-        </WelcomeItem>
-      </a>
-
-
-
-      <RouterLink to="/business-card">
-        <WelcomeItem>
-          <template #icon>
-            <i class="bi bi-card"></i>
-          </template>
-          <template #heading>
-            My Card
-          </template>
-
-          <span class="text">
-            foo
-          </span>
-        </WelcomeItem>
-      </RouterLink>
-
-    </div>
-
-    <hr>
   </main>
 </template>
 
 
 <script lang="ts">
-export default {
-  data() {
-    return {
-      value: 'https://example.com',
-      size: 30,
-    }
-  },
-}
 </script>
 
 <style>
