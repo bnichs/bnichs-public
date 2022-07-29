@@ -3,6 +3,7 @@ import BNLogo from './BNLogo.vue'
 defineProps<{
   msg: string
 }>()
+import {PERSON_SUBTITLE, PERSON_NAME} from "../config"
 </script>
 
 <template>
@@ -22,9 +23,11 @@ defineProps<{
 
     <div class="col title-box">
 
-      <h1 class="the-name green">{{ msg }}</h1>
+      <h1 class="the-name green">
+        {{ PERSON_NAME }}
+      </h1>
       <h3 class="the-subtitle">
-        System Development and Automation
+        {{ PERSON_SUBTITLE }}
       </h3>
     </div>
   </div>
