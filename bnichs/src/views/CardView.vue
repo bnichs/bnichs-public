@@ -2,6 +2,8 @@
 import AboutBox from '../components/AboutBox.vue'
 import BNLogo from '../components/BNLogo.vue'
 import QrcodeVue from 'qrcode.vue'
+
+import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
 </script>
 
 <template>
