@@ -20,7 +20,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: screenshots
-      - name: get_screenshots
+      - name: Take screenshots
+        id: get_screenshots
         uses: swinton/screenshot-website@v1.x
         with:
           source: https://bnichs.github.io/
