@@ -8,8 +8,6 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
 
 <template>
   <main>
-
-
     <div class="bcard row">
 
       <div class="col">

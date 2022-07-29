@@ -97,7 +97,12 @@ export default {
 
 <style>
 
+.contact h3{
+  font-size: 20px;
+}
+
 .contact .text {
+  font-size: 15px;
   /*margin: 0;*/
   /*position: absolute;*/
   /*top: 50%;*/
@@ -117,10 +122,12 @@ export default {
   line-height: 32px;
   margin-bottom: 20px;
   opacity: 0.9;
-
-
 }
 
+
+.contact .details{
+  margin: 0 0 1vh 1vw;
+}
 
 .contact a i {
   /*margin-right: 20px;*/
