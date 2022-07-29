@@ -57,6 +57,12 @@ export default {
 
 footer{
   float: right;
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  /*left: 0;*/
+  text-align: center;
+  display: block;
+  margin: 10vh 0 0 0;
 }
 
 header {
