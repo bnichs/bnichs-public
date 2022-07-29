@@ -97,6 +97,11 @@ nav a:first-of-type {
   border: 0;
 }
 
+
+main{
+  min-height: 100vh;
+}
+
 @media (min-width: 1024px) {
   header {
     display: flex;
@@ -121,6 +126,11 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
+  }
+
+
+  main{
+    margin: 15vh 0 0 0;
   }
 }
 </style>
