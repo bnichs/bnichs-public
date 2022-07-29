@@ -44,9 +44,9 @@ import CONFIG from "./config"
 export default {
   name: "App",
   props: {
-      bare: {
-        type: Boolean,
-        default: false,
+    bare: {
+      type: Boolean,
+      default: false,
     }
   },
   mounted() {
