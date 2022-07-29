@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import WelcomeItem from '../components/WelcomeItem.vue'
-import QrcodeVue from 'qrcode.vue'
 </script>
 
 <template>
@@ -9,7 +8,6 @@ import QrcodeVue from 'qrcode.vue'
       Contact Info
     </h1>
 
-    <qrcode-vue :value="value" :size="size" level="H" />
 
     <hr>
 
