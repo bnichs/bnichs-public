@@ -1,11 +1,17 @@
 <script setup lang="ts">
 import AboutBox from '../components/AboutBox.vue'
+import MainBox from '@/components/MainBox.vue'
 </script>
 
 <template>
-  <main>
-    <AboutBox></AboutBox>
-  </main>
+  <MainBox>
+    <template #title>
+      About Me
+    </template>
+    <template #content>
+      <AboutBox></AboutBox>
+    </template>
+  </MainBox>
 </template>
 
 <style>

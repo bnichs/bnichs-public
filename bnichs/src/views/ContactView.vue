@@ -1,21 +1,19 @@
 <script setup lang="ts">
 import ContactLinks from '../components/ContactLinks.vue'
+import MainBox from '../components/MainBox.vue'
 </script>
 
 <template>
-  <main>
-    <h1>
-      Contact Info
-    </h1>
+  <MainBox>
+   <template #title>
+     Contact Info
+   </template>
 
-    <hr>
-
-    <ContactLinks>
-    </ContactLinks>
-
-    <hr>
-
-  </main>
+    <template #content>
+      <ContactLinks>
+      </ContactLinks>
+    </template>
+  </MainBox>
 </template>
 
 
