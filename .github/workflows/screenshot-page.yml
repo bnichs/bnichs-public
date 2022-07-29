@@ -13,12 +13,12 @@ jobs:
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ${{ matrix.os }}
     steps:
+      - uses: actions/checkout@v2
       - name: Screenshot Website
         uses: swinton/screenshot-website@v1.x
         with:
           source: https://bnichs.github.io/
           destination: screenshot-${{ matrix.os }}.png
-      - uses: actions/checkout@v2
       - name: Commit report
         run: |
           git config --global user.name 'Your Name'
