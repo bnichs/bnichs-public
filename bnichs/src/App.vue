@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import TitleBox from './components/HelloWorld.vue'
+import TitleBox from './components/TitleBox.vue'
 </script>
 
 <template>
