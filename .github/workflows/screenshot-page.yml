@@ -18,6 +18,7 @@ jobs:
         with:
           source: https://bnichs.github.io/
           destination: screenshot-${{ matrix.os }}.png
+      - uses: actions/checkout@v2
       - name: Commit report
         run: |
           git config --global user.name 'Your Name'
