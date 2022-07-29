@@ -14,6 +14,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: screenshots
       - name: Screenshot Website
         uses: swinton/screenshot-website@v1.x
         with:
@@ -23,6 +25,7 @@ jobs:
         run: |
           ls
           ls ./*/*
+          git branch --list
           git config --global user.name 'Your Name'
           git config --global user.email 'your-username@users.noreply.github.com'
           git checkout screenshots
