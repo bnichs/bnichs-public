@@ -23,7 +23,7 @@ jobs:
           destination: screenshot-${{ matrix.os }}.png
       - name: Commit report
         run: |
-          echo ${{ steps.get_screenshots.output }}
+          echo ${{ steps.get_screenshots.outputs.path }}
           ls
           git branch --list
           git config --global user.name 'Your Name'
