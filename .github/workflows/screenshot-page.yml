@@ -34,7 +34,6 @@ jobs:
           git branch --list
           git config --global user.name 'Ben Nichols (auto)'
           git config --global user.email 'mail@ben-nichols.net'
-#          git checkout screenshots
           git add "screenshot*"
           git commit -am "Automated screenshots report"
           git push
