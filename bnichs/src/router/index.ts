@@ -34,8 +34,18 @@ const router = createRouter({
       name: 'services',
       component: () => import('../views/ServicesView.vue')
     },
+    {
+      path: '/card',
+      name: 'card',
+      component: () => import('../views/CardView.vue'),
+      // meta: {
+      // template: 'bare',
+      props: {
+        bare: true
+      }
+      // }
+    },
   ],
-  // scrollBehavior(to, from, savedPosition) {
   // @ts-ignore <- ignore it
   scrollBehavior: function(to, from, savedPosition){
     if (to.hash) {
