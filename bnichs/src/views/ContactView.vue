@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import WelcomeItem from '../components/WelcomeItem.vue'
+import QrcodeVue from 'qrcode.vue'
 </script>
 
 <template>
@@ -7,6 +8,8 @@ import WelcomeItem from '../components/WelcomeItem.vue'
     <h1>
       Contact Info
     </h1>
+
+    <qrcode-vue :value="value" :size="size" level="H" />
 
     <hr>
 
@@ -64,6 +67,18 @@ import WelcomeItem from '../components/WelcomeItem.vue'
     <hr>
   </main>
 </template>
+
+
+<script lang="ts">
+export default {
+  data() {
+    return {
+      value: 'https://example.com',
+      size: 30,
+    }
+  },
+}
+</script>
 
 <style>
 
