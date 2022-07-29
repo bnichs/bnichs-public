@@ -1,0 +1,20 @@
+name: Screenshot page
+on:
+  push:
+    branches:
+      - setup-screenshots
+permissions:
+  contents: write
+jobs:
+  screenshot:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Screenshot Website
+        uses: swinton/screenshot-website@v1.x
+        with:
+          source: https://bnichs.github.io/
+          destination: screenshot-${{ matrix.os }}.png
