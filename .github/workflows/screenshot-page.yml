@@ -29,12 +29,12 @@ jobs:
       - name: Commit report
         run: |
           echo ${{ steps.get_screenshots.outputs.path }}
-          cp ${{ steps.get_screenshots.outputs.path }} ./foo.png
+          cp ${{ steps.get_screenshots.outputs.path }} ./
           ls
           git branch --list
           git config --global user.name 'Your Name'
           git config --global user.email 'your-username@users.noreply.github.com'
-          git checkout screenshots
+#          git checkout screenshots
           git add "screenshot*"
           git commit -am "Automated screenshots report"
           git push
