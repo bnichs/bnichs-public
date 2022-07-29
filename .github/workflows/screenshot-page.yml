@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%dT%H-%M')"
+        run: echo "::set-output name=date::$(date +'%Y-%m-%dT%H-%M-%s')"
       - uses: actions/checkout@v2
         with:
           ref: screenshots
@@ -29,16 +29,18 @@ jobs:
         uses: swinton/screenshot-website@v1.x
         with:
           source: https://bnichs.github.io/
-          destination: screenshot-${{ matrix.os }}-${{ matrix.width }}-${{ steps.date.outputs.date }}.png
+          destination: screenshot-${{ matrix.os }}-${{ matrix.width }}-${{ steps.date.outputs.date }}-${{ github.sha }}.png
           width: ${{ matrix.width }}
       - name: Commit report
         run: |
+          export branch=${{ github.head_ref }}
+          mkdir -p $branch
           echo ${{ steps.get_screenshots.outputs.path }}
-          cp ${{ steps.get_screenshots.outputs.path }} ./
+          cp ${{ steps.get_screenshots.outputs.path }} ./$branch
           ls
           git branch --list
           git config --global user.name 'Ben Nichols (auto)'
           git config --global user.email 'mail@ben-nichols.net'
-          git add "screenshot*"
+          git add .
           git commit -am "Automated screenshots report"
           git push
