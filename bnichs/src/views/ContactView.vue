@@ -118,7 +118,7 @@ export default {
   display: block;
   line-height: 32px;
   margin-bottom: 20px;
-  opacity: 0.6;
+  opacity: 0.9;
 
 
 }
