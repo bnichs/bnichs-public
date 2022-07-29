@@ -62,6 +62,23 @@ import QrcodeVue from 'qrcode.vue'
         </WelcomeItem>
       </a>
 
+
+
+      <RouterLink to="/business-card">
+        <WelcomeItem>
+          <template #icon>
+            <i class="bi bi-card"></i>
+          </template>
+          <template #heading>
+            My Card
+          </template>
+
+          <span class="text">
+            foo
+          </span>
+        </WelcomeItem>
+      </RouterLink>
+
     </div>
 
     <hr>
