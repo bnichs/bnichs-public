@@ -20,7 +20,7 @@ jobs:
         uses: swinton/screenshot-website@v1.x
         with:
           source: https://bnichs.github.io/
-          destination: screenshot-${{ matrix.os }}.png
+          path: screenshot-${{ matrix.os }}.png
       - name: Commit report
         run: |
           ls
