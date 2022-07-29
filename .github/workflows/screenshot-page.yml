@@ -32,8 +32,8 @@ jobs:
           cp ${{ steps.get_screenshots.outputs.path }} ./
           ls
           git branch --list
-          git config --global user.name 'Your Name'
-          git config --global user.email 'your-username@users.noreply.github.com'
+          git config --global user.name 'Ben Nichols (auto)'
+          git config --global user.email 'mail@ben-nichols.net'
 #          git checkout screenshots
           git add "screenshot*"
           git commit -am "Automated screenshots report"
