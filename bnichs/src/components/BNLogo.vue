@@ -12,11 +12,11 @@ export default {
   props: {
     height: {
       type: String,
-      default: 200,
+      default: "200",
     },
     width: {
       type: String,
-      default: 300,
+      default: "300",
     }
   },
 }
