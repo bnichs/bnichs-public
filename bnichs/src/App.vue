@@ -50,7 +50,6 @@ export default {
     }
   },
   mounted() {
-    document.title = `${CONFIG.PAGE_TITLE}`;
   },
 };
 </script>
