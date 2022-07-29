@@ -1,15 +1,7 @@
 
 <template>
   <div class="bn-logo logo">
-
     <img src="src/assets/bn-logo.svg" alt="BN Logo" v-bind:width="width" v-bind:height="height"/>
-<!--    <div class="strikethrough">-->
-<!--    </div>-->
-
-<!--    <div class="logo-letter-wrapper">-->
-<!--      <span class='flip_H letter-1'>B</span>-->
-<!--      <span class="letter-2">N</span>-->
-<!--    </div>-->
 
   </div>
 </template>
