@@ -1,17 +1,35 @@
 
 <template>
   <div class="bn-logo logo">
-    <div class="strikethrough">
-    </div>
 
-    <div class="logo-letter-wrapper">
-      <span class='flip_H letter-1'>B</span>
-      <span class="letter-2">N</span>
-    </div>
+    <img src="src/assets/bn-logo.svg" alt="BN Logo" v-bind:width="width" v-bind:height="height"/>
+<!--    <div class="strikethrough">-->
+<!--    </div>-->
+
+<!--    <div class="logo-letter-wrapper">-->
+<!--      <span class='flip_H letter-1'>B</span>-->
+<!--      <span class="letter-2">N</span>-->
+<!--    </div>-->
 
   </div>
 </template>
 
+<script lang="ts">
+export default {
+  name: "App",
+  props: {
+    height: {
+      type: String,
+      default: 200,
+    },
+    width: {
+      type: String,
+      default: 300,
+    }
+  },
+}
+
+</script>
 
 <style scoped>
 
@@ -52,11 +70,18 @@
 
 .bn-logo {
   /*color: green;*/
-  font-size: 100px;
+  /*font-size: 100px;*/
   /*font-kerning: none;*/
   letter-spacing: -1px;
   width: 300px;
-  margin: 0 2vh 0 4vh;
+  margin: 0 auto 0 18vw;
+
+}
+
+@media (min-width: 1024px) {
+  .bn-logo {
+    margin: 0 2vh 0 4vh;
+  }
 }
 
 .bn-logo .letter-1{
