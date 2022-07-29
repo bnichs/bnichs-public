@@ -4,30 +4,34 @@ import TitleBox from './components/TitleBox.vue'
 </script>
 
 <template>
-  <header>
-<!--    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />-->
 
+  {{ this.bare }}
+  <div v-if="bare">
+    <RouterView />
+  </div>
+  <div v-else>
+    <header>
+      <div class="wrapper">
+        <TitleBox msg="Ben Nichols" />
 
-    <div class="wrapper">
-      <TitleBox msg="Ben Nichols" />
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/resume">Resume/CV & Skills</RouterLink>
+          <RouterLink to="/services">Services</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+          <RouterLink to="/blog">Blog</RouterLink>
+          <RouterLink to="/contact">Contact</RouterLink>
+        </nav>
+      </div>
+    </header>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/resume">Resume/CV & Skills</RouterLink>
-        <RouterLink to="/services">Services</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/blog">Blog</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
-      </nav>
-    </div>
-  </header>
+    <RouterView />
+    <div style="clear:both;"></div>
 
-  <RouterView />
-  <div style="clear:both;"></div>
-
-  <footer>
-    Copyright Ben Nichols
-  </footer>
+    <footer>
+      Copyright Ben Nichols
+    </footer>
+  </div>
 </template>
 
 
@@ -37,6 +41,12 @@ import CONFIG from "./config"
 
 export default {
   name: "App",
+  props: {
+      bare: {
+        type: Boolean,
+        default: false,
+    }
+  },
   mounted() {
     document.title = `${CONFIG.PAGE_TITLE}`;
   },
