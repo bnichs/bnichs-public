@@ -33,6 +33,9 @@ import {PERSON_SUBTITLE, PERSON_NAME} from "../config"
   </div>
 </template>
 
+<script lang="ts">
+</script>
+
 <style scoped>
 
 /*.logo-letter-wrapper{*/

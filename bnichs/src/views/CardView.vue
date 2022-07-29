@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import AboutBox from '../components/AboutBox.vue'
 import BNLogo from '../components/BNLogo.vue'
 import ContactLinks from '../components/ContactLinks.vue'
 import QrcodeVue from 'qrcode.vue'
