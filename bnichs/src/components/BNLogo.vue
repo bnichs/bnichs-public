@@ -56,10 +56,6 @@ export default {
 }
 
 .bn-logo {
-  /*color: green;*/
-  /*font-size: 100px;*/
-  /*font-kerning: none;*/
-  letter-spacing: -1px;
   width: 300px;
   margin: 0 auto 0 18vw;
 
