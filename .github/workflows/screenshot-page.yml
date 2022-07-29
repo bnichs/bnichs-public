@@ -27,6 +27,7 @@ jobs:
           destination: screenshot-${{ matrix.os }}.png
       - name: Commit report
         run: |
+          echo ${{ steps.get_screenshots.outputs }}
           cp ${{ steps.get_screenshots.outputs.path }} ./foo.png
           ls
           git branch --list
