@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import {PAGE_TITLE} from "@/config";
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -34,8 +35,18 @@ const router = createRouter({
       name: 'services',
       component: () => import('../views/ServicesView.vue')
     },
+    {
+      path: '/card',
+      name: 'card',
+      component: () => import('../views/CardView.vue'),
+      // meta: {
+      // template: 'bare',
+      props: {
+        bare: true
+      }
+      // }
+    },
   ],
-  // scrollBehavior(to, from, savedPosition) {
   // @ts-ignore <- ignore it
   scrollBehavior: function(to, from, savedPosition){
     if (to.hash) {
@@ -45,5 +56,15 @@ const router = createRouter({
     }
   },
 })
+
+String.prototype.toProperCase = function () {
+  return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+};
+
+router.beforeEach((to, from, next) => {
+  const name = String(to.name).toProperCase()
+  document.title = `${PAGE_TITLE} - ${name}`
+  next()
+});
 
 export default router

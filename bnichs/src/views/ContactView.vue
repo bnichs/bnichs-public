@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import WelcomeItem from '../components/WelcomeItem.vue'
+import ContactLinks from '../components/ContactLinks.vue'
 </script>
 
 <template>
@@ -10,64 +10,26 @@ import WelcomeItem from '../components/WelcomeItem.vue'
 
     <hr>
 
-    <div class="contact">
-    <a href="mailto:mail@ben-nichols.net" target="_blank">
-      <WelcomeItem>
-        <template #icon>
-          <i class="bi bi-envelope"></i>
-        </template>
-        <template #heading>
-          Email
-        </template>
-
-        <span class="text">
-            mail@ben-nichols.net
-          </span>
-      </WelcomeItem>
-    </a>
-    </div>
-
-    <div class="contact">
-      <a href="https://www.linkedin.com/in/ben-j-nichols/" target="_blank">
-        <WelcomeItem>
-          <template #icon>
-            <i class="bi bi-linkedin"></i>
-          </template>
-          <template #heading>
-            LinkedIn
-          </template>
-
-          <span class="text">
-            https://www.linkedin.com/in/ben-j-nichols/
-          </span>
-
-        </WelcomeItem>
-      </a>
-
-      <a href="https://github.com/bnichs" target="_blank">
-        <WelcomeItem>
-          <template #icon>
-            <i class="bi bi-github"></i>
-          </template>
-          <template #heading>
-            GitHub
-          </template>
-
-          <span class="text">
-            https://github.com/bnichs
-          </span>
-        </WelcomeItem>
-      </a>
-
-    </div>
+    <ContactLinks>
+    </ContactLinks>
 
     <hr>
+
   </main>
 </template>
 
+
+<script lang="ts">
+</script>
+
 <style>
 
+.contact h3{
+  font-size: 20px;
+}
+
 .contact .text {
+  font-size: 15px;
   /*margin: 0;*/
   /*position: absolute;*/
   /*top: 50%;*/
@@ -86,11 +48,13 @@ import WelcomeItem from '../components/WelcomeItem.vue'
   display: block;
   line-height: 32px;
   margin-bottom: 20px;
-  opacity: 0.6;
-
-
+  opacity: 0.9;
 }
 
+
+.contact .details{
+  margin: 0 0 1vh 1vw;
+}
 
 .contact a i {
   /*margin-right: 20px;*/

@@ -1,18 +1,23 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import TitleBox from './components/HelloWorld.vue'
+import TitleBox from './components/TitleBox.vue'
 </script>
 
 <template>
+
+  <!--  {{ this.bare }}-->
+  <!--  <div v-if="bare">-->
+  <!--    <RouterView />-->
+  <!--  </div>-->
+  <!--  <div v-else>-->
   <header>
-<!--    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />-->
-
-
     <div class="wrapper">
-      <TitleBox msg="Ben Nichols" />
+      <RouterLink to="/">
+        <TitleBox msg="Ben Nichols" />
+        <!--                    Home-->
+      </RouterLink>
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/resume">Resume/CV & Skills</RouterLink>
         <RouterLink to="/services">Services</RouterLink>
         <RouterLink to="/about">About</RouterLink>
@@ -28,6 +33,7 @@ import TitleBox from './components/HelloWorld.vue'
   <footer>
     Copyright Ben Nichols
   </footer>
+  <!--  </div>-->
 </template>
 
 
@@ -37,8 +43,13 @@ import CONFIG from "./config"
 
 export default {
   name: "App",
+  props: {
+    bare: {
+      type: Boolean,
+      default: false,
+    }
+  },
   mounted() {
-    document.title = `${CONFIG.PAGE_TITLE}`;
   },
 };
 </script>
@@ -47,6 +58,12 @@ export default {
 
 footer{
   float: right;
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  /*left: 0;*/
+  text-align: center;
+  display: block;
+  margin: 10vh 0 0 0;
 }
 
 header {
