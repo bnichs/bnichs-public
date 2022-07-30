@@ -5,7 +5,7 @@ on:
       - "gh-pages"
       - setup-screenshots
       - "gh-pages"
-  page-build:
+  page_build:
 permissions:
   contents: write
 jobs:
