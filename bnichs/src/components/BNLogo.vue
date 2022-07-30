@@ -1,7 +1,7 @@
 
 <template>
   <div class="bn-logo logo">
-    <img src="src/assets/bn-logo.svg" alt="BN Logo" v-bind:width="width" v-bind:height="height"/>
+    <img src="/src/assets/bn-logo.svg" alt="BN Logo" v-bind:width="width" v-bind:height="height"/>
 
   </div>
 </template>
