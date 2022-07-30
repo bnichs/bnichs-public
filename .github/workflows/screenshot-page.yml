@@ -38,12 +38,12 @@ jobs:
           destination: screenshot-${{ matrix.os }}-${{ matrix.width }}-${{ steps.date.outputs.date }}-${{ steps.vars.outputs.sha_short }}.png
           width: ${{ matrix.width }}
       - name: Commit reportt
-        env:
-          BRANCH: "branch-${{ steps.vars.output.branch }}"
+#        env:
+#          BRANCH: branch-${{ steps.vars.output.branch }}
         run: |
-          mkdir -p $BRANCH
+          mkdir -p ${{ steps.vars.outputs.branch }}
           echo ${{ steps.get_screenshots.outputs.path }}
-          cp ${{ steps.get_screenshots.outputs.path }} ./$BRANCH
+          cp ${{ steps.get_screenshots.outputs.path }} ./${{ steps.vars.outputs.branch }}
           ls
           git branch --list
           git config --global user.name 'Ben Nichols (auto)'
