@@ -57,12 +57,13 @@ const router = createRouter({
   },
 })
 
-String.prototype.toProperCase = function () {
-  return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+
+function toProperCase(s: string) {
+  return s.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 };
 
 router.beforeEach((to, from, next) => {
-  const name = String(to.name).toProperCase()
+  const name = toProperCase(String(to.name))
   document.title = `${PAGE_TITLE} - ${name}`
   next()
 });
