@@ -1,0 +1,1 @@
+import{d as o,o as n,f as t,g as e}from"./index.88fc1da6.js";const s=e("h2",null," Coming soon ",-1),_=e("hr",null,null,-1),a=[s,_],m=o({__name:"BlogView",setup(l){return(c,r)=>(n(),t("main",null,a))}});export{m as default};
