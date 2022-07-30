@@ -29,10 +29,8 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
             {{ PERSON_SUBTITLE }}
           </h5>
         </div>
-
       </div>
     </div>
-
   </main>
 </template>
 
