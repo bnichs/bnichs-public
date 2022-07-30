@@ -5,6 +5,8 @@ on:
       - setup-screenshots
 permissions:
   contents: write
+concurrency:
+  group: screenshots-${{ github.job }}-${{ github.ref }}
 jobs:
   screenshot:
     strategy:
@@ -16,8 +18,8 @@ jobs:
         ]
         width: [1500, 992, 768, 600, 300]
 #    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
-    concurrency:
-      group: screenshots-${{ github.job }}-${{ github.ref }}
+#    concurrency:
+#      group: screenshots-${{ github.job }}-${{ github.ref }}
 #      cancel-in-progress: false
 #      cancel-pending: false
 
