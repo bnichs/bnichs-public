@@ -12,13 +12,6 @@ defineProps<{
 
       <BNLogo></BNLogo>
 
-<!--      <div class="bn-logo logo strikethrough">-->
-
-<!--        <div class="logo-letter-wrapper">-->
-<!--          <span class='flip_H letter-1'>B</span>-->
-<!--          <span class="letter-2">N</span>-->
-<!--        </div>-->
-<!--      </div>-->
     </div>
 
     <div class="col title-box">
@@ -37,12 +30,6 @@ defineProps<{
 </script>
 
 <style scoped>
-
-/*.logo-letter-wrapper{*/
-/*  background-color: white;*/
-/*  width: fit-content;*/
-/*  margin: 0 auto 0 auto;*/
-/*}*/
 
 .title-box {
   padding: 4vh 0 0 0;
@@ -72,11 +59,4 @@ h3 {
 }
 
 
-/*.vertical-center {*/
-/*  margin: 0;*/
-/*  position: absolute;*/
-/*  top: 50%;*/
-/*  -ms-transform: translateY(-50%);*/
-/*  transform: translateY(-50%);*/
-/*}*/
 </style>
