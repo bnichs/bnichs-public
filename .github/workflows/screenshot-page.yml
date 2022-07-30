@@ -2,8 +2,9 @@ name: Screenshot page
 on:
   push:
     branches:
+      - "gh-pages"
       - setup-screenshots
-      - gh-pages
+      - "gh-pages"
 permissions:
   contents: write
 jobs:
