@@ -31,7 +31,7 @@ import TitleBox from './components/TitleBox.vue'
 
 
 <script lang="ts">
-import CONFIG from "./config"
+import {PAGE_TITLE} from "./config"
 
 
 export default {

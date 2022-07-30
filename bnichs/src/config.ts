@@ -11,8 +11,3 @@ export const PAGE_TITLE = `${TITLE_PREFIX}${PAGE_TITLE_BASE}`
 export const PERSON_NAME = "Ben Nichols"
 export const PERSON_SUBTITLE = "System Development and Automation"
 export const PERSON_WEBSITE = "https://www.ben-nichols.net"
-
-
-export default {
-    PAGE_TITLE: PAGE_TITLE
-}
