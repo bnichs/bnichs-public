@@ -4,7 +4,6 @@ on:
     branches:
       - setup-screenshots
       - gh-pages
-      - main
 permissions:
   contents: write
 jobs:
