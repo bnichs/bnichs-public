@@ -50,4 +50,5 @@ jobs:
           git config --global user.email 'mail@ben-nichols.net'
           git add .
           git commit -am "Automated screenshots report"
+          git pull --rebase
           git push
