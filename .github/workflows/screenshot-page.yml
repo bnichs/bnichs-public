@@ -6,6 +6,11 @@ on:
       - setup-screenshots
       - "gh-pages"
   page_build:
+  deployment:
+  workflow_run:
+    workflows: [pages-build-deployment ]
+    types:
+      - completed
 permissions:
   contents: write
 jobs:
