@@ -9,7 +9,6 @@ import TitleBox from './components/TitleBox.vue'
     <div class="wrapper">
       <RouterLink to="/">
         <TitleBox msg="Ben Nichols" />
-        <!--                    Home-->
       </RouterLink>
 
       <nav>
@@ -28,7 +27,6 @@ import TitleBox from './components/TitleBox.vue'
   <footer>
     Copyright Ben Nichols
   </footer>
-  <!--  </div>-->
 </template>
 
 
