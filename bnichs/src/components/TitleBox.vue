@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <div class="greetings row">
-    <div class="col">
+    <div class="">
 
       <BNLogo></BNLogo>
 
@@ -34,8 +34,6 @@ defineProps<{
 .title-box {
   padding: 4vh 0 0 0;
 }
-
-
 h1 {
   font-weight: 500;
   font-size: 2.2rem;
@@ -58,5 +56,11 @@ h3 {
   }
 }
 
+@media (max-width: 1024px) {
+
+  .bn-logo{
+    margin: 0 auto 0 auto;
+  }
+}
 
 </style>
