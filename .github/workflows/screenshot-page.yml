@@ -1,12 +1,12 @@
 name: Screenshot page
 on:
-  push:
-    branches:
-      - "gh-pages"
-      - setup-screenshots
-      - "gh-pages"
-  page_build:
-  deployment:
+#  push:
+#    branches:
+#      - "gh-pages"
+#      - setup-screenshots
+#      - "gh-pages"
+#  page_build:
+#  deployment:
   workflow_run:
     workflows: [pages-build-deployment ]
     types:
