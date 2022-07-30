@@ -5,8 +5,10 @@ on:
       - setup-screenshots
 permissions:
   contents: write
-concurrency:
-  group: screenshots-${{ github.job }}-${{ github.ref }}
+#concurrency:
+#  group: screenshots-${{ github.job }}-${{ github.ref }}
+#  cancel-in-progress: false
+#  cancel-pending: false
 jobs:
   screenshot:
     strategy:
@@ -20,8 +22,6 @@ jobs:
 #    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
 #    concurrency:
 #      group: screenshots-${{ github.job }}-${{ github.ref }}
-#      cancel-in-progress: false
-#      cancel-pending: false
 
     runs-on: ${{ matrix.os }}
     steps:
