@@ -1,0 +1,1 @@
+import{e as o,o as s,f as a,g as n,r as t}from"./index.7affe5f5.js";const c={},r={class:"main-content"};function _(e,l){return s(),a("main",null,[n("h2",null,[t(e.$slots,"title")]),n("div",r,[t(e.$slots,"content")])])}const d=o(c,[["render",_]]);export{d as M};
