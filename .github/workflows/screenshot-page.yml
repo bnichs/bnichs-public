@@ -3,12 +3,10 @@ on:
   push:
     branches:
       - setup-screenshots
+      - gh-pages
+      - main
 permissions:
   contents: write
-#concurrency:
-#  group: screenshots-${{ github.job }}-${{ github.ref }}
-#  cancel-in-progress: false
-#  cancel-pending: false
 jobs:
   screenshot:
     strategy:
@@ -46,8 +44,6 @@ jobs:
           width: ${{ matrix.width }}
           full-page: true
       - name: Commit reportt
-#        env:
-#          BRANCH: branch-${{ steps.vars.output.branch }}
         run: |
           mkdir -p ${{ steps.vars.outputs.branch }}
           echo ${{ steps.get_screenshots.outputs.path }}
