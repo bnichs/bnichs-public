@@ -1,1 +1,0 @@
-import{e as s,o as t,f as a,g as n,r as o}from"./index.1f1803f5.js";const c={},r={class:"main-content"};function l(e,i){return t(),a("main",null,[n("h2",null,[o(e.$slots,"title")]),n("div",r,[o(e.$slots,"content")])])}const d=s(c,[["render",l]]);export{d as M};
