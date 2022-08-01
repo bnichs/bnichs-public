@@ -42,9 +42,9 @@ import WelcomeItem from './WelcomeItem.vue'
 
 
 <style scoped>
-.welcome-items {
-  margin: 5vh 0 0 0
-}
+/*.welcome-items {*/
+/*  margin: 5vh 0 0 0*/
+/*}*/
 
 .welcome-items a {
   display: block;

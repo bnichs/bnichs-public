@@ -49,6 +49,7 @@ export default {
 
 <style>
 
+
 footer{
   float: right;
   /*position: absolute;*/
@@ -133,7 +134,7 @@ main{
     font-size: 1rem;
 
     padding: 1rem 0;
-    margin-top: 1rem;
+    margin-top: -150px;
   }
 
 
@@ -149,11 +150,27 @@ main{
   .greetings .title-box{
     float: left;
     width: 15vw;
+    padding: 10vh 0 0 3vw;
+  }
+
+  .welcome-items {
+    margin: 15vh 0 0 0
   }
 }
 
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
+  main{
+    padding: 1vh 0 0 0;
+  }
 
+  #app {
+    padding: 0 10vw 0 10vw;
+  }
+
+  .welcome-items {
+    margin: 2vh 0 0 0
+  }
 }
+
 </style>
