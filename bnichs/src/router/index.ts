@@ -1,9 +1,9 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import {PAGE_TITLE} from "@/config";
 
 const router = createRouter({
-  history: createWebHashHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
@@ -48,13 +48,13 @@ const router = createRouter({
     },
   ],
   // @ts-ignore <- ignore it
-  scrollBehavior: function(to, from, savedPosition){
-    if (to.hash) {
-      return {el: to.hash}
-    } else {
-      return { x: 0, y: 0 }
-    }
-  },
+  // scrollBehavior: function(to, from, savedPosition){
+  //   if (to.hash) {
+  //     return {el: to.hash}
+  //   } else {
+  //     return { x: 0, y: 0 }
+  //   }
+  // },
 })
 
 
