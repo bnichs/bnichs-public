@@ -129,7 +129,7 @@ export default {
 
 
 .contact h3{
-  font-size: .15in;
+  font-size: .12in;
   margin: 0px;
 }
 
@@ -139,7 +139,7 @@ export default {
 }
 
 .contact .text{
-  font-size: .10in;
+  font-size: .08in;
 }
 
 
