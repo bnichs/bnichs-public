@@ -1,12 +1,14 @@
 <template>
   <main>
-      <h2>
-        <slot name="title"></slot>
-      </h2>
+    <h2>
+      <slot name="title"></slot>
+    </h2>
 
-      <div class="main-content">
-        <slot name="content"></slot>
-      </div>
+    <hr>
+
+    <div class="main-content">
+      <slot name="content"></slot>
+    </div>
   </main>
 </template>
 
