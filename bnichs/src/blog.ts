@@ -22,6 +22,10 @@ export class PostManifest {
     // bam: string;
 
 
+    loaded(){
+        return this.posts.size > 0
+    }
+
     constructor(payload: Partial<PostManifest>) {
         this.posts = new Map() ;
 
@@ -57,8 +61,9 @@ export class PostManifest {
 
 export function fetchManifest(){
     // let posts: PostManifest = {} // = {} as PostManifest
+    // let manifest: PostManifest;
 
-    fetch("./blog/manifest.json")
+    const man = fetch("./blog/manifest.json")
         .then(response => {
             return response.json();
             // console.log(this.posts)
@@ -69,6 +74,7 @@ export function fetchManifest(){
             const manifest = new PostManifest(jsondata)
             console.log(manifest)
             return manifest
+            // return manifest
             // console.log(foo)
             //
             // console.log("I hate js")
@@ -93,7 +99,12 @@ export function fetchManifest(){
             // return posts
             }
         );
-    return new PostManifest({})
+    return man
+    // const p = Promise.all([man])
+    // console.log(p)
+    // return p
+    // console.log("returning bad")
+    // return manifest
     // return posts
     // return posts
 }

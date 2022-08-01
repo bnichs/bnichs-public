@@ -3,7 +3,6 @@ import JobBox from '@/components/JobBox.vue'
 import TeamBox from '@/components/TeamBox.vue'
 import SkillsBox from '@/components/SkillsBox.vue'
 import MainBox from '@/components/MainBox.vue'
-import { defineComponent } from 'vue'
 </script>
 
 
@@ -315,6 +314,7 @@ import { defineComponent } from 'vue'
 
 
 <script lang="ts">
+import {defineComponent} from "vue";
 export default defineComponent({
   data() {
     return {

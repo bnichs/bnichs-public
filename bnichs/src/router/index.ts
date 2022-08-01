@@ -32,6 +32,7 @@ const router = createRouter({
     },
     {
       path: '/blog/:ref',
+      name: 'blog_post',
       component: () => import('../views/BlogPostView.vue'),
       props: true
     },

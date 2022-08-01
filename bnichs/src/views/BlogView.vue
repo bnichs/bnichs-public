@@ -1,42 +1,59 @@
 <script setup lang="ts">
+import MainBox from '@/components/MainBox.vue'
 </script>
 
 <template>
-  <main>
-    <h2>
-      Coming soon
-    </h2>
+  <MainBox>
+    <template #title>
+      A blog
+    </template>
 
-    <hr>
-    {{ posts }}
+    <template #content>
+      {{ manifest.posts }}
 
-    <div class="postPreview" v-for="post in manifest.posts">
-      <a :href="post.permalink">
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.preview }}</p>
-      </a>
-      {{ post }}
-    </div>
-  </main>
+      <div class="postPreview" v-if="manifestLoaded" v-for=" [ref, post]  in manifest.posts">
+        <RouterLink :to="{ name: 'blog_post', params: { ref: ref } }">
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.preview }}</p>
+          {{ post }}
+
+        </RouterLink>
+        <!--      <a :href="post.permalink">-->
+        <!--        <h3>{{ post.title }}</h3>-->
+        <!--        <p>{{ post.preview }}</p>-->
+        <!--      </a>-->
+      </div>
+    </template>
+  </MainBox>
 </template>
 
 
 <script lang="ts">
 import {defineComponent} from "vue";
 import type {Post} from '@/blog'
-import {fetchManifest} from "@/blog";
-import type {PostManifest} from "@/blog";
+import {fetchManifest, PostManifest} from "@/blog";
+// import type {PostManifest} from "@/blog";
 
 
 export default defineComponent({
 
   data(){
     return {
-      manifest: PostManifest = new PostManifest({})
+      manifest: new PostManifest({}) as PostManifest
     }
   },
   mounted() {
-    this.manifest = fetchManifest()
+    fetchManifest().then(p => {
+      this.manifest = p
+    })
+    console.log("Heres the man")
+    console.log(this.manifest)
+  },
+
+  computed: {
+    manifestLoaded(){
+      return this.manifest.loaded()
+    }
   }
 })
 
