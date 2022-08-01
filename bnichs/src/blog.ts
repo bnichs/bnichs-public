@@ -1,24 +1,26 @@
 
-export class Post {
+export class PostInfo {
     permalink: string
     preview: string
     title: string
+    path: string
 
-    constructor(payload: Partial<Post>) {
+    constructor(payload: Partial<PostInfo>) {
         this.title = payload.title || ""
         this.preview = payload.preview || ""
         this.permalink = payload.permalink || ""
+        this.path = payload.path || ""
     }
 }
 
 
 export declare interface PostManifestI {
-    posts: Map<string, Post>
+    posts: Map<string, PostInfo>
 }
 
 
 export class PostManifest {
-    public posts: Map<string, Post>;
+    public posts: Map<string, PostInfo>;
     // bam: string;
 
 
@@ -36,7 +38,7 @@ export class PostManifest {
         entries.forEach( ([key, val]) =>{
             console.log(key)
             console.log(val)
-            const post: Post = new Post(val)
+            const post: PostInfo = new PostInfo(val)
             console.log(post)
             this.posts.set(key, post);
             // const post = this.posts.get(key)

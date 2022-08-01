@@ -30,7 +30,7 @@ import MainBox from '@/components/MainBox.vue'
 
 <script lang="ts">
 import {defineComponent} from "vue";
-import type {Post} from '@/blog'
+import type {PostInfo} from '@/blog'
 import {fetchManifest, PostManifest} from "@/blog";
 // import type {PostManifest} from "@/blog";
 
