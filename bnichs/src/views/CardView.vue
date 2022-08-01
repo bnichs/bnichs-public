@@ -88,15 +88,15 @@ export default {
 }
 
 #card-title h3 {
-  font-size: 15px;
+  font-size: .20in;
 }
 
 #card-title h5 {
-  font-size: 10px;
+  font-size: .1in;
 }
 
 #card-contact{
-  padding: 5px;
+  padding: .05in;
   margin: 0 0 0 0 ;
   /*border-left: 1px solid green;*/
   height: fit-content;
@@ -115,7 +115,7 @@ export default {
 }
 
 .contact i {
-  font-size: 15px;
+  font-size: .15in;
   padding: 0px;
   width: unset;
   height: unset;
@@ -128,7 +128,7 @@ export default {
 
 
 .contact h3{
-  font-size: 10px;
+  font-size: .15in;
   margin: 0px;
 }
 
@@ -138,7 +138,7 @@ export default {
 }
 
 .contact .text{
-  font-size: 8px
+  font-size: .10in;
 }
 
 
