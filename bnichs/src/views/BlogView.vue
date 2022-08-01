@@ -33,7 +33,6 @@ import MainBox from '@/components/MainBox.vue'
 import {defineComponent} from "vue";
 import type {PostInfo} from '@/blog'
 import {fetchManifest, PostManifest} from "@/blog";
-// import type {PostManifest} from "@/blog";
 
 
 export default defineComponent({
