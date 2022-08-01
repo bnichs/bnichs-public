@@ -1,0 +1,14 @@
+{
+  "posts":  {
+    "the-first": {
+      "path": "foo/bar.md",
+      "title": "The first blog post",
+      "permalink": "blog/the-first"
+    },
+    "the-second": {
+      "path": "foo/baz.md",
+      "title": "The second blog post",
+      "permalink": "blog/the-second"
+    }
+  }
+}
