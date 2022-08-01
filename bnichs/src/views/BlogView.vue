@@ -9,19 +9,20 @@ import MainBox from '@/components/MainBox.vue'
     </template>
 
     <template #content>
-      {{ manifest.posts }}
+      <p>
+        {{ manifest.posts }}
+      </p>
 
-      <div class="postPreview" v-if="manifestLoaded" v-for=" [ref, post]  in manifest.posts">
+      <div class="postPreview" v-if="manifestLoaded" v-for="[ref, post] in manifest.posts">
         <RouterLink :to="{ name: 'blog_post', params: { ref: ref } }">
-          <h3>{{ post.title }}</h3>
-          <p>{{ post.preview }}</p>
-          {{ post }}
+          <div class="blogPreview">
+
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.preview }}</p>
+            {{ post }}
+          </div>
 
         </RouterLink>
-        <!--      <a :href="post.permalink">-->
-        <!--        <h3>{{ post.title }}</h3>-->
-        <!--        <p>{{ post.preview }}</p>-->
-        <!--      </a>-->
       </div>
     </template>
   </MainBox>
