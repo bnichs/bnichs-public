@@ -47,7 +47,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 
 footer{
   float: right;
@@ -95,16 +95,31 @@ main{
   min-height: 100vh;
 }
 
+
+
 @media (min-width: 1024px) {
-  header {
+  body {
     display: flex;
     place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*padding: 0 2rem;*/
+    margin: 15vh 8vw 0 8vw;
+  }
+
+  header {
+    /*margin: 15vh 0 0 0;*/
+    display: flex;
+    /*place-items: center;*/
     padding-right: calc(var(--section-gap) / 2);
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+  /*.logo {*/
+  /*  margin: 0 2rem 0 0;*/
+  /*}*/
 
   header .wrapper {
     display: flex;
@@ -125,5 +140,20 @@ main{
   main{
     margin: 15vh 0 0 0;
   }
+
+
+  .greetings .bn-logo{
+    float: left
+  }
+
+  .greetings .title-box{
+    float: left;
+    width: 15vw;
+  }
+}
+
+
+@media (min-width: 1024px) {
+
 }
 </style>

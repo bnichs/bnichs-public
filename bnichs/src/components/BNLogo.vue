@@ -52,20 +52,20 @@ export default {
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  /*margin: 0 auto 2rem;*/
 }
 
 .bn-logo {
   width: 300px;
-  margin: 0 auto 0 18vw;
+  /*margin: 0 auto 0 18vw;*/
 
 }
 
-@media (min-width: 1024px) {
-  .bn-logo {
-    margin: 0 2vh 0 4vh;
-  }
-}
+/*@media (min-width: 1024px) {*/
+/*  .bn-logo {*/
+/*    margin: 0 2vh 0 4vh;*/
+/*  }*/
+/*}*/
 
 .bn-logo .letter-1{
   margin: 0 auto 0 3vh;

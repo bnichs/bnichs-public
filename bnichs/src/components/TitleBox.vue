@@ -7,14 +7,14 @@ defineProps<{
 </script>
 
 <template>
-  <div class="greetings row">
-    <div class="">
+  <div class="greetings">
+<!--    <div class="">-->
 
       <BNLogo></BNLogo>
 
-    </div>
+<!--    </div>-->
 
-    <div class="col title-box">
+    <div class="title-box">
 
       <h1 class="the-name green">
         {{ PERSON_NAME }}
