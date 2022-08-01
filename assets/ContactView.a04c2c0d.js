@@ -1,1 +1,0 @@
-import{C as e}from"./ContactLinks.52c268df.js";import{M as o}from"./MainBox.6e6d931b.js";import{d as a,o as n,c,w as t,a as s,b as _}from"./index.c947a69b.js";const r=_(" Contact Info "),u=a({__name:"ContactView",setup(i){return(p,m)=>(n(),c(o,null,{title:t(()=>[r]),content:t(()=>[s(e)]),_:1}))}});export{u as default};
