@@ -20,7 +20,7 @@ import MainBox from '../components/MainBox.vue'
 <script lang="ts">
 </script>
 
-<style>
+<style scoped>
 
 .contact h3{
   font-size: 20px;

@@ -128,7 +128,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 
 .contact i{
   color: var(--color-text);

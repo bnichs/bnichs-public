@@ -105,17 +105,17 @@ export default {
 }
 
 
-.contact{
+.bcard .contact{
   width: fit-content;
   margin: 0 0 0in 0;
 }
 
 
-.contact a {
+.bcard .contact a {
  margin: 0;
 }
 
-.contact i {
+.bcard .contact i {
   font-size: .15in;
   padding: 0px;
   width: unset;
@@ -123,22 +123,22 @@ export default {
   left: -.15in;
 }
 
-.contact .details {
+.bcard .contact .details {
   margin: 0 0px 5px 0;
 }
 
 
-.contact h3{
+.bcard .contact h3{
   font-size: .12in;
   margin: 0px;
 }
 
-.contact .item {
+.bcard .contact .item {
   padding: 0 0 0 0vh;
   margin: 0;
 }
 
-.contact .text{
+.bcard .contact .text{
   font-size: .08in;
 }
 
