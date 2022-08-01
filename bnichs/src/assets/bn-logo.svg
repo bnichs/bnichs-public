@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="1150"
+   width="700"
    height="470"
-   viewBox="0 0 304.27083 124.35417"
+   viewBox="0 0 185.20834 124.35417"
    version="1.1"
    id="svg12371"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
@@ -26,8 +26,8 @@
      showgrid="false"
      units="px"
      inkscape:zoom="0.57370932"
-     inkscape:cx="469.75009"
-     inkscape:cy="766.06739"
+     inkscape:cx="58.39194"
+     inkscape:cy="488.92355"
      inkscape:window-width="3440"
      inkscape:window-height="1406"
      inkscape:window-x="0"
@@ -176,16 +176,6 @@
        id="rect17547" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient40511"
-       id="linearGradient64391"
-       gradientUnits="userSpaceOnUse"
-       x1="8.9323874"
-       y1="125.13589"
-       x2="378.86444"
-       y2="125.13589"
-       gradientTransform="matrix(0.86578417,0,0,1.0245662,-4.9201579,-65.689254)" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient62315"
        id="linearGradient64848"
        x1="-5.0140176"
@@ -199,7 +189,7 @@
        xlink:href="#linearGradient64387"
        id="linearGradient108990"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.02562906,-0.31889146,2.8789369,0.01702447,-217.66042,120.5805)"
+       gradientTransform="matrix(0.02562906,-0.31889146,2.8789369,0.01702447,-273.22327,120.5805)"
        x1="8.9323874"
        y1="125.13589"
        x2="378.86444"
@@ -209,17 +199,7 @@
        xlink:href="#linearGradient64387"
        id="linearGradient108992"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.02562906,-0.31889146,2.8789369,0.01702447,-217.66042,120.5805)"
-       x1="8.9323874"
-       y1="125.13589"
-       x2="378.86444"
-       y2="125.13589" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient40511"
-       id="linearGradient115219"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.5616883,0,0,1.0448056,82.033942,-68.195985)"
+       gradientTransform="matrix(0.02562906,-0.31889146,2.8789369,0.01702447,-273.22327,120.5805)"
        x1="8.9323874"
        y1="125.13589"
        x2="378.86444"
@@ -227,7 +207,7 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient44957"
-       id="linearGradient120353"
+       id="linearGradient2153"
        gradientUnits="userSpaceOnUse"
        x1="103.18948"
        y1="541.04285"
@@ -236,31 +216,13 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient44957"
-       id="linearGradient120357"
+       id="linearGradient2157"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.89884262,0,0,0.89884266,-7.4790565,-59.734543)"
+       gradientTransform="matrix(0.89884262,0,0,0.89884266,-67.587461,-59.734543)"
        x1="191.39738"
        y1="129.02437"
        x2="289.92719"
        y2="129.02437" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient64387"
-       id="linearGradient120359"
-       gradientUnits="userSpaceOnUse"
-       x1="172.80664"
-       y1="377.89691"
-       x2="258.55661"
-       y2="377.89691" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient64387"
-       id="linearGradient120361"
-       gradientUnits="userSpaceOnUse"
-       x1="1459.72"
-       y1="608.83508"
-       x2="1669.095"
-       y2="608.83508" />
   </defs>
   <g
      inkscape:groupmode="layer"
@@ -285,16 +247,7 @@
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="Line">
-    <path
-       id="path36400"
-       style="fill:none;fill-opacity:1;stroke:url(#linearGradient115219);stroke-width:7.66069;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 242.52836,61.657943 52.28325,-0.900792" />
-    <path
-       id="path113522"
-       style="fill:none;fill-opacity:1;stroke:url(#linearGradient64391);stroke-width:9.4184;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 2.8534672,64.275606 49.554066,63.763724" />
-  </g>
+     inkscape:label="Line" />
   <g
      inkscape:groupmode="layer"
      id="layer4"
@@ -305,40 +258,24 @@
      inkscape:label="Acronym">
     <text
        xml:space="preserve"
-       transform="matrix(-0.21983297,0,0,0.25727614,166.53192,-78.320017)"
+       transform="matrix(-0.21983297,0,0,0.25727614,110.96907,-78.320017)"
        id="text17545"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:666.669px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect17547);fill:url(#linearGradient120353);fill-opacity:1;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:666.669px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect17547);fill:url(#linearGradient2153);fill-opacity:1;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none"><tspan
          x="48.501953"
          y="770.3742"
-         id="tspan120427">B</tspan></text>
+         id="tspan2213">B</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:158.546px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient120357);fill-opacity:1;stroke-width:0.23831;stroke-miterlimit:4;stroke-dasharray:none"
-       x="151.55124"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:158.546px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient2157);fill-opacity:1;stroke-width:0.23831;stroke-miterlimit:4;stroke-dasharray:none"
+       x="91.442543"
        y="110.77708"
        id="text33472"
        transform="scale(0.92437178,1.0818158)"><tspan
          sodipodi:role="line"
          id="tspan33470"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:158.547px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient120357);fill-opacity:1;stroke-width:0.23831;stroke-miterlimit:4;stroke-dasharray:none"
-         x="151.55124"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:158.547px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient2157);fill-opacity:1;stroke-width:0.23831;stroke-miterlimit:4;stroke-dasharray:none"
+         x="91.442543"
          y="110.77708">N</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.20202205,0,0,0.16988356,-15.143641,-13.301249)"
-       id="text74893"
-       style="font-size:85.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect74895);fill:url(#linearGradient120359);fill-opacity:1"><tspan
-         x="169.18164"
-         y="400.43856"
-         id="tspan120429">Ben</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.18347529,0,0,0.17849978,-24.893535,-34.70872)"
-       id="text78261"
-       style="font-size:85.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect78263);fill:url(#linearGradient120361);fill-opacity:1"><tspan
-         x="1454.0117"
-         y="639.33505"
-         id="tspan120431">Nichols</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:22.5778px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
@@ -352,7 +289,7 @@
          y="111.60718" /></text>
     <path
        style="fill:url(#linearGradient108990);fill-opacity:1;stroke:url(#linearGradient108992);stroke-width:9.58394;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 147.75902,119.87683 147.37546,1.8799488"
+       d="M 92.196215,119.87683 91.812658,1.8799488"
        id="path108988"
        sodipodi:nodetypes="cc" />
   </g>
