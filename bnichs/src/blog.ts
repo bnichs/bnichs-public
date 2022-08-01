@@ -110,3 +110,12 @@ export function fetchManifest(){
     // return posts
     // return posts
 }
+
+
+export function fetchPost(url: string){
+    const p = fetch(url)
+        .then(resp => {
+            return resp.text()
+        })
+    return p
+}
