@@ -35,10 +35,12 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
 </template>
 
 <script lang="ts">
+import {PERSON_WEBSITE} from "@/config";
+
 export default {
   data() {
     return {
-      value: 'https://example.com',
+      value: PERSON_WEBSITE,
       size: 55,
     }
   },
