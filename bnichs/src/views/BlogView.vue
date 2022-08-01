@@ -10,7 +10,7 @@
     <hr>
     {{ posts }}
 
-    <div class="postPreview" v-for="post in posts">
+    <div class="postPreview" v-for="post in manifest.posts">
       <a :href="post.permalink">
         <h3>{{ post.title }}</h3>
         <p>{{ post.preview }}</p>
@@ -25,17 +25,18 @@
 import {defineComponent} from "vue";
 import type {Post} from '@/blog'
 import {fetchManifest} from "@/blog";
+import type {PostManifest} from "@/blog";
 
 
 export default defineComponent({
 
   data(){
     return {
-      posts: [] as Post[],
+      manifest: PostManifest = new PostManifest({})
     }
   },
   mounted() {
-    this.posts = fetchManifest()
+    this.manifest = fetchManifest()
   }
 })
 
