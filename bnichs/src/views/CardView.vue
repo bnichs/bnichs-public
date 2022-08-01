@@ -85,6 +85,7 @@ export default {
   border-top: 1px solid green;
   padding: .1in 0 0 .2in;
   margin: 0 0 0 -.2in;
+  height: 40%;
 }
 
 #card-title h3 {
@@ -99,7 +100,7 @@ export default {
   padding: .05in;
   margin: 0 0 0 0 ;
   /*border-left: 1px solid green;*/
-  height: fit-content;
+  height: 60%;
   /*width: 110px;*/
 }
 
