@@ -10,5 +10,14 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          markdown: ['vue3-markdown-it', 'markdown-it-highlightjs']
+        }
+      },
+    }
   }
 })

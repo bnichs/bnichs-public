@@ -5,25 +5,14 @@ import MainBox from '../components/MainBox.vue'
 <template>
   <MainBox v-if="manifestLoaded">
     <template #title>
-      {{ this.postInfo.title }}
+      {{ postInfo.title }}
     </template>
     <template #content>
-      {{ this.postInfo }}
+      {{ postInfo }}
+
+      <Markdown :source="mdSource" :plugins="plugins" />
     </template>
   </MainBox>
-  <main>
-
-<!--    {{ posts }}-->
-
-<!--    <div class="postPreview" v-for="post in this.posts">-->
-<!--      <a :href="post.permalink">-->
-<!--        <h3>{{ post.title }}</h3>-->
-<!--        <p>{{ post.preview }}</p>-->
-<!--      </a>-->
-
-<!--      {{ post }}-->
-<!--    </div>-->
-  </main>
 </template>
 
 
@@ -31,13 +20,31 @@ import MainBox from '../components/MainBox.vue'
 import {defineComponent} from "vue";
 import {fetchManifest, fetchPost, PostManifest, PostInfo} from "@/blog";
 
+// https://github.com/JanGuillermo/vue3-markdown-it
+// import Markdown from 'vue3-markdown-it';
+const Markdown = require('vue3-markdown-it');
+import MarkdownHighlighter from 'markdown-it-highlightjs';
+const MetaPlugin = require("markdown-it-meta");
+
 
 export default defineComponent({
+  components: {
+    Markdown
+  },
   data(){
     return {
       posts: null,
       manifest: new PostManifest({}) as PostManifest,
-      postInfo: new PostInfo({}) as PostInfo
+      postInfo: new PostInfo({}) as PostInfo,
+      mdSource: "",
+      plugins: [
+        {
+          plugin: MarkdownHighlighter,
+        },
+        {
+          plugin: MetaPlugin,
+        }
+      ]
     }
   },
   created(){
@@ -54,6 +61,7 @@ export default defineComponent({
     }).then(pInfo => {
       fetchPost(pInfo.path).then(pText => {
         console.log(pText)
+        this.mdSource = pText
       })
     })
     console.log("Heres the man")
