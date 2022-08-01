@@ -83,7 +83,7 @@ import WelcomeItem from '../components/WelcomeItem.vue'
         </template>
 
         <span class="text">
-            foo
+            See my business card made using HTML/CSS
           </span>
       </WelcomeItem>
     </RouterLink>

@@ -63,7 +63,7 @@ import MainBox from '@/components/MainBox.vue'
         <template #teams>
           <TeamBox>
             <template #team-name>
-              Working for the Security org
+              Threat and Vulnerability Management
             </template>
             <template #projects>
               <li>
@@ -79,7 +79,7 @@ import MainBox from '@/components/MainBox.vue'
           </TeamBox>
           <TeamBox>
             <template #team-name>
-              Working for the Security Infrastructure org
+              Security Infrastructure (SIEM)
             </template>
             <template #projects>
               <li>
