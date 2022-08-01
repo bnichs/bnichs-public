@@ -3,6 +3,7 @@ import JobBox from '@/components/JobBox.vue'
 import TeamBox from '@/components/TeamBox.vue'
 import SkillsBox from '@/components/SkillsBox.vue'
 import MainBox from '@/components/MainBox.vue'
+import { defineComponent } from 'vue'
 </script>
 
 
@@ -314,7 +315,7 @@ import MainBox from '@/components/MainBox.vue'
 
 
 <script lang="ts">
-export default {
+export default defineComponent({
   data() {
     return {
       goToTop: '<div class="goToTop"><p>Go to\n      <a href="/#/resume/#ResumeHeader">top</a>.\n    </p></div>',
@@ -345,7 +346,7 @@ export default {
       }
     }
   }
-};
+});
 </script>
 
 
