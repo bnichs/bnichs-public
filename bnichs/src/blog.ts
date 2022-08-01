@@ -63,7 +63,7 @@ export function fetchManifest(){
     // let posts: PostManifest = {} // = {} as PostManifest
     // let manifest: PostManifest;
 
-    const man = fetch("./blog/manifest.json")
+    const man = fetch("/blog/manifest.json")
         .then(response => {
             return response.json();
             // console.log(this.posts)

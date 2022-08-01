@@ -1,13 +1,13 @@
 {
   "posts":  {
     "the-first": {
-      "path": "foo/bar.md",
+      "path": "/blog/posts/2022/foo.md",
       "title": "The first blog post",
       "permalink": "blog/the-first",
       "preview":"some text of the post"
     },
     "the-second": {
-      "path": "foo/baz.md",
+      "path": "/blog/posts/2022/bar.md",
       "title": "The second blog post",
       "permalink": "blog/the-second",
       "preview":"some text of the post"
