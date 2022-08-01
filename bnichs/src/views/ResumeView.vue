@@ -333,13 +333,15 @@ export default {
   },
   methods: {
     toggleMore() {
-      var d = document.getElementById("extra-jobs");
-      console.log(d.style.display)
+      const d = document.getElementById("extra-jobs");
 
-      if (d.style.display === "" || d.style.display == "unset"){
-        d.style.display = "none";
-      } else if (d.style.display === "none"){
-        d.style.display = "unset";
+      if (d !== null){
+
+        if (d.style.display === "" || d.style.display == "unset"){
+          d.style.display = "none";
+        } else if (d.style.display === "none"){
+          d.style.display = "unset";
+        }
       }
     }
   }
