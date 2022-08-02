@@ -1,24 +1,24 @@
 {
-    "posts": [
-        {
+    "posts": {
+        "the-second": {
+            "ref": "the-second",
             "foo": "bar",
             "title": "Helll fucking js",
             "tags": [
                 "hatred"
             ],
-            "path": "public/blog/posts/2022/bar.md",
-            "permalink": "a perma",
+            "path": "/public/blog/posts/2022/bar.md",
             "preview": "A preview"
         },
-        {
+        "the-first": {
+            "ref": "the-first",
             "title": "Welcome to Markdown-it-meta",
             "keywords": "markdown-it-meta",
             "tags": [
                 "blogging"
             ],
-            "path": "public/blog/posts/2022/foo.md",
-            "permalink": "a perma",
+            "path": "/public/blog/posts/2022/foo.md",
             "preview": "A preview"
         }
-    ]
+    }
 }
