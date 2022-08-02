@@ -1,16 +1,24 @@
 {
-  "posts":  {
-    "the-first": {
-      "path": "/blog/posts/2022/foo.md",
-      "title": "The first blog post",
-      "permalink": "blog/the-first",
-      "preview":"some text of the post"
-    },
-    "the-second": {
-      "path": "/blog/posts/2022/bar.md",
-      "title": "The second blog post",
-      "permalink": "blog/the-second",
-      "preview":"some text of the post"
-    }
-  }
+    "posts": [
+        {
+            "foo": "bar",
+            "title": "Helll fucking js",
+            "tags": [
+                "hatred"
+            ],
+            "path": "public/blog/posts/2022/bar.md",
+            "permalink": "a perma",
+            "preview": "A preview"
+        },
+        {
+            "title": "Welcome to Markdown-it-meta",
+            "keywords": "markdown-it-meta",
+            "tags": [
+                "blogging"
+            ],
+            "path": "public/blog/posts/2022/foo.md",
+            "permalink": "a perma",
+            "preview": "A preview"
+        }
+    ]
 }
