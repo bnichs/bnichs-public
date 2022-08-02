@@ -1,7 +1,7 @@
 import {PostInfo} from "../src/blog";
 
 
-const Walk = require('@root/walk');
+// const Walk = require('@root/walk');
 const path = require('path');
 const MarkdownIt = require('markdown-it')
 const meta = require('markdown-it-meta')
