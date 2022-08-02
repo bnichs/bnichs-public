@@ -35,23 +35,55 @@ function myExample () {
 }
 
 
+export function CustomHmr() {
+  return {
+    name: 'custom-hmr',
+    enforce: 'post',
+    // HMR
+    handleHotUpdate({ file, server }) {
+      console.log(file)
+      if (file.endsWith('.md')) {
+        console.log('reloading md file...');
+
+        server.ws.send({
+          type: 'full-reload',
+          path: '*'
+        });
+      }
+    },
+  }
+}
+
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
       vue(),
     myExample(),
     splitVendorChunkPlugin(),
+      // CustomHmr(),
   ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
+  server: {
+    watch: {
+      ignored: ['!**/node_modules/your-package-name/**'],
+      // paths: [
+      //
+      // ],
+    }
+  },
   build: {
     rollupOptions: {
       output: {
         manualChunks: {
-          markdown: ['vue3-markdown-it', 'markdown-it-highlightjs']
+          markdown: [
+            'vue3-markdown-it',
+            'markdown-it-highlightjs'
+          ]
         }
       },
     }
