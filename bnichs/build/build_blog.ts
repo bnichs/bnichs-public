@@ -102,8 +102,8 @@ export function buildManifest(){
         // console.log(renderedDocument);
         // console.log(md.meta);
         let meta = md.meta as PostInfo
-        meta['path'] = fil
-        meta['permalink'] = "a perma"
+        meta['path'] = `/${fil}`
+        // meta['permalink'] = "a-perma"
         meta['preview'] = "A preview"
         return meta
     }).map(md => {
@@ -112,8 +112,15 @@ export function buildManifest(){
         return md
     })
 
+    let posts = {}
+    for (const ind in res){
+        const md = res[ind]
+        console.log(md)
+        posts[md.ref] = md
+    }
+
     let manifest = {
-        posts: res
+        posts: posts
     }
     console.log(manifest)
     let jstr = JSON.stringify(manifest, null, 4)
