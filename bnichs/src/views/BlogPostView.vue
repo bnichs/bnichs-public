@@ -8,9 +8,11 @@ import MainBox from '../components/MainBox.vue'
       {{ postInfo.title }}
     </template>
     <template #content>
-      {{ postInfo }}
 
-      <Markdown :source="mdSource" :plugins="plugins" />
+<!--      {{ htmlSource }}-->
+      <span v-html="htmlSource"></span>
+
+<!--      <Markdown :source="mdSource" :plugins="plugins" />-->
     </template>
   </MainBox>
 </template>
@@ -19,17 +21,26 @@ import MainBox from '../components/MainBox.vue'
 <script lang="ts">
 import {defineComponent} from "vue";
 import {fetchManifest, fetchPost, PostManifest, PostInfo} from "@/blog";
+import 'highlight.js/styles/monokai.css';
 
 // https://github.com/JanGuillermo/vue3-markdown-it
 // import Markdown from 'vue3-markdown-it';
-import Markdown from 'vue3-markdown-it';
-import MarkdownHighlighter from 'markdown-it-highlightjs';
-import MetaPlugin from "markdown-it-meta";
+// import Markdown from 'vue3-markdown-it';
+// const Markdown = () => import('vue3-markdown-it');
+// import MarkdownHighlighter from 'markdown-it-highlightjs';
+// import MetaPlugin from "markdown-it-meta";
+
+
+// import hljs_core from 'highlight.js/lib/core'
+// import hljs_js from 'highlight.js/lib/languages/javascript'
+// import md_it from 'markdown-it'
+// import md_it_hl from 'markdown-it-highlightjs'
+
 
 
 export default defineComponent({
   components: {
-    Markdown
+    // Markdown,
   },
   data(){
     return {
@@ -37,13 +48,14 @@ export default defineComponent({
       manifest: new PostManifest({}) as PostManifest,
       postInfo: new PostInfo({}) as PostInfo,
       mdSource: "",
+      htmlSource: "",
       plugins: [
-        {
-          plugin: MarkdownHighlighter,
-        },
-        {
-          plugin: MetaPlugin,
-        }
+        // {
+        //   plugin: MarkdownHighlighter,
+        // },
+        // {
+        //   plugin: MetaPlugin,
+        // }
       ]
     }
   },
@@ -51,6 +63,17 @@ export default defineComponent({
 
   },
   mounted() {
+    // const hljs = require('highlight.js/lib/core')
+
+    // hljs_core.registerLanguage(
+    //     'javascript',
+    //     hljs_js
+    // )
+    //
+    // const md = md_it()
+    //     .use(md_it_hl, { hljs_core })
+
+
     fetchManifest().then(p => {
       this.manifest = p
       const ref = this.$route.params.ref as string
@@ -61,7 +84,7 @@ export default defineComponent({
     }).then(pInfo => {
       fetchPost(pInfo.path).then(pText => {
         console.log(pText)
-        this.mdSource = pText
+        this.htmlSource = pText
       })
     })
     console.log("Heres the man")

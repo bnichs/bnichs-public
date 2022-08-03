@@ -7,7 +7,7 @@
             "tags": [
                 "hatred"
             ],
-            "path": "/public/blog/posts/2022/bar.md",
+            "path": "/public/blog_out/posts/the-second.html",
             "preview": "A preview"
         },
         "the-first": {
@@ -17,7 +17,17 @@
             "tags": [
                 "blogging"
             ],
-            "path": "/public/blog/posts/2022/foo.md",
+            "path": "/public/blog_out/posts/the-first.html",
+            "preview": "A preview"
+        },
+        "Fuck-js": {
+            "ref": "Fuck-js",
+            "foo": "bar",
+            "title": "Js is a god  damn nightmare",
+            "tags": [
+                "hatred"
+            ],
+            "path": "/public/blog_out/posts/Fuck-js.html",
             "preview": "A preview"
         }
     }

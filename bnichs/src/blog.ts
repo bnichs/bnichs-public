@@ -4,12 +4,14 @@ export class PostInfo {
     preview: string
     title: string
     path: string
+    ref: string
 
     constructor(payload: Partial<PostInfo>) {
         this.title = payload.title || ""
         this.preview = payload.preview || ""
         this.permalink = payload.permalink || ""
         this.path = payload.path || ""
+        this.ref = payload.ref || ""
     }
 }
 

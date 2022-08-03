@@ -82,7 +82,8 @@ export default defineConfig({
         manualChunks: {
           markdown: [
             'vue3-markdown-it',
-            'markdown-it-highlightjs'
+            // 'markdown-it-highlightjs',
+              'highlight.js',
           ]
         }
       },
