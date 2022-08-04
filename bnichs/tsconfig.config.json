@@ -3,9 +3,6 @@
   "include": ["vite.config.*", "vitest.config.*", "cypress.config.*"],
   "compilerOptions": {
     "composite": true,
-    "types": ["node"],
-    "allowJs": true,
-    "checkJs": false,
-    "noImplicitAny": false
+    "types": ["node"]
   }
 }
