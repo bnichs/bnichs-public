@@ -18,8 +18,10 @@ import MainBox from '../components/MainBox.vue'
         <template #heading>
           Process Automation
         </template>
-        Companies of all sizes face a common problem: people are made to do repetitive tasks that require little or no extra though or effort but take up their most valuable resource: time.
-        These tasks can range from:
+        <p>
+          Companies of all sizes face a common problem: people are made to do repetitive tasks that require little or no extra thought or effort but take up their most valuable resource: time.
+          These tasks can range from:
+        </p>
         <ul>
           <li>Manually deploying software</li>
           <li>Inputting sales data by hand</li>
@@ -27,8 +29,12 @@ import MainBox from '../components/MainBox.vue'
           <li>Configuring servers and services by hand</li>
           <li>Oncall responses for repeat problems</li>
         </ul>
-
-        No matter the task, it can be automated. Break the cycle of manual work and free your employees to do something they enjoy.
+        <p>
+          I specialize in taking manually processes and human-based systems and turning them into well oiled, configuration driven machines.
+        </p>
+        <p>
+          No matter the task, it can be automated. Break the cycle of manual work and free your employees to do something they enjoy.
+        </p>
       </WelcomeItem>
 
       <WelcomeItem>
