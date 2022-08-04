@@ -22,18 +22,17 @@ import TagBox from '@/components/TagBox.vue'
     <template #content>
       <div class="postPreview" v-if="manifestLoaded" v-for="[ref, post] in posts">
         <RouterLink :to="{ name: 'blog_post', params: { ref: ref } }">
-          <div class="blogPreview">
-
-            <h3>{{ post.title }}</h3>
-            <p>{{ post.preview }}</p>
-            {{ post }}
-          </div>
-
+          <h3 class="postPreviewTitle">{{ post.title }}</h3>
         </RouterLink>
 
         <TagBox :tags="post.tags">
         </TagBox>
 
+            <span class="postPreviewText" v-html="post.preview"></span>
+
+        <RouterLink :to="{ name: 'blog_post', params: { ref: ref } }">
+          <span class="viewPostButton">View Post...</span>
+        </RouterLink>
       </div>
       <div v-if="!posts">
         No posts found...
@@ -106,5 +105,28 @@ export default defineComponent({
 }
 
 
+.postPreviewTitle {
+  font-size: 2.5em;
+  margin: 0 0 4vh 0;
+  width: 70%;
+  float: left;
+}
+
+.postPreview {
+  margin: 0 0 5vh 0;
+  border: 1px solid var(--color-border);
+  padding: 5vh 1vw 10vh 2vw;
+}
+.postPreviewText{
+  font-size: 1.5em;
+  overflow-y: hidden;
+  max-height: 60vh;
+  display: inline-block;
+}
+
+.viewPostButton {
+  font-size: 1.5em;
+  float: right;
+}
 
 </style>
