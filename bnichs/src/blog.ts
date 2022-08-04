@@ -5,6 +5,7 @@ export class PostInfo {
     title: string
     path: string
     ref: string
+    tags: Array<string>
 
     constructor(payload: Partial<PostInfo>) {
         this.title = payload.title || ""
@@ -12,6 +13,7 @@ export class PostInfo {
         this.permalink = payload.permalink || ""
         this.path = payload.path || ""
         this.ref = payload.ref || ""
+        this.tags = payload.tags || Array<string>()
     }
 }
 

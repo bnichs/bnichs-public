@@ -4,6 +4,7 @@ foo: bar
 title: Helll fucking js
 tags: 
     - hatred
+    - js
 ---
 
 
