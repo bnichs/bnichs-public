@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
-const Markdown = require('vue3-markdown-it');
+import Markdown from 'vue3-markdown-it';
 import 'highlight.js/styles/monokai.css';
 
 import 'bootstrap'

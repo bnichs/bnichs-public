@@ -22,9 +22,9 @@ import {fetchManifest, fetchPost, PostManifest, PostInfo} from "@/blog";
 
 // https://github.com/JanGuillermo/vue3-markdown-it
 // import Markdown from 'vue3-markdown-it';
-const Markdown = require('vue3-markdown-it');
+import Markdown from 'vue3-markdown-it';
 import MarkdownHighlighter from 'markdown-it-highlightjs';
-const MetaPlugin = require("markdown-it-meta");
+import MetaPlugin from "markdown-it-meta";
 
 
 export default defineComponent({
