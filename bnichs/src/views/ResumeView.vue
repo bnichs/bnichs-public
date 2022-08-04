@@ -10,25 +10,25 @@ import MainBox from '@/components/MainBox.vue'
 <template>
   <MainBox>
     <template #title>
-          <div id="ResumeHeader">
-            Resume
-          </div>
+      <div id="ResumeHeader">
+        Resume
+      </div>
     </template>
 
     <template #content>
       <ul class="resume-nav">
         Navigation:
-        <a href="/#/resume/#ResumeJobs">
+        <a href="/resume/#ResumeJobs">
           <li>
             Jobs
           </li>
         </a>
-        <a href="/#/resume/#ResumeSkills">
+        <a href="/resume/#ResumeSkills">
           <li>
             Skills
           </li>
         </a>
-        <a href="/#/resume/#ResumeEducation">
+        <a href="/resume/#ResumeEducation">
           <li>
             Education
           </li>
@@ -314,10 +314,11 @@ import MainBox from '@/components/MainBox.vue'
 
 
 <script lang="ts">
-export default {
+import {defineComponent} from "vue";
+export default defineComponent({
   data() {
     return {
-      goToTop: '<div class="goToTop"><p>Go to\n      <a href="/#/resume/#ResumeHeader">top</a>.\n    </p></div>',
+      goToTop: '<div class="goToTop"><p>Go to\n      <a href="/resume/#ResumeHeader">top</a>.\n    </p></div>',
       showMoreJobs: false,
       // displayExtraJobs: "none",
     };
@@ -345,7 +346,7 @@ export default {
       }
     }
   }
-};
+});
 </script>
 
 

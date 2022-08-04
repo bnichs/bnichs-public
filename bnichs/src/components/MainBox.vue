@@ -1,8 +1,8 @@
 <template>
   <main>
-    <h2>
+    <h1>
       <slot name="title"></slot>
-    </h2>
+    </h1>
 
     <hr>
 

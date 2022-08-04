@@ -29,3 +29,6 @@ coverage
 
 
 dist/
+
+# Ignore the built files, just let them get copied to dist
+public/blog_out/*

@@ -8,11 +8,8 @@ defineProps<{
 
 <template>
   <div class="greetings">
-<!--    <div class="">-->
 
-      <BNLogo></BNLogo>
-
-<!--    </div>-->
+    <BNLogo></BNLogo>
 
     <div class="title-box">
 
@@ -30,6 +27,10 @@ defineProps<{
 </script>
 
 <style scoped>
+
+.bn-logo object {
+  pointer-events: none;
+}
 
 /*.title-box {*/
 /*  padding: 4vh 0 0 0;*/
