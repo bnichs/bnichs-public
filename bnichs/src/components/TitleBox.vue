@@ -28,6 +28,10 @@ defineProps<{
 
 <style scoped>
 
+.bn-logo object {
+  pointer-events: none;
+}
+
 /*.title-box {*/
 /*  padding: 4vh 0 0 0;*/
 /*}*/
