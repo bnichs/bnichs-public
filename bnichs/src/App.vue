@@ -140,6 +140,7 @@ main{
 
   main{
     margin: 15vh 0 0 0;
+    width: 45vw;
   }
 
 
