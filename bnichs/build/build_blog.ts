@@ -27,11 +27,11 @@ const md = require('markdown-it')()
 
 
 // directory path
-const blogDir = './public/blog';
+const blogDir = './blog';
 const blogOutDir = './public/blog_out';
 const postsDir = path.join(blogDir, 'posts')
 const manifestName = "manifest.json"
-const manifestPath = path.join(blogDir, manifestName)
+const manifestPath = path.join(blogOutDir, manifestName)
 
 
 

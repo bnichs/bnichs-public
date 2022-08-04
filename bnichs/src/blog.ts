@@ -52,7 +52,7 @@ export class PostManifest {
 
 export function fetchManifest(){
 
-    const man = fetch("/blog/manifest.json")
+    const man = fetch("/blog_out/manifest.json")
         .then(response => {
             return response.json();
             // console.log(this.posts)
