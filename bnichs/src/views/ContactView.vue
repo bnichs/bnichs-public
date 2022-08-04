@@ -9,9 +9,11 @@ import MainBox from '../components/MainBox.vue'
      Contact Info
    </template>
 
-    <template #content>
-      <ContactLinks>
-      </ContactLinks>
+    <template  #content>
+      <div id="contactList">
+        <ContactLinks>
+        </ContactLinks>
+      </div>
     </template>
   </MainBox>
 </template>
@@ -20,28 +22,28 @@ import MainBox from '../components/MainBox.vue'
 <script lang="ts">
 </script>
 
-<style scoped>
+<style >
 
-.contact h3{
-  font-size: 20px;
+#contactList .contact h3{
+  font-size: 1.8rem;
 }
 
-.contact .text {
-  font-size: 15px;
+#contactList .contact .text {
+  font-size: 1.2rem;
   /*margin: 0;*/
   /*position: absolute;*/
   /*top: 50%;*/
   /*transform: translateY(-60%);*/
 }
-.contact {
+#contactList .contact {
   list-style: none;
 }
 
-.contact i {
+#contactList .contact i {
   font-size: 30px;
 }
 
-.contact a{
+#contactList .contact a{
   font-size: 15px;
   display: block;
   line-height: 32px;
@@ -50,20 +52,8 @@ import MainBox from '../components/MainBox.vue'
 }
 
 
-.contact .details{
+#contactList .contact .details{
   margin: 0 0 1vh 1vw;
 }
 
-.contact .text {
-  font-size: 15px;
-}
-
-.contact h3{
-  font-size: 20px;
-}
-
-
-.contact a i {
-  /*margin-right: 20px;*/
-}
 </style>
