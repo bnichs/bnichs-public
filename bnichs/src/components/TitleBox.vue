@@ -8,11 +8,8 @@ defineProps<{
 
 <template>
   <div class="greetings">
-<!--    <div class="">-->
 
-      <BNLogo></BNLogo>
-
-<!--    </div>-->
+    <BNLogo></BNLogo>
 
     <div class="title-box">
 
