@@ -5,6 +5,9 @@ const path = require('path');
 const fs = require('fs')
 
 
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
+
 
 const hljs = require('highlight.js/lib/core')
 const languages = ["javascript", "python"]
@@ -60,8 +63,20 @@ function validateMeta(md: Object){
     })
 }
 
+function gen_preview(doc: String){
+    // console.log(doc)
+    const dom = new JSDOM("<!DOCTYPE html>"+doc)
+    const pars = dom.window.document.querySelectorAll("p")
 
+    let txt = ""
+    for (let i = 0; i < pars.length; i++) {
+        console.log(pars[i].textContent)
+        txt += pars[i].outerHTML
+    }
+    console.log(txt)
 
+    return txt
+}
 
 export function buildManifest(){
     let res = walk(postsDir).map(fil =>{
@@ -80,8 +95,7 @@ export function buildManifest(){
 
 
         meta['path'] = `/${f_out_path}`
-        // meta['permalink'] = "a-perma"
-        meta['preview'] = "A preview"
+        meta['preview'] = gen_preview(renderedDocument)
         return meta
     }).map(md => {
         validateMeta(md)
