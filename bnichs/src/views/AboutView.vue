@@ -9,7 +9,7 @@ import MainBox from '@/components/MainBox.vue'
       About Me
     </template>
     <template #content>
-      <AboutBox></AboutBox>
+      <AboutBox :extra="true"></AboutBox>
     </template>
   </MainBox>
 </template>
