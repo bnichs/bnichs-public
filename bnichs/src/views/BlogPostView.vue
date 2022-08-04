@@ -63,4 +63,29 @@ export default defineComponent({
 
 <style>
 
+.blogPost p {
+  font-size: 1.4rem;
+}
+
+.blogPost h1 {
+  font-size: 2rem;
+}
+
+
+.blogPost h2 {
+  font-size: 1.9rem;
+}
+
+.blogPost h3 {
+  font-size: 1.8rem;
+}
+
+.blogPost h4 {
+  font-size: 1.7rem;
+}
+
+.blogPost h4 {
+  font-size: 1.6rem;
+}
+
 </style>
