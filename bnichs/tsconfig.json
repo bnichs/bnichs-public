@@ -11,7 +11,7 @@
 
   "references": [
     {
-      "path": "./tsconfig.config.json"
+      "path": "./tsconfig.vue.json"
     }
   ]
 }
