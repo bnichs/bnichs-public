@@ -8,14 +8,14 @@ import TitleBox from './components/TitleBox.vue'
   <header>
     <div class="wrapper">
       <RouterLink to="/">
-        <TitleBox msg="Ben Nichols" />
+        <TitleBox class="row"/>
       </RouterLink>
 
-      <nav>
-        <RouterLink to="/resume">Resume/CV & Skills</RouterLink>
+      <nav class="row">
+        <RouterLink to="/resume">Resume</RouterLink>
         <RouterLink to="/services">Services</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/blog">Blog</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
       </nav>
     </div>
@@ -65,12 +65,22 @@ header {
   max-height: 100vh;
 }
 
+.row .title-box {
+  padding-right: 0px;
+}
+
+.title-box{
+  text-align: center;
+}
+
+
 
 nav {
-  width: 100%;
+  /*width: 100%;*/
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  display: inline;
 }
 
 nav a.router-link-exact-active {
@@ -83,6 +93,7 @@ nav a.router-link-exact-active:hover {
 
 nav a {
   display: inline-block;
+  width: fit-content !important;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
 }
@@ -104,6 +115,10 @@ main{
     place-items: center;
   }
 
+  .the-subtitle{
+    padding: 10vh 0 2vh 0;
+  }
+
   #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -123,9 +138,9 @@ main{
   /*}*/
 
   header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+    /*display: flex;*/
+    /*place-items: flex-start;*/
+    /*flex-wrap: wrap;*/
   }
 
   nav {
@@ -150,8 +165,8 @@ main{
 
   .greetings .title-box{
     float: left;
-    width: 15vw;
-    padding: 10vh 0 0 3vw;
+    /*width: 15vw;*/
+    /*padding: 10vh 0 0 3vw;*/
   }
 
   .welcome-items {
@@ -166,11 +181,23 @@ main{
   }
 
   #app {
-    padding: 0 10vw 0 10vw;
+    padding: 5vh 6vw 0 6vw;
   }
 
   .welcome-items {
     margin: 2vh 0 0 0
+  }
+
+  .title-box{
+    padding: 2vh 0 0 0;
+  }
+
+  .the-name {
+    padding: 2vh 0 0 0;
+  }
+
+  .the-subtitle{
+    padding: 2vh 0 2vh 0;
   }
 }
 

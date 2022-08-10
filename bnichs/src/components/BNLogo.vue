@@ -1,9 +1,7 @@
 
 <template>
   <div class="bn-logo logo">
-    <object data="/bn-logo-full.svg" alt="BN Logo"
-            v-bind:width="width"
-            v-bind:height="height"
+    <object id="logoImg" data="/bn-logo-full.svg" alt="BN Logo"
             type="image/svg+xml" >
       <h3>fallback</h3>
     </object>
@@ -85,6 +83,12 @@ export default {
 .bn-logo span{
   display: inline-block;
   /*background-color: white;*/
+}
+
+
+#logoImg{
+  width: 200px;
+
 }
 
 .flip_H{
