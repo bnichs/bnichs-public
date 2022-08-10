@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import DataTable from 'datatables.net-vue3';
+import DataTableBs5 from 'datatables.net-bs5';
+
+DataTable.use(DataTableBs5)
 </script>
 
 <template>
     <DataTable
                :options="{select: true, paginate: false, searching: false, info: false, order: [[ 1, 'des' ]]}"
                :columns="columns"
+               width="100%"
                ajax="/skills.json"
                class="display table table-bordered">
       <thead>

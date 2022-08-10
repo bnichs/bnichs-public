@@ -8,7 +8,7 @@ import MainBox from '@/components/MainBox.vue'
 
 
 <template>
-  <MainBox>
+  <MainBox id="resume">
     <template #title>
       <div id="ResumeHeader">
         Resume
@@ -352,6 +352,9 @@ export default defineComponent({
 
 
 <style>
+#resume{
+  font-size: .8rem;
+}
 
 .goToTop {
   margin: 5px 0 0 30px;
@@ -378,6 +381,33 @@ export default defineComponent({
 .resume-nav li {
   display: inline;
   margin: 10px;
+}
+
+
+@media (max-width: 1024px){
+  .where-and-when {
+    padding: 1vh 0 0 0;
+  }
+
+  .job {
+    margin: 0 !important;
+  }
+
+  .skill-box{
+    border-left: none !important;
+  }
+
+  .team-box{
+    margin: 0 !important;
+  }
+
+  .where-and-when {
+    padding: 0 2vw 0 0vw;
+  }
+
+  .project-list {
+    margin: 0 !important;
+  }
 }
 
 

@@ -6,19 +6,19 @@
   <div class="team-box">
     <div class="row">
       <div class="col">
-        <h4 class="team">
+        <h4 class="team-name">
           <slot name="team-name"></slot>
         </h4>
         <h5 class="team-subtitle">
           <slot name="team-subtitle"></slot>
         </h5>
-        <h4 class="role">
+        <h4 class="team-role">
           <slot name="role"></slot>
         </h4>
       </div>
 
       <div class="col-md-4 where-and-when">
-        <span class="dates">
+        <span class="team-dates">
           <slot name="dates"></slot>
         </span>
       </div>
@@ -41,8 +41,25 @@
   padding: 10px;
 }
 
+.team-name{
+  font-size: 1.2em;
+}
+
+.team-dates {
+  font-size: 1em;
+}
+
+.team-subtitle {
+  font-size: 1em;
+}
+
+.team-role {
+  padding: 2vh 0 0 0;
+  font-size: .9em;
+}
+
 .project-list{
-  margin: 0 10px 0 10px;
+  margin: 1vh 10px 0 10px;
 }
 
 
