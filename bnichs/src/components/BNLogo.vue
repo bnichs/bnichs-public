@@ -5,9 +5,6 @@
             type="image/svg+xml" >
       <h3>fallback</h3>
     </object>
-<!--    <img src="/src/assets/bn-logo-full.svg" alt="BN Logo" v-bind:width="width" v-bind:height="height" type="image/svg+xml" />-->
-<!--    <img src="/src/assets/recursion.svg" alt="BN Logo" v-bind:width="width" v-bind:height="height"/>-->
-
   </div>
 </template>
 
