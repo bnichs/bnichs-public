@@ -48,6 +48,10 @@ h3 {
   font-size: 1.2rem;
 }
 
+.the-subtitle{
+  text-align: center;
+}
+
 /*.greetings h1,*/
 /*.greetings h3 {*/
 /*  text-align: center;*/
@@ -65,9 +69,7 @@ h3 {
     margin: 0 auto 0 auto;
   }
 
-  .the-subtitle{
-    text-align: center;
-  }
+
 }
 
 </style>
