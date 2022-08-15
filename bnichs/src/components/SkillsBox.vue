@@ -42,6 +42,7 @@ const columns = [
   color: var(--color-text);
   border: 1px solid var(--color-border);
   box-shadow: 0 0 3px rgba(255, 255, 255, 0.25);
+  width: 100% !important;
 }
 
 .table th{
