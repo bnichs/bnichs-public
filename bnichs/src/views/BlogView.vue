@@ -129,4 +129,12 @@ export default defineComponent({
   float: right;
 }
 
+@media (max-width: 1024px) {
+  .postPreview{
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+  }
+}
+
+
 </style>
