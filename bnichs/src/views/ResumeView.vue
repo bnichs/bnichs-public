@@ -398,7 +398,12 @@ export default defineComponent({
   }
 
   .team-box{
-    margin: 0 !important;
+    margin: 1vh 0 0 0 !important;
+    padding: 1vh 1vw 1vh 1vw;
+  }
+
+  .team-role {
+    padding-top: 1vh !important;
   }
 
   .where-and-when {

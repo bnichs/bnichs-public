@@ -5,6 +5,7 @@
         <span class="team-role">
           <slot name="role"></slot>
         </span>
+        <br>
           at
           <span class="company">
           <slot name="company"></slot>
@@ -69,7 +70,7 @@
 }
 
 .team-role {
-  font-size: 1.5em;
+  /*font-size: 1.5em;*/
   color: var(--color-heading)
 }
 

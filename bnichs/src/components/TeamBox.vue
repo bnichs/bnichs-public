@@ -38,7 +38,7 @@
 
   border: 1px solid var(--color-border);
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.25);
-  padding: 10px;
+  /*margin: 4vh 1vw 0 1vw;*/
 }
 
 .team-name{
@@ -55,7 +55,7 @@
 
 .team-role {
   padding: 2vh 0 0 0;
-  font-size: .9em;
+  font-size: .7em;
 }
 
 .project-list{
