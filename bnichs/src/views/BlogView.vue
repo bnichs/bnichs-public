@@ -106,7 +106,7 @@ export default defineComponent({
 
 
 .postPreviewTitle {
-  font-size: 2.5em;
+  /*font-size: 2.5em;*/
   margin: 0 0 4vh 0;
   width: 70%;
   float: left;
@@ -118,7 +118,7 @@ export default defineComponent({
   padding: 5vh 1vw 10vh 2vw;
 }
 .postPreviewText{
-  font-size: 1.5em;
+  /*font-size: 1.5em;*/
   overflow-y: hidden;
   max-height: 60vh;
   display: inline-block;
