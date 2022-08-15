@@ -7,17 +7,20 @@ defineProps<{
 </script>
 
 <template>
-  <div class="greetings">
-    <div class="row title-box">
-      <BNLogo class="col"></BNLogo>
+  <div class="greetings row mx-auto">
+<!--    <div class="row title-box">-->
+      <BNLogo class="col-md-auto"></BNLogo>
 
-      <h1 class="col the-name green">
-        {{ PERSON_NAME }}
-      </h1>
+      <div class="col col-md-auto title-box">
+        <span class="row the-name">
+          {{ PERSON_NAME }}
+        </span>
+        <span class="row the-subtitle">
+          {{ PERSON_SUBTITLE }}
+        </span>
+
+<!--      </div>-->
     </div>
-    <h3 class="row the-subtitle">
-      {{ PERSON_SUBTITLE }}
-    </h3>
   </div>
 </template>
 
@@ -50,8 +53,24 @@ h3 {
   font-size: 1.2rem;
 }
 
+.greetings{
+  margin: 0 0 8vh 0;
+  width: fit-content;
+}
+
+.title-box{
+  margin: 0 0 0vh 5vw;
+}
+
+.the-name{
+  width: fit-content;
+  font-size: 1.2rem;
+}
+
 .the-subtitle{
-  text-align: center;
+  /*text-align: center;*/
+  width: fit-content;
+  font-size: .6rem;
 }
 
 /*.greetings h1,*/
@@ -64,6 +83,16 @@ h3 {
   /*.greetings h3 {*/
   /*  text-align: left;*/
   /*}*/
+  .row .bn-logo{
+    --bs-gutter-x: 0;
+  }
+
+  header{
+    min-width: 290px;
+  }
+  .title-box{
+    margin: 0 0 0vh 2vw;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -71,6 +100,13 @@ h3 {
     margin: 0 auto 0 auto;
   }
 
+  .title-box{
+    margin: 0 0 0vh 10vw;
+  }
+
+  .greetings{
+    margin: 0 0 5vh 0;
+  }
 
 }
 

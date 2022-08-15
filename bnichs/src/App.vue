@@ -8,10 +8,10 @@ import TitleBox from './components/TitleBox.vue'
   <header>
     <div class="wrapper">
       <RouterLink to="/">
-        <TitleBox class="row"/>
+        <TitleBox class=""/>
       </RouterLink>
 
-      <nav class="row">
+      <nav class="row justify-content-center">
         <RouterLink to="/resume">Resume</RouterLink>
         <RouterLink to="/services">Services</RouterLink>
         <RouterLink to="/blog">Blog</RouterLink>
@@ -65,13 +65,13 @@ header {
   max-height: 100vh;
 }
 
-.row .title-box {
-  padding-right: 0px;
-}
+/*.row .title-box {*/
+/*  padding-right: 0px;*/
+/*}*/
 
-.title-box{
-  text-align: center;
-}
+/*.title-box{*/
+/*  text-align: center;*/
+/*}*/
 
 
 
@@ -115,9 +115,9 @@ main{
     place-items: center;
   }
 
-  .the-subtitle{
-    padding: 10vh 0 2vh 0;
-  }
+  /*.the-subtitle{*/
+  /*  padding: 10vh 0 2vh 0;*/
+  /*}*/
 
   #app {
     display: grid;
@@ -130,7 +130,7 @@ main{
     /*margin: 15vh 0 0 0;*/
     display: flex;
     /*place-items: center;*/
-    padding-right: calc(var(--section-gap) / 2);
+    padding-right: calc(var(--section-gap) / 4);
   }
 
   /*.logo {*/
@@ -146,7 +146,7 @@ main{
   nav {
     text-align: left;
     margin-left: -1rem;
-    font-size: 1rem;
+    font-size: .8rem;
 
     padding: 1rem 0;
     margin-top: -150px;
@@ -155,18 +155,18 @@ main{
 
   main{
     margin: 15vh 0 0 0;
-    width: 55vw;
+    width: 52vw;
   }
 
-  .greetings .bn-logo{
-    float: left
-  }
+  /*.greetings .bn-logo{*/
+  /*  float: left*/
+  /*}*/
 
-  .greetings .title-box{
-    float: left;
-    /*width: 15vw;*/
-    /*padding: 10vh 0 0 3vw;*/
-  }
+  /*.greetings .title-box{*/
+  /*  float: left;*/
+  /*  !*width: 15vw;*!*/
+  /*  !*padding: 10vh 0 0 3vw;*!*/
+  /*}*/
 
   .welcome-items {
     margin: 15vh 0 0 0
@@ -180,24 +180,24 @@ main{
   }
 
   #app {
-    padding: 5vh 6vw 0 6vw;
+    padding: 2vh 6vw 0 6vw;
   }
 
   .welcome-items {
     margin: 2vh 0 0 0
   }
 
-  .title-box{
-    padding: 2vh 0 0 0;
-  }
+  /*.title-box{*/
+  /*  padding: 2vh 0 0 0;*/
+  /*}*/
 
-  .the-name {
-    padding: 2vh 0 0 0;
-  }
+  /*.the-name {*/
+  /*  padding: 2vh 0 0 0;*/
+  /*}*/
 
-  .the-subtitle{
-    padding: 2vh 0 2vh 0;
-  }
+  /*.the-subtitle{*/
+  /*  padding: 2vh 0 2vh 0;*/
+  /*}*/
 }
 
 </style>
