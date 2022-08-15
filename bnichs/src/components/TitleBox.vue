@@ -36,6 +36,8 @@ defineProps<{
 
 .the-name{
   text-align: center;
+  color: var(--color-title);
+  /*margin: 0vh 0 0 0;*/
 }
 
 h1 {

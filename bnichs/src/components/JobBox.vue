@@ -70,6 +70,7 @@
 
 .team-role {
   font-size: 1.5em;
+  color: var(--color-heading)
 }
 
 .skill-box{
