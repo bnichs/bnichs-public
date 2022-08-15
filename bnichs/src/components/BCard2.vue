@@ -93,7 +93,7 @@ export default {
   border: var(--card-border);
   display: grid;
 
-  background-color: white;
+  /*background-color: white;*/
   /*color: black;*/
 }
 

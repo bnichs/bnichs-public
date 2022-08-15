@@ -26,29 +26,9 @@ export default {
 </script>
 
 <style scoped>
-
-.strikethrough {
-  position: relative;
-}
-.strikethrough:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  /*top: 23vh;*/
-  right: 0;
-  border-top: 6px solid;
-  border-color: inherit;
-  margin: 22% 0 0 0;
-
-}
-
-.logo-letter-wrapper{
-  background-color: var(--color-background);
-  width: fit-content;
-  margin: 0 auto 0 auto;
-
-  font-size: 10vw;
-  /*display: inline;*/
+.bn-logo{
+  --logo-width: 100px;
+  --logo-height: 45px;
 }
 
 
@@ -58,7 +38,8 @@ export default {
 }
 
 .bn-logo {
-  width: 300px;
+  width: var(--logo-width);
+  height: var(--logo-height);
   /*margin: 0 auto 0 18vw;*/
 
 }
@@ -84,7 +65,8 @@ export default {
 
 
 #logoImg{
-  width: 200px;
+  width: var(--logo-width);
+  height: var(--logo-height);
 
 }
 
