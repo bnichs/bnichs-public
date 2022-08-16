@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import DataTable from 'datatables.net-vue3';
-import DataTableBs5 from 'datatables.net-bs5';
+// import DataTableBs5 from 'datatables.net-bs5';
 
-DataTable.use(DataTableBs5)
+// DataTable.use(DataTableBs5)
 </script>
 
 <template>

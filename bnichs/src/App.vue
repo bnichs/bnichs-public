@@ -8,7 +8,7 @@ import TitleBox from './components/TitleBox.vue'
   <header>
     <div class="wrapper">
       <RouterLink to="/">
-        <TitleBox class=""/>
+        <TitleBox />
       </RouterLink>
 
       <nav class="row justify-content-center">

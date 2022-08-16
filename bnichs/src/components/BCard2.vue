@@ -43,7 +43,7 @@ export default {
   data() {
     return {
       value: PERSON_WEBSITE,
-      size: "55",
+      size: 55,
     }
   },
 }
