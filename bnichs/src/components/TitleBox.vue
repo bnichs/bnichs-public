@@ -106,7 +106,7 @@ h3 {
   }
 
   .title-box{
-    margin: 0 0 0vh 10vw;
+    margin: 0 0 0vh 5vw;
   }
 
   .greetings{

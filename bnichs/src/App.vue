@@ -218,7 +218,7 @@ main{
 
   main{
     margin: 15vh 0 10vh 0;
-    width: 52vw;
+    width: 50vw;
   }
 
   .welcome-items {
