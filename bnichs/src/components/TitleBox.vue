@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import {PERSON_SUBTITLE, PERSON_NAME} from "@/config"
 import BNLogo from './BNLogo.vue'
-defineProps<{
-  msg: string
-}>()
+// defineProps<{
+//   // msg: string
+// }>()
 </script>
 
 <template>
