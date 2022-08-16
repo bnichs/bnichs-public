@@ -49,30 +49,27 @@ export default {
 
 <style>
 
+body{
+  padding: 0 0 5vh 0;
+}
+
 
 footer{
-  float: right;
-  /*position: absolute;*/
-  /*bottom: 0;*/
-  /*left: 0;*/
   text-align: center;
   display: block;
   margin: 10vh 0 0 0;
+}
+
+.footer-text{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }
 
 header {
   line-height: 1.5;
   max-height: 100vh;
 }
-
-/*.row .title-box {*/
-/*  padding-right: 0px;*/
-/*}*/
-
-/*.title-box{*/
-/*  text-align: center;*/
-/*}*/
-
 
 
 nav {
@@ -115,10 +112,6 @@ main{
     place-items: center;
   }
 
-  /*.the-subtitle{*/
-  /*  padding: 10vh 0 2vh 0;*/
-  /*}*/
-
   #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -133,9 +126,6 @@ main{
     padding-right: calc(var(--section-gap) / 4);
   }
 
-  /*.logo {*/
-  /*  margin: 0 2rem 0 0;*/
-  /*}*/
 
   header .wrapper {
     /*display: flex;*/
@@ -154,19 +144,9 @@ main{
 
 
   main{
-    margin: 15vh 0 0 0;
+    margin: 15vh 0 10vh 0;
     width: 52vw;
   }
-
-  /*.greetings .bn-logo{*/
-  /*  float: left*/
-  /*}*/
-
-  /*.greetings .title-box{*/
-  /*  float: left;*/
-  /*  !*width: 15vw;*!*/
-  /*  !*padding: 10vh 0 0 3vw;*!*/
-  /*}*/
 
   .welcome-items {
     margin: 15vh 0 0 0
@@ -175,6 +155,10 @@ main{
 
 
 @media (max-width: 1024px) {
+  body{
+    padding: 0 0 1vh 0;
+  }
+
   main{
     padding: 1vh 0 0 0;
   }
@@ -187,17 +171,6 @@ main{
     margin: 2vh 0 0 0
   }
 
-  /*.title-box{*/
-  /*  padding: 2vh 0 0 0;*/
-  /*}*/
-
-  /*.the-name {*/
-  /*  padding: 2vh 0 0 0;*/
-  /*}*/
-
-  /*.the-subtitle{*/
-  /*  padding: 2vh 0 2vh 0;*/
-  /*}*/
 }
 
 </style>
