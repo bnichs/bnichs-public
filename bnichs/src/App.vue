@@ -25,16 +25,35 @@ import TitleBox from './components/TitleBox.vue'
   <div style="clear:both;"></div>
 
   <footer>
-    Copyright Ben Nichols
+    <span class="footer-text">
+      Copyright Ben Nichols
+    </span>
+    <button @click="toggleDark" type="button" class="dark-toggle">
+      <i
+          v-if="! darkMode()"
+          aria-hidden="true"
+          class="bi-moon"
+          title="Toggle between dark and light mode"
+      ></i>
+      <i
+          v-if="darkMode()"
+          aria-hidden="true"
+          class="bi-sun"
+          title="Toggle between dark and light mode"
+      ></i>
+<!--      <span class="sr-only">Toggle between dark and light mode</span>-->
+
+    </button>
   </footer>
 </template>
 
 
 <script lang="ts">
 import {PAGE_TITLE} from "./config"
+import {defineComponent} from "vue";
 
 
-export default {
+export default defineComponent({
   name: "App",
   props: {
     bare: {
@@ -42,9 +61,58 @@ export default {
       default: false,
     }
   },
-  mounted() {
+  data(){
+    return {
+      defaultColorScheme: "dark",
+    }
   },
-};
+  mounted() {
+    this.detectColorScheme()
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",   e => e.matches && this.setScheme("dark") );
+    window.matchMedia("(prefers-color-scheme: light)").addEventListener("change",   e => e.matches && this.setScheme("light") );
+  },
+  computed: {
+  },
+  methods: {
+    darkMode(){
+      return this.getScheme() == "dark" ;
+    },
+    getScheme(){
+      return localStorage.getItem('theme')
+    },
+    setScheme(scheme: string){
+      localStorage.setItem('theme', scheme);
+      document.documentElement.setAttribute('data-theme', scheme);
+      this.$forceUpdate()
+    },
+    toggleDark() {
+      if (this.darkMode()){
+        this.setScheme("light")
+      } else{
+        this.setScheme("dark")
+      }
+      this.$forceUpdate()
+    },
+    detectColorScheme(){
+      let theme = this.defaultColorScheme;
+
+      //local storage is used to override OS theme settings
+      if(localStorage.getItem("theme")){
+        if(localStorage.getItem("theme") == "dark"){
+          let theme = "dark";
+        }
+      } else if(!window.matchMedia) {
+        //matchMedia method not supported
+        return false;
+      } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        //OS theme setting detected as dark
+        let theme = "dark";
+      }
+
+      this.setScheme(theme)
+    }
+  }
+});
 </script>
 
 <style>
@@ -58,6 +126,15 @@ footer{
   text-align: center;
   display: block;
   margin: 10vh 0 0 0;
+}
+
+.dark-toggle{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  color: var(--color-icon);
+  background-color: var(--color-background);
+  border: 2px solid var(--color-border);
 }
 
 .footer-text{
