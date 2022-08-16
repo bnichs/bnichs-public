@@ -1,15 +1,10 @@
 
 <template>
   <div class="bn-logo logo">
-    <object data="/bn-logo-full.svg" alt="BN Logo"
-            v-bind:width="width"
-            v-bind:height="height"
+    <object id="logoImg" data="/bn-logo-full.svg" alt="BN Logo"
             type="image/svg+xml" >
       <h3>fallback</h3>
     </object>
-<!--    <img src="/src/assets/bn-logo-full.svg" alt="BN Logo" v-bind:width="width" v-bind:height="height" type="image/svg+xml" />-->
-<!--    <img src="/src/assets/recursion.svg" alt="BN Logo" v-bind:width="width" v-bind:height="height"/>-->
-
   </div>
 </template>
 
@@ -31,29 +26,9 @@ export default {
 </script>
 
 <style scoped>
-
-.strikethrough {
-  position: relative;
-}
-.strikethrough:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  /*top: 23vh;*/
-  right: 0;
-  border-top: 6px solid;
-  border-color: inherit;
-  margin: 22% 0 0 0;
-
-}
-
-.logo-letter-wrapper{
-  background-color: var(--color-background);
-  width: fit-content;
-  margin: 0 auto 0 auto;
-
-  font-size: 10vw;
-  /*display: inline;*/
+.bn-logo{
+  --logo-width: 100px;
+  --logo-height: 45px;
 }
 
 
@@ -63,7 +38,8 @@ export default {
 }
 
 .bn-logo {
-  width: 300px;
+  width: var(--logo-width);
+  height: var(--logo-height);
   /*margin: 0 auto 0 18vw;*/
 
 }
@@ -85,6 +61,13 @@ export default {
 .bn-logo span{
   display: inline-block;
   /*background-color: white;*/
+}
+
+
+#logoImg{
+  width: var(--logo-width);
+  height: var(--logo-height);
+
 }
 
 .flip_H{

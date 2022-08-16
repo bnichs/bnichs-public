@@ -131,6 +131,6 @@ export default {
 <style>
 
 .contact i{
-  color: var(--color-text);
+  color: var(--color-heading);
 }
 </style>

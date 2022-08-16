@@ -26,10 +26,10 @@
      showgrid="false"
      units="px"
      inkscape:zoom="0.57370932"
-     inkscape:cx="58.39194"
-     inkscape:cy="488.92355"
+     inkscape:cx="59.263461"
+     inkscape:cy="488.05203"
      inkscape:window-width="3440"
-     inkscape:window-height="1406"
+     inkscape:window-height="1410"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -37,40 +37,35 @@
   <defs
      id="defs12368">
     <linearGradient
-       id="linearGradient111341"
-       inkscape:swatch="solid">
+       id="linearGradient111341">
       <stop
          style="stop-color:#000000;stop-opacity:1;"
          offset="0"
          id="stop111339" />
     </linearGradient>
     <linearGradient
-       id="linearGradient110037"
-       inkscape:swatch="solid">
+       id="linearGradient110037">
       <stop
          style="stop-color:#000000;stop-opacity:1;"
          offset="0"
          id="stop110035" />
     </linearGradient>
     <linearGradient
-       id="linearGradient108671"
-       inkscape:swatch="solid">
+       id="linearGradient108671">
       <stop
          style="stop-color:#000000;stop-opacity:1;"
          offset="0"
          id="stop108669" />
     </linearGradient>
     <linearGradient
-       id="linearGradient92495"
-       inkscape:swatch="solid">
+       id="linearGradient92495">
       <stop
          style="stop-color:#000000;stop-opacity:1;"
          offset="0"
          id="stop92493" />
     </linearGradient>
     <linearGradient
-       id="linearGradient92489"
-       inkscape:swatch="solid">
+       id="linearGradient92489">
       <stop
          style="stop-color:#000000;stop-opacity:1;"
          offset="0"
@@ -89,16 +84,14 @@
        height="129.26933"
        id="rect74895" />
     <linearGradient
-       id="linearGradient64846"
-       inkscape:swatch="solid">
+       id="linearGradient64846">
       <stop
          style="stop-color:#224d4d;stop-opacity:1;"
          offset="0"
          id="stop64844" />
     </linearGradient>
     <linearGradient
-       id="linearGradient64840"
-       inkscape:swatch="solid">
+       id="linearGradient64840">
       <stop
          style="stop-color:#224d4d;stop-opacity:1;"
          offset="0"
@@ -108,37 +101,33 @@
        id="linearGradient64387"
        inkscape:swatch="solid">
       <stop
-         style="stop-color:#006c61;stop-opacity:1;"
+         style="stop-color:#284566;stop-opacity:1;"
          offset="0"
          id="stop64385" />
     </linearGradient>
     <linearGradient
-       id="linearGradient62315"
-       inkscape:swatch="solid">
+       id="linearGradient62315">
       <stop
          style="stop-color:#928f8c;stop-opacity:1;"
          offset="0"
          id="stop62313" />
     </linearGradient>
     <linearGradient
-       id="linearGradient60743"
-       inkscape:swatch="solid">
+       id="linearGradient60743">
       <stop
          style="stop-color:#4d4d4d;stop-opacity:1;"
          offset="0"
          id="stop60741" />
     </linearGradient>
     <linearGradient
-       id="linearGradient60737"
-       inkscape:swatch="solid">
+       id="linearGradient60737">
       <stop
          style="stop-color:#4d4d4d;stop-opacity:1;"
          offset="0"
          id="stop60735" />
     </linearGradient>
     <linearGradient
-       id="linearGradient57153"
-       inkscape:swatch="solid">
+       id="linearGradient57153">
       <stop
          style="stop-color:#4d4d4d;stop-opacity:1;"
          offset="0"
@@ -153,16 +142,14 @@
          id="stop44955" />
     </linearGradient>
     <linearGradient
-       id="linearGradient40511"
-       inkscape:swatch="solid">
+       id="linearGradient40511">
       <stop
          style="stop-color:#000000;stop-opacity:1;"
          offset="0"
          id="stop40509" />
     </linearGradient>
     <linearGradient
-       id="linearGradient39153"
-       inkscape:swatch="solid">
+       id="linearGradient39153">
       <stop
          style="stop-color:#ffffff;stop-opacity:0;"
          offset="0"
@@ -263,7 +250,7 @@
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:666.669px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect17547);fill:url(#linearGradient2153);fill-opacity:1;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none"><tspan
          x="48.501953"
          y="770.3742"
-         id="tspan2213">B</tspan></text>
+         id="tspan1242">B</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:158.546px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient2157);fill-opacity:1;stroke-width:0.23831;stroke-miterlimit:4;stroke-dasharray:none"

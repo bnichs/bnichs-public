@@ -25,10 +25,10 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.57370932"
-     inkscape:cx="124.62757"
-     inkscape:cy="560.38832"
+     inkscape:cx="123.75605"
+     inkscape:cy="559.5168"
      inkscape:window-width="3440"
-     inkscape:window-height="1406"
+     inkscape:window-height="1410"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -57,7 +57,7 @@
        id="linearGradient64387"
        inkscape:swatch="solid">
       <stop
-         style="stop-color:#006c61;stop-opacity:1;"
+         style="stop-color:#284566;stop-opacity:1;"
          offset="0"
          id="stop64385" />
     </linearGradient>
@@ -126,7 +126,7 @@
        style="font-size:85.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect74895);fill:url(#linearGradient1299);fill-opacity:1"><tspan
          x="169.18164"
          y="400.43856"
-         id="tspan2292">Ben</tspan></text>
+         id="tspan1518">Ben</tspan></text>
     <path
        id="path36400"
        style="fill:none;fill-opacity:1;stroke:url(#linearGradient115219);stroke-width:7.66069;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -138,6 +138,6 @@
        style="font-size:85.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect78263);fill:url(#linearGradient2269);fill-opacity:1"><tspan
          x="1454.0117"
          y="639.33505"
-         id="tspan2294">Nichols</tspan></text>
+         id="tspan1520">Nichols</tspan></text>
   </g>
 </svg>
