@@ -9,9 +9,14 @@ import BNLogo from './BNLogo.vue'
 <template>
   <div class="greetings row mx-auto">
 <!--    <div class="row title-box">-->
-      <BNLogo class="col-md-auto"></BNLogo>
 
-      <div class="col col-md-auto title-box">
+    <div class="col-md-auto logoWrapper">
+      <RouterLink to="/">
+        <BNLogo class=""></BNLogo>
+      </RouterLink>
+    </div>
+
+    <div class="col col-md-auto title-box">
         <span class="row the-name">
           {{ PERSON_NAME }}
         </span>
@@ -29,8 +34,8 @@ import BNLogo from './BNLogo.vue'
 
 <style scoped>
 
-.bn-logo object {
-  pointer-events: none;
+.logoWrapper{
+  width: fit-content;
 }
 
 /*.title-box {*/

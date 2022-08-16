@@ -7,9 +7,7 @@ import TitleBox from './components/TitleBox.vue'
 
   <header>
     <div class="wrapper">
-      <RouterLink to="/">
-        <TitleBox />
-      </RouterLink>
+      <TitleBox />
 
       <nav class="row justify-content-center">
         <RouterLink to="/resume">Resume</RouterLink>
@@ -41,7 +39,6 @@ import TitleBox from './components/TitleBox.vue'
           class="bi-sun"
           title="Toggle between dark and light mode"
       ></i>
-<!--      <span class="sr-only">Toggle between dark and light mode</span>-->
 
     </button>
   </footer>
@@ -49,7 +46,6 @@ import TitleBox from './components/TitleBox.vue'
 
 
 <script lang="ts">
-import {PAGE_TITLE} from "./config"
 import {defineComponent} from "vue";
 
 

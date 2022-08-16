@@ -32,6 +32,10 @@ export default {
 }
 
 
+.bn-logo object {
+  pointer-events: none;
+}
+
 .logo {
   display: block;
   /*margin: 0 auto 2rem;*/
