@@ -25,16 +25,35 @@ import TitleBox from './components/TitleBox.vue'
   <div style="clear:both;"></div>
 
   <footer>
-    Copyright Ben Nichols
+    <span class="footer-text">
+      Copyright Ben Nichols
+    </span>
+    <button @click="toggleDark" type="button" class="dark-toggle">
+      <i
+          v-if="! darkMode()"
+          aria-hidden="true"
+          class="bi-moon"
+          title="Toggle between dark and light mode"
+      ></i>
+      <i
+          v-if="darkMode()"
+          aria-hidden="true"
+          class="bi-sun"
+          title="Toggle between dark and light mode"
+      ></i>
+<!--      <span class="sr-only">Toggle between dark and light mode</span>-->
+
+    </button>
   </footer>
 </template>
 
 
 <script lang="ts">
 import {PAGE_TITLE} from "./config"
+import {defineComponent} from "vue";
 
 
-export default {
+export default defineComponent({
   name: "App",
   props: {
     bare: {
@@ -42,37 +61,92 @@ export default {
       default: false,
     }
   },
-  mounted() {
+  data(){
+    return {
+      defaultColorScheme: "dark",
+    }
   },
-};
+  mounted() {
+    this.detectColorScheme()
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",   e => e.matches && this.setScheme("dark") );
+    window.matchMedia("(prefers-color-scheme: light)").addEventListener("change",   e => e.matches && this.setScheme("light") );
+  },
+  computed: {
+  },
+  methods: {
+    darkMode(){
+      return this.getScheme() == "dark" ;
+    },
+    getScheme(){
+      return localStorage.getItem('theme')
+    },
+    setScheme(scheme: string){
+      localStorage.setItem('theme', scheme);
+      document.documentElement.setAttribute('data-theme', scheme);
+      this.$forceUpdate()
+    },
+    toggleDark() {
+      if (this.darkMode()){
+        this.setScheme("light")
+      } else{
+        this.setScheme("dark")
+      }
+      this.$forceUpdate()
+    },
+    detectColorScheme(){
+      let theme = this.defaultColorScheme;
+
+      //local storage is used to override OS theme settings
+      if(localStorage.getItem("theme")){
+        if(localStorage.getItem("theme") == "dark"){
+          let theme = "dark";
+        }
+      } else if(!window.matchMedia) {
+        //matchMedia method not supported
+        return false;
+      } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        //OS theme setting detected as dark
+        let theme = "dark";
+      }
+
+      this.setScheme(theme)
+    }
+  }
+});
 </script>
 
 <style>
 
+body{
+  padding: 0 0 5vh 0;
+}
+
 
 footer{
-  float: right;
-  /*position: absolute;*/
-  /*bottom: 0;*/
-  /*left: 0;*/
   text-align: center;
   display: block;
   margin: 10vh 0 0 0;
+}
+
+.dark-toggle{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  color: var(--color-icon);
+  background-color: var(--color-background);
+  border: 2px solid var(--color-border);
+}
+
+.footer-text{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }
 
 header {
   line-height: 1.5;
   max-height: 100vh;
 }
-
-/*.row .title-box {*/
-/*  padding-right: 0px;*/
-/*}*/
-
-/*.title-box{*/
-/*  text-align: center;*/
-/*}*/
-
 
 
 nav {
@@ -115,10 +189,6 @@ main{
     place-items: center;
   }
 
-  /*.the-subtitle{*/
-  /*  padding: 10vh 0 2vh 0;*/
-  /*}*/
-
   #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -133,9 +203,6 @@ main{
     padding-right: calc(var(--section-gap) / 4);
   }
 
-  /*.logo {*/
-  /*  margin: 0 2rem 0 0;*/
-  /*}*/
 
   header .wrapper {
     /*display: flex;*/
@@ -154,19 +221,9 @@ main{
 
 
   main{
-    margin: 15vh 0 0 0;
+    margin: 15vh 0 10vh 0;
     width: 52vw;
   }
-
-  /*.greetings .bn-logo{*/
-  /*  float: left*/
-  /*}*/
-
-  /*.greetings .title-box{*/
-  /*  float: left;*/
-  /*  !*width: 15vw;*!*/
-  /*  !*padding: 10vh 0 0 3vw;*!*/
-  /*}*/
 
   .welcome-items {
     margin: 15vh 0 0 0
@@ -175,6 +232,10 @@ main{
 
 
 @media (max-width: 1024px) {
+  body{
+    padding: 0 0 1vh 0;
+  }
+
   main{
     padding: 1vh 0 0 0;
   }
@@ -187,17 +248,6 @@ main{
     margin: 2vh 0 0 0
   }
 
-  /*.title-box{*/
-  /*  padding: 2vh 0 0 0;*/
-  /*}*/
-
-  /*.the-name {*/
-  /*  padding: 2vh 0 0 0;*/
-  /*}*/
-
-  /*.the-subtitle{*/
-  /*  padding: 2vh 0 2vh 0;*/
-  /*}*/
 }
 
 </style>
