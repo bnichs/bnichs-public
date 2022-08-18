@@ -47,6 +47,11 @@ const columns = [
 
 .table th{
   font-weight: bold;
+  cursor: pointer;
+}
+
+.table td{
+  padding: 5px;
 }
 
 </style>

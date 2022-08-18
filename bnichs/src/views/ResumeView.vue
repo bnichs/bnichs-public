@@ -390,7 +390,7 @@ export default defineComponent({
   }
 
   .job {
-    margin: 0 !important;
+    /*margin: 0 !important;*/
   }
 
   .skill-box{
@@ -432,7 +432,7 @@ export default defineComponent({
     width: 8.5in;
     height: fit-content;
     margin: 0;
-    padding: 0 .5in 0 .5in;
+    padding: 0 .5in 0 .1in;
   }
 
   main{
@@ -440,7 +440,7 @@ export default defineComponent({
   }
 
   .job{
-    /*page-break-after: always;*/
+    /*page-break-after: avoid;*/
   }
 
   .goToTop {
@@ -453,6 +453,23 @@ export default defineComponent({
 
 
   footer {
+    display: none;
+  }
+
+  #ResumeEducation{
+    margin: 0px;
+
+  }
+  #ResumeSkills{
+    margin: .3in 0 0 0 ;
+  }
+
+  .team-box {
+    /*padding-top: 0px !important;*/
+    margin-top: 0px !important;
+  }
+
+  hr {
     display: none;
   }
 
