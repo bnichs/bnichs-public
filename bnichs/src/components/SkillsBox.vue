@@ -15,8 +15,8 @@ import DataTable from 'datatables.net-vue3';
       <thead>
       <tr>
         <th>Name</th>
-        <th>Years Total</th>
-        <th>Years Professionally</th>
+        <th>Years</th>
+        <th>Years Prof.</th>
         <th>Description</th>
       </tr>
       </thead>
@@ -52,6 +52,11 @@ const columns = [
 
 .table td{
   padding: 5px;
+}
+
+.table th:nth-child(3) {
+  /* third column */
+  width: fit-content !important;
 }
 
 </style>
