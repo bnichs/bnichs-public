@@ -51,6 +51,7 @@ import GoToTop from './components/GoToTop.vue'
 
 <script lang="ts">
 import {defineComponent} from "vue";
+import {detectColorScheme, getScheme, setScheme} from "@/dark";
 
 
 export default defineComponent({
@@ -78,11 +79,10 @@ export default defineComponent({
       return this.getScheme() == "dark" ;
     },
     getScheme(){
-      return localStorage.getItem('theme')
+      return getScheme()
     },
     setScheme(scheme: string){
-      localStorage.setItem('theme', scheme);
-      document.documentElement.setAttribute('data-theme', scheme);
+      setScheme(scheme)
       this.$forceUpdate()
     },
     toggleDark() {
@@ -94,21 +94,7 @@ export default defineComponent({
       this.$forceUpdate()
     },
     detectColorScheme(){
-      let theme = this.defaultColorScheme;
-
-      //local storage is used to override OS theme settings
-      if(localStorage.getItem("theme")){
-        if(localStorage.getItem("theme") == "dark"){
-          let theme = "dark";
-        }
-      } else if(!window.matchMedia) {
-        //matchMedia method not supported
-        return false;
-      } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        //OS theme setting detected as dark
-        let theme = "dark";
-      }
-
+      let theme = detectColorScheme(this.defaultColorScheme)
       this.setScheme(theme)
     }
   }

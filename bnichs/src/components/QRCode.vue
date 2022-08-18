@@ -9,6 +9,7 @@ import QrcodeVue from 'qrcode.vue'
 <script lang="ts">
 import {PERSON_WEBSITE} from "@/config";
 import {defineComponent} from "vue";
+import {colorFromCSSClass} from "@/dark";
 
 export default defineComponent({
   props: {
