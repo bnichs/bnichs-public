@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import BNLogo from '../components/BNLogo.vue'
+import QRCode from '../components/QRCode.vue'
 import ContactLinks from '../components/ContactLinks.vue'
 import QrcodeVue from 'qrcode.vue'
 
@@ -29,7 +30,8 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
         </div>
 
         <div class="qr-wrapper">
-          <qrcode-vue id="qr-box" :value="value" :size="size" level="H" />
+          <QRCode></QRCode>
+<!--          <qrcode-vue id="qr-box" :value="value" :size="size" level="H" />-->
         </div>
 
       </div>
@@ -122,6 +124,7 @@ export default {
 
 #bcard2 .qr-wrapper{
   text-align: center;
+  margin: .1in 0 0 0in;
 }
 
 #bcard2 #qr-box {

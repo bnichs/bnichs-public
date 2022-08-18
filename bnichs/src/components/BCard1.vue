@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import BNLogo from '../components/BNLogo.vue'
+import QRCode from '../components/QRCode.vue'
 import ContactLinks from '../components/ContactLinks.vue'
 import QrcodeVue from 'qrcode.vue'
 
@@ -11,7 +12,8 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
 
       <div id="card-left" class="col">
         <BNLogo width="150" height="100"></BNLogo>
-        <qrcode-vue class="qr-box" :value="value" :size="size" level="H" />
+<!--        <qrcode-vue class="qr-box" :value="value" :size="size" level="H" />-->
+        <QRCode></QRCode>
       </div>
 
       <div id="card-right" class="col">
