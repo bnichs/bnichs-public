@@ -421,6 +421,7 @@ export default defineComponent({
 
 #ResumePrintHeader{
   border-bottom: 1px solid var(--color-border);
+  margin-top: 40px;
   margin-bottom: 5vh;
 }
 
@@ -532,6 +533,7 @@ export default defineComponent({
 
 
   #ResumePrintHeader{
+    margin-top: 0px;
     margin-bottom: .1in;
   }
 
@@ -553,6 +555,7 @@ export default defineComponent({
 
   main{
     width: 8.5in;
+    margin-top: 0px;
   }
 
   .job{
@@ -578,7 +581,7 @@ export default defineComponent({
 
 
   footer {
-    display: none;
+    display: none !important;
   }
 
   #ResumeEducation{
