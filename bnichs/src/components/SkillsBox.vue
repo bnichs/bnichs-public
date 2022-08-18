@@ -25,31 +25,34 @@ import {DataTable} from "simple-datatables"
 export default defineComponent({
   mounted() {
     const myTable = document.querySelector("#skillTable");
-    const dataTable = new DataTable(myTable, {
-     searchable: false,
-     paging: false,
-      columns: [
-        // Sort the second column in ascending order
-        { select: [1,2] , type: Number },
-        { select: [0, 1, 2], sortable: true },
+    if (myTable){
+      // @ts-ignore
+      const dataTable = new DataTable(myTable, {
+        searchable: false,
+        paging: false,
+        columns: [
+          // Sort the second column in ascending order
+          { select: [1,2] , type: Number },
+          { select: [0, 1, 2], sortable: true },
 
 
-        // Disable sorting on the fourth and fifth columns
-        { select: [3], sortable: false },
+          // Disable sorting on the fourth and fifth columns
+          { select: [3], sortable: false },
 
-      ]
-    });
+        ]
+      });
 
-    fetch("/skills.json").then((resp) =>{
-      resp.text().then((data) => {
-        console.log(data)
-        dataTable.import({
-          type: "json",
-          data: data
+      fetch("/skills.json").then((resp) =>{
+        resp.text().then((data) => {
+          console.log(data)
+          dataTable.import({
+            type: "json",
+            data: data
+          })
         })
+        console.log("Imported")
       })
-      console.log("Imported")
-    })
+    }
 
   }
 })
