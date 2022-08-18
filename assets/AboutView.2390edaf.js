@@ -1,1 +1,0 @@
-import{d as t,o,c as a,w as e,a as s,_ as n,b as r}from"./index.e01ba31f.js";import{M as c}from"./MainBox.65da2d10.js";const _=r(" About Me "),f=t({__name:"AboutView",setup(i){return(m,p)=>(o(),a(c,null,{title:e(()=>[_]),content:e(()=>[s(n,{extra:!0})]),_:1}))}});export{f as default};
