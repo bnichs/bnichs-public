@@ -110,7 +110,7 @@ h3 {
   }
 
   .greetings{
-    margin: 0 0 2vh 0;
+    margin: 0 0 3vh 0;
   }
 
 }

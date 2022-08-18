@@ -416,6 +416,10 @@ export default defineComponent({
   margin-bottom: 5vh;
 }
 
+#ResumePrintHeader .col-md-auto {
+  padding: 0px;
+}
+
 .resumeTitle {
   width: 35%;
 }
