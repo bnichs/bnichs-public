@@ -1,76 +1,75 @@
-{
-  "data": [
+[
     {
       "name": "python",
-      "years": 11,
-      "years_prof": 8,
+      "years": "11",
+      "years_prof": "8",
       "desc": "Favorite and most proficient language. Used for scripting, building systems, and everything in between "
     },
     {
       "name": "bash",
-      "years": 9,
-      "years_prof": 8,
+      "years": "9",
+      "years_prof": "8",
       "desc": "Love/Hate relationship but absolutely unavoidable."
     },
     {
       "name": "java",
-      "years": 5,
-      "years_prof": 1,
+      "years": "5",
+      "years_prof": "1",
       "desc": "First language learned but quickly lost out to python"
     },
-    {
-      "name": "PHP",
-      "years": 2,
-      "years_prof": 2,
-      "desc": "Used to build websites before I knew any better"
-    },
+
     {
       "name": "javascript",
-      "years": 6,
-      "years_prof": 2,
+      "years": "6",
+      "years_prof": "2",
       "desc": "Love/hate relationship but hard to avoid"
     },
     {
       "name": "VueJS",
-      "years": 1,
-      "years_prof": 1,
+      "years": "1",
+      "years_prof": "1",
       "desc": "Everyone needs a framework and this one seemed like the least bad"
     },
     {
       "name": "scala",
-      "years": 2,
-      "years_prof": 1,
-      "desc": "Ideal language but not used enough"
+      "years": "2",
+      "years_prof": "1",
+      "desc": "My goto typed language. Used to build an infrastructure metadata service among other things."
     },
     {
       "name": "git",
-      "years": 12,
-      "years_prof": 10,
+      "years": "12",
+      "years_prof": "10",
       "desc": "Favorite tool and I'm usually the one in the office who people ask to fix their broken tree."
     },
     {
       "name": "terraform",
-      "years": 3,
-      "years_prof": 3,
+      "years": "3",
+      "years_prof": "3",
       "desc": "Used to automate infrastructure and deployment for multiple different fleets and services"
     },
     {
       "name": "Load Balancing",
-      "years": 3,
-      "years_prof": 3,
+      "years": "3",
+      "years_prof": "3",
       "desc": "Wrote services and managed both proprietary LBs and Netscalers."
     },
     {
       "name": "IPV6",
-      "years": 1,
-      "years_prof": 1,
+      "years": "1",
+      "years_prof": "1",
       "desc": "Wrote the IPv6 addressing scheme for AWS - S3"
     },
     {
       "name": "Linux/UNIX",
-      "years": 12,
-      "years_prof": 8,
+      "years": "12",
+      "years_prof": "8",
       "desc": "Both my daily driver (kubuntu) and used in all professional contexts (RHEL)."
+    },
+    {
+      "name": "PHP",
+      "years": "2",
+      "years_prof": "2",
+      "desc": "Used to build websites before I knew any better"
     }
-  ]
-}
+]
