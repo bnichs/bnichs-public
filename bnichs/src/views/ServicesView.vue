@@ -83,9 +83,18 @@ import MainBox from '../components/MainBox.vue'
 
         No organization can survive without sharing knowledge. All of the services and skill provided here are easily transferable to teams via training.
       </WelcomeItem>
+
+
+      <p class="closer">
+        If you're interested in any of these services or seeing what can be done to improve your business, <RouterLink to="/contact">reach out for a consultation </RouterLink>
+      </p>
     </template>
   </MainBox>
 </template>
 
 <style>
+
+.closer {
+  margin: 18vh 0 0 0;
+}
 </style>
