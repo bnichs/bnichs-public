@@ -4,7 +4,7 @@
       <slot name="title"></slot>
     </h1>
 
-    <hr>
+    <hr class="pageTitleLine">
 
     <div class="main-content">
       <slot name="content"></slot>

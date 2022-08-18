@@ -3,6 +3,10 @@ import JobBox from '@/components/JobBox.vue'
 import TeamBox from '@/components/TeamBox.vue'
 import SkillsBox from '@/components/SkillsBox.vue'
 import MainBox from '@/components/MainBox.vue'
+import QRCode from '@/components/QRCode.vue'
+import ContactLinks from '../components/ContactLinks.vue'
+
+import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
 </script>
 
 
@@ -13,9 +17,29 @@ import MainBox from '@/components/MainBox.vue'
       <div id="ResumeHeader">
         Resume
       </div>
+
     </template>
 
     <template #content>
+      <div id="ResumePrintHeader" class="row">
+        <div class="resumeTitle col-md-auto">
+          <h1>
+            {{ PERSON_NAME }}
+          </h1>
+        </div>
+
+        <div class="resumeContact col-md-auto">
+          <ContactLinks :showLinkedin="false" :showCard="false" :showGitHub="false">
+          </ContactLinks>
+        </div>
+
+        <div class="resumeQR col-md-auto">
+          <QRCode :size="40"></QRCode>
+        </div>
+
+
+      </div>
+
 
       <button id="printButton" class="button" onclick="window.print();" >
         Print
@@ -370,15 +394,58 @@ export default defineComponent({
   float: left;
 }
 
+
 #ResumeHeader {
   /*float: left;*/
   width: 30%;
+  display: none;
+}
+
+.pageTitleLine {
+  display: none;
 }
 
 .resumeHeading{
   width: fit-content;
   float: left;
   margin: 3vh 0 0 0;
+}
+
+#ResumePrintHeader{
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 5vh;
+}
+
+.resumeTitle {
+  width: 35%;
+}
+
+.resumeContact {
+  width: 55%;
+  font-size: 9pt;
+}
+
+.resumeContact .contact {
+  display: inline-block;
+  margin: 0 0 0 1rem;
+}
+
+.resumeContact .details{
+  margin-left: .5rem;
+}
+
+
+.resumeContact .item {
+  margin: 0 0 5px 0;
+}
+
+.resumeContact h3 {
+  margin: 0 0 1px 0;
+}
+
+.resumeQR {
+  width: 10%;
+  float: right;
 }
 
 .resume-nav{
