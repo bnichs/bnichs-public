@@ -16,6 +16,10 @@ import MainBox from '@/components/MainBox.vue'
     </template>
 
     <template #content>
+
+      <button id="printButton" class="button" onclick="window.print();" >
+        Print
+      </button>
       <ul class="resume-nav">
         Navigation:
         <a href="/resume/#ResumeJobs">
@@ -354,6 +358,11 @@ export default defineComponent({
 <style>
 #resume{
   font-size: .8rem;
+  /*page-break-inside: avoid;*/
+}
+
+#printButton{
+  float: right
 }
 
 .goToTop {
@@ -419,7 +428,22 @@ export default defineComponent({
 @media print {
   @page { margin: 0; }
 
+  html, body { height: 99%; }
+
+  /*body {*/
+  /*  page-break-inside: avoid;*/
+  /*}*/
+
+  /*Helps with page breaks for some reason*/
+  #resume, .team-box, .where-and-when {
+    border: 2px solid hsla(120, 58%, 23%, 0.00);
+  }
+
   header {
+    display: none;
+  }
+
+  #printButton{
     display: none;
   }
 
