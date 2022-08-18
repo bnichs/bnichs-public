@@ -130,7 +130,7 @@ export default {
 
 <style>
 
-.contact i{
-  color: var(--color-heading);
-}
+/*i {*/
+/*  color: var(--color-icon);*/
+/*}*/
 </style>

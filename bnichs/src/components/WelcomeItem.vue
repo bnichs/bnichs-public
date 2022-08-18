@@ -10,6 +10,15 @@
   </div>
 </template>
 
+
+<style>
+
+i {
+  color: var(--color-icon);
+}
+</style>
+
+
 <style scoped>
 .item {
   margin-top: 2rem;
@@ -27,12 +36,10 @@ i {
   place-content: center;
   width: 32px;
   height: 32px;
-
-  color: var(--color-heading);
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: 500;
   margin-bottom: 0.4rem;
   color: var(--color-heading);

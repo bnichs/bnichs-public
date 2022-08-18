@@ -3,28 +3,29 @@ import DataTable from 'datatables.net-vue3';
 </script>
 
 <template>
-  <main>
-    <h2>
-      Skills
-    </h2>
+  TODO
+<!--  <main>-->
+<!--    <h2>-->
+<!--      Skills-->
+<!--    </h2>-->
 
-    <DataTable
-               :options="{select: true, paginate: false, searching: false, info: false, order: [[ 1, 'des' ]]}"
-               :columns="columns"
-               ajax="/skills.json"
-               class="display table table-bordered">
-      <thead>
-      <tr>
-        <th>Name</th>
-        <th>Years Total</th>
-        <th>Years Professionally</th>
-        <th>Description</th>
-      </tr>
-      </thead>
-    </DataTable>
+<!--    <DataTable-->
+<!--               :options="{select: true, paginate: false, searching: false, info: false, order: [[ 1, 'des' ]]}"-->
+<!--               :columns="columns"-->
+<!--               ajax="/skills.json"-->
+<!--               class="display foo">-->
+<!--      <thead>-->
+<!--      <tr>-->
+<!--        <th>Name</th>-->
+<!--        <th>Years Total</th>-->
+<!--        <th>Years Professionally</th>-->
+<!--        <th>Description</th>-->
+<!--      </tr>-->
+<!--      </thead>-->
+<!--    </DataTable>-->
 
-    <hr>
-  </main>
+<!--    <hr>-->
+<!--  </main>-->
 </template>
 
 <script lang="ts">
@@ -52,6 +53,10 @@ export default {
 
 .table th{
   font-weight: bold;
+}
+
+.table {
+  padding: 1px !important;
 }
 
 </style>

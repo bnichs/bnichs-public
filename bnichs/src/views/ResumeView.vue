@@ -3,6 +3,10 @@ import JobBox from '@/components/JobBox.vue'
 import TeamBox from '@/components/TeamBox.vue'
 import SkillsBox from '@/components/SkillsBox.vue'
 import MainBox from '@/components/MainBox.vue'
+import QRCode from '@/components/QRCode.vue'
+import ContactLinks from '../components/ContactLinks.vue'
+
+import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
 </script>
 
 
@@ -13,9 +17,33 @@ import MainBox from '@/components/MainBox.vue'
       <div id="ResumeHeader">
         Resume
       </div>
+
     </template>
 
     <template #content>
+      <div id="ResumePrintHeader" class="row">
+        <div class="resumeTitle col-md-auto">
+          <h1>
+            {{ PERSON_NAME }}
+          </h1>
+        </div>
+
+        <div class="resumeContact col-md-auto">
+          <ContactLinks :showLinkedin="false" :showCard="false" :showGitHub="false">
+          </ContactLinks>
+        </div>
+
+        <div class="resumeQR col-md-auto">
+          <QRCode :size="40"></QRCode>
+        </div>
+
+
+      </div>
+
+
+      <button id="printButton" class="button" onclick="window.print();" >
+        Print
+      </button>
       <ul class="resume-nav">
         Navigation:
         <a href="/resume/#ResumeJobs">
@@ -89,7 +117,7 @@ import MainBox from '@/components/MainBox.vue'
                 Designed and built an automated backup system for log data
               </li>
               <li>
-                Built tooling and testing methodologies for enabling and monitoring Selinux on the fleetWorking for the Security org:
+                Built tooling and testing methodologies for enabling and monitoring Selinux on the fleet
               </li>
             </template>
           </TeamBox>
@@ -354,6 +382,11 @@ export default defineComponent({
 <style>
 #resume{
   font-size: .8rem;
+  /*page-break-inside: avoid;*/
+}
+
+#printButton{
+  float: right
 }
 
 .goToTop {
@@ -361,15 +394,62 @@ export default defineComponent({
   float: left;
 }
 
+
 #ResumeHeader {
   /*float: left;*/
   width: 30%;
+  display: none;
+}
+
+.pageTitleLine {
+  display: none;
 }
 
 .resumeHeading{
   width: fit-content;
   float: left;
   margin: 3vh 0 0 0;
+}
+
+#ResumePrintHeader{
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 5vh;
+}
+
+.resumeTitle {
+  width: 35%;
+}
+
+.resumeTitle h1{
+  font-size: 1.3rem;
+}
+
+.resumeContact {
+  width: 55%;
+  font-size: 9pt;
+}
+
+.resumeContact .contact {
+  display: inline-block;
+  margin: 0 0 0 1rem;
+}
+
+.resumeContact .details{
+  margin-left: .5rem;
+}
+
+
+.resumeContact .item {
+  margin: 0 0 5px 0;
+}
+
+.resumeContact h3 {
+  margin: 0 0 1px 0;
+}
+
+.resumeQR {
+  width: 10%;
+  float: right;
 }
 
 .resume-nav{
@@ -390,7 +470,7 @@ export default defineComponent({
   }
 
   .job {
-    margin: 0 !important;
+    /*margin: 0 !important;*/
   }
 
   .skill-box{
@@ -419,7 +499,31 @@ export default defineComponent({
 @media print {
   @page { margin: 0; }
 
+  html, body { height: 99%; }
+
+  body {
+    display: unset;
+  }
+
+  /*body {*/
+  /*  page-break-inside: avoid;*/
+  /*}*/
+
+  /*Helps with page breaks for some reason*/
+  #resume, .team-box, .where-and-when {
+    border: 2px solid hsla(120, 58%, 23%, 0.00);
+  }
+
   header {
+    display: none;
+  }
+
+
+  #ResumePrintHeader{
+    margin-bottom: .1in;
+  }
+
+  #printButton{
     display: none;
   }
 
@@ -432,7 +536,7 @@ export default defineComponent({
     width: 8.5in;
     height: fit-content;
     margin: 0;
-    padding: 0 .5in 0 .5in;
+    padding: 0 .5in 0 .1in;
   }
 
   main{
@@ -440,7 +544,16 @@ export default defineComponent({
   }
 
   .job{
-    /*page-break-after: always;*/
+    margin-top: .1in !important;
+    /*page-break-after: avoid;*/
+  }
+
+  .job-header{
+    margin-bottom: 0 !important;
+  }
+
+  .team-box{
+    margin-bottom: 0 !important;
   }
 
   .goToTop {
@@ -453,6 +566,23 @@ export default defineComponent({
 
 
   footer {
+    display: none;
+  }
+
+  #ResumeEducation{
+    margin: 0px;
+
+  }
+  #ResumeSkills{
+    margin: .3in 0 0 0 ;
+  }
+
+  .team-box {
+    /*padding-top: 0px !important;*/
+    margin-top: 0px !important;
+  }
+
+  hr {
     display: none;
   }
 

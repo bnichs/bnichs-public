@@ -1,6 +1,6 @@
 <template>
   <div class="job">
-    <div class="row">
+    <div class="row job-header">
       <div class="col-8">
         <span class="team-role">
           <slot name="role"></slot>
@@ -24,10 +24,10 @@
     <hr v-if="$slots.job_description">
 
     <div class="row">
-      <div class="col">
-      <span class="job-description">
-        <slot name="job-description"></slot>
-      </span>
+      <div class="col job-description-box">
+        <span class="job-description">
+          <slot name="job-description"></slot>
+        </span>
 
         <div class="team-boxes">
           <slot name="teams"></slot>
@@ -51,10 +51,23 @@
 
 <style scoped>
 .job{
-  margin: 20px 10px 0 10px;
-  padding: 20px;
+  /*margin: 20px 10px 0 10px;*/
+  /*padding: 20px;*/
   border: 1px solid var(--color-border);
   box-shadow: 0 0 3px rgba(255, 255, 255, 0.25);
+  margin: 8vh 0 0 0;
+  page-break-inside: auto;
+  /*page-break-after: avoid;*/
+  /*page-break-before: avoid;*/
+}
+
+.job-header{
+  padding: 1vh 5vw 1vh 5vw;
+  page-break-after: avoid;
+}
+
+.job-description-box{
+  margin: 0 1vw 1vh 3vw;
 }
 
 .job-location{
@@ -77,7 +90,7 @@
 .skill-box{
   /*border-left: 1px solid;*/
   border-left: 1px solid var(--color-border);
-  padding: 20px 0 0 10px;
+  margin: 1vh 1vw 1vh 5vw;
 }
 
 .skill-box h5 {
@@ -86,5 +99,24 @@
 
 .where-and-when {
   text-align: right;
+}
+
+@media not print and (max-width: 1024px){
+
+  .job {
+    margin: 3vh 0 0 0;
+  }
+}
+
+@media not print and (min-width: 1024px){
+
+  .job-header {
+    padding: 2vh 2vw 0 1vw;
+  }
+
+  .skill-box {
+    margin: 5vh 1vw 0 1vw;
+  }
+
 }
 </style>

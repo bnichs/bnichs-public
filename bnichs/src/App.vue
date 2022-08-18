@@ -7,9 +7,7 @@ import TitleBox from './components/TitleBox.vue'
 
   <header>
     <div class="wrapper">
-      <RouterLink to="/">
-        <TitleBox />
-      </RouterLink>
+      <TitleBox />
 
       <nav class="row justify-content-center">
         <RouterLink to="/resume">Resume</RouterLink>
@@ -28,7 +26,7 @@ import TitleBox from './components/TitleBox.vue'
     <span class="footer-text">
       Copyright Ben Nichols
     </span>
-    <button @click="toggleDark" type="button" class="dark-toggle">
+    <button @click="toggleDark" type="button" class="button dark-toggle">
       <i
           v-if="! darkMode()"
           aria-hidden="true"
@@ -41,7 +39,6 @@ import TitleBox from './components/TitleBox.vue'
           class="bi-sun"
           title="Toggle between dark and light mode"
       ></i>
-<!--      <span class="sr-only">Toggle between dark and light mode</span>-->
 
     </button>
   </footer>
@@ -49,7 +46,6 @@ import TitleBox from './components/TitleBox.vue'
 
 
 <script lang="ts">
-import {PAGE_TITLE} from "./config"
 import {defineComponent} from "vue";
 
 
@@ -132,9 +128,6 @@ footer{
   position: absolute;
   right: 0px;
   bottom: 0px;
-  color: var(--color-icon);
-  background-color: var(--color-background);
-  border: 2px solid var(--color-border);
 }
 
 .footer-text{
@@ -222,7 +215,7 @@ main{
 
   main{
     margin: 15vh 0 10vh 0;
-    width: 52vw;
+    width: 50vw;
   }
 
   .welcome-items {

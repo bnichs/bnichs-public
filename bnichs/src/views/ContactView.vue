@@ -24,12 +24,17 @@ import MainBox from '../components/MainBox.vue'
 
 <style >
 
+
+#contactList {
+  font-size: 1rem;
+}
+
 #contactList .contact h3{
-  font-size: 1.8em;
+  /*font-size: 1.8em;*/
 }
 
 #contactList .contact .text {
-  font-size: 1.2em;
+  /*font-size: 1.2em;*/
   /*margin: 0;*/
   /*position: absolute;*/
   /*top: 50%;*/
@@ -40,11 +45,11 @@ import MainBox from '../components/MainBox.vue'
 }
 
 #contactList .contact i {
-  font-size: 30px;
+  font-size: 1.5rem;
 }
 
 #contactList .contact a{
-  font-size: 15px;
+  /*font-size: 15px;*/
   display: block;
   line-height: 32px;
   margin-bottom: 20px;
