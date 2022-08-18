@@ -93,7 +93,7 @@ import MainBox from '@/components/MainBox.vue'
                 Designed and built an automated backup system for log data
               </li>
               <li>
-                Built tooling and testing methodologies for enabling and monitoring Selinux on the fleetWorking for the Security org:
+                Built tooling and testing methodologies for enabling and monitoring Selinux on the fleet
               </li>
             </template>
           </TeamBox>
