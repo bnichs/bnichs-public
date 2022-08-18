@@ -29,16 +29,9 @@ main {
   }
 }
 
-/*@media (min-width: 1024px) {*/
-/*  body {*/
-/*    display: flex;*/
-/*    place-items: center;*/
-/*  }*/
 
-/*  #app {*/
-/*    display: grid;*/
-/*    grid-template-columns: 1fr 1fr;*/
-/*    padding: 0 2rem;*/
-/*    margin: 0 10vw 0 10vw;*/
-/*  }*/
-/*}*/
+button {
+  color: var(--color-icon);
+  background-color: var(--color-background);
+  border: 2px solid var(--color-border);
+}

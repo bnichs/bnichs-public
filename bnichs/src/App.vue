@@ -26,7 +26,7 @@ import TitleBox from './components/TitleBox.vue'
     <span class="footer-text">
       Copyright Ben Nichols
     </span>
-    <button @click="toggleDark" type="button" class="dark-toggle">
+    <button @click="toggleDark" type="button" class="button dark-toggle">
       <i
           v-if="! darkMode()"
           aria-hidden="true"
@@ -128,9 +128,6 @@ footer{
   position: absolute;
   right: 0px;
   bottom: 0px;
-  color: var(--color-icon);
-  background-color: var(--color-background);
-  border: 2px solid var(--color-border);
 }
 
 .footer-text{
