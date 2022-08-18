@@ -41,7 +41,7 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
       </div>
 
 
-      <button id="printButton" class="button" onclick="window.print();" >
+      <button id="printButton" class="button" @click="pprint();" >
         Print
       </button>
       <ul class="resume-nav">
@@ -343,6 +343,8 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
 
 <script lang="ts">
 import {defineComponent} from "vue";
+import {setScheme} from "@/dark";
+
 export default defineComponent({
   data() {
     return {
@@ -361,6 +363,12 @@ export default defineComponent({
     }
   },
   methods: {
+    async pprint(){
+      let scheme = "light"
+      setScheme(scheme)
+      await this.$forceUpdate()
+      window.print()
+    },
     toggleMore() {
       const d = document.getElementById("extra-jobs");
 
