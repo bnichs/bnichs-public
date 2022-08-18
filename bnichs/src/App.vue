@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import TitleBox from './components/TitleBox.vue'
+import GoToTop from './components/GoToTop.vue'
 </script>
 
 <template>
@@ -22,11 +23,14 @@ import TitleBox from './components/TitleBox.vue'
   <RouterView />
   <div style="clear:both;"></div>
 
-  <footer>
-    <span class="footer-text">
+  <footer class="row">
+    <span class="col-md-auto footer-text">
       Copyright Ben Nichols
     </span>
-    <button @click="toggleDark" type="button" class="button dark-toggle">
+
+    <GoToTop class="col-md-auto"></GoToTop>
+
+    <button @click="toggleDark" type="button" class="col-md-auto button dark-toggle">
       <i
           v-if="! darkMode()"
           aria-hidden="true"
@@ -131,9 +135,13 @@ footer{
 }
 
 .footer-text{
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
+  /*position: absolute;*/
+  /*left: 0px;*/
+  /*bottom: 0px;*/
+}
+
+.goToTop {
+  margin: 0 0 0 10vw;
 }
 
 header {
