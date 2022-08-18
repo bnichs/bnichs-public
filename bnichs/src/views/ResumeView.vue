@@ -420,6 +420,10 @@ export default defineComponent({
   width: 35%;
 }
 
+.resumeTitle h1{
+  font-size: 1.3rem;
+}
+
 .resumeContact {
   width: 55%;
   font-size: 9pt;
@@ -497,6 +501,10 @@ export default defineComponent({
 
   html, body { height: 99%; }
 
+  body {
+    display: unset;
+  }
+
   /*body {*/
   /*  page-break-inside: avoid;*/
   /*}*/
@@ -508,6 +516,11 @@ export default defineComponent({
 
   header {
     display: none;
+  }
+
+
+  #ResumePrintHeader{
+    margin-bottom: .1in;
   }
 
   #printButton{
@@ -531,7 +544,16 @@ export default defineComponent({
   }
 
   .job{
+    margin-top: .1in !important;
     /*page-break-after: avoid;*/
+  }
+
+  .job-header{
+    margin-bottom: 0 !important;
+  }
+
+  .team-box{
+    margin-bottom: 0 !important;
   }
 
   .goToTop {

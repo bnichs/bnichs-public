@@ -101,14 +101,14 @@
   text-align: right;
 }
 
-@media (max-width: 1024px){
+@media not print and (max-width: 1024px){
 
   .job {
     margin: 3vh 0 0 0;
   }
 }
 
-@media (min-width: 1024px){
+@media not print and (min-width: 1024px){
 
   .job-header {
     padding: 2vh 2vw 0 1vw;
