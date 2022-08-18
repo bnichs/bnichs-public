@@ -53,6 +53,12 @@ const router = createRouter({
       // }
     },
   ],
+  scrollBehavior (to, from, savedPosition) {
+    return {
+      top: 0,
+      el: "body"
+    };
+  }
   // @ts-ignore <- ignore it
   // scrollBehavior: function(to, from, savedPosition){
   //   if (to.hash) {

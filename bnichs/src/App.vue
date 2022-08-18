@@ -121,7 +121,7 @@ body{
 footer{
   text-align: center;
   display: block;
-  margin: 10vh 0 0 0;
+  margin: 20vh 0 0 0;
 }
 
 .dark-toggle{
