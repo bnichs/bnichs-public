@@ -24,27 +24,29 @@ import GoToTop from './components/GoToTop.vue'
   <div style="clear:both;"></div>
 
   <footer class="row">
-    <span class="col-md-auto footer-text">
+    <span class="footer-col col-4 footer-text">
       Copyright Ben Nichols
     </span>
 
-    <GoToTop class="col-md-auto"></GoToTop>
+    <GoToTop class="footer-col col-6"></GoToTop>
 
-    <button @click="toggleDark" type="button" class="col-md-auto button dark-toggle">
-      <i
-          v-if="! darkMode()"
-          aria-hidden="true"
-          class="bi-moon"
-          title="Toggle between dark and light mode"
-      ></i>
-      <i
-          v-if="darkMode()"
-          aria-hidden="true"
-          class="bi-sun"
-          title="Toggle between dark and light mode"
-      ></i>
+    <div class="darkWrapper col-2 footer-col float-end">
+      <button @click="toggleDark" type="button" class="button dark-toggle">
+        <i
+            v-if="! darkMode()"
+            aria-hidden="true"
+            class="bi-moon"
+            title="Toggle between dark and light mode"
+        ></i>
+        <i
+            v-if="darkMode()"
+            aria-hidden="true"
+            class="bi-sun"
+            title="Toggle between dark and light mode"
+        ></i>
 
-    </button>
+      </button>
+    </div>
   </footer>
 </template>
 
@@ -111,13 +113,23 @@ body{
 footer{
   text-align: center;
   display: block;
-  margin: 20vh 0 0 0;
+  margin: 15vh 0 0 0 !important;
 }
 
 .dark-toggle{
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
+  float: right;
+  /*position: absolute;*/
+  /*right: 0px;*/
+  /*bottom: 0px;*/
+}
+
+.footer-col{
+  /*width: fit-content !important;*/
+}
+
+
+footer .goToTop {
+  margin: 0px ;
 }
 
 .footer-text{
@@ -233,6 +245,10 @@ main{
 
   .welcome-items {
     margin: 2vh 0 0 0
+  }
+
+  footer {
+    margin-top: 5vh !important;
   }
 
 }
