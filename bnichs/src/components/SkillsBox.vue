@@ -1,38 +1,58 @@
 <script setup lang="ts">
-import DataTable from 'datatables.net-vue3';
-// import DataTableBs5 from 'datatables.net-bs5';
-
-// DataTable.use(DataTableBs5)
 </script>
 
 <template>
-    <DataTable
-               :options="{select: true, paginate: false, searching: false, info: false, order: [[ 1, 'des' ]]}"
-               :columns="columns"
-               width="100%"
-               ajax="/skills.json"
-               class="display table table-bordered">
-      <thead>
-      <tr>
-        <th>Name</th>
-        <th>Years</th>
-        <th>Years Prof.</th>
-        <th>Description</th>
-      </tr>
-      </thead>
-    </DataTable>
+  <table id="skillTable" class="display table table-bordered">
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th title="Years used">Years</th>
+            <th data-type="Number" title="Years used professionally">Years Prof.</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+
+  </table>
 
 </template>
 
 <script lang="ts">
 
 // https://datatables.net/blog/2022-06-22-vue
-const columns = [
-  {data: "name"},
-  {data: "years"},
-  {data: "years_prof"},
-  {data: "desc"},
-];
+import {defineComponent} from "vue";
+import {DataTable} from "simple-datatables"
+
+export default defineComponent({
+  mounted() {
+    const myTable = document.querySelector("#skillTable");
+    const dataTable = new DataTable(myTable, {
+     searchable: false,
+     paging: false,
+      columns: [
+        // Sort the second column in ascending order
+        { select: [1,2] , type: Number },
+        { select: [0, 1, 2], sortable: true },
+
+
+        // Disable sorting on the fourth and fifth columns
+        { select: [3], sortable: false },
+
+      ]
+    });
+
+    fetch("/skills.json").then((resp) =>{
+      resp.text().then((data) => {
+        console.log(data)
+        dataTable.import({
+          type: "json",
+          data: data
+        })
+      })
+      console.log("Imported")
+    })
+
+  }
+})
 
 </script>
 
@@ -48,15 +68,21 @@ const columns = [
 .table th{
   font-weight: bold;
   cursor: pointer;
+  color: var(--color-heading) !important;
+}
+
+.table th a{
+  color: var(--color-heading);
+  font-weight: bold;
 }
 
 .table td{
   padding: 5px;
 }
 
-.table th:nth-child(3) {
+.table th:nth-child(3){
   /* third column */
-  width: fit-content !important;
+  width: 5.5rem !important;
 }
 
 </style>
