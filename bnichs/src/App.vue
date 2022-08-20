@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import TitleBox from './components/TitleBox.vue'
 import GoToTop from './components/GoToTop.vue'
+import ToggleButton from './components/ToggleButton.vue'
 </script>
 
 <template>
@@ -28,25 +29,26 @@ import GoToTop from './components/GoToTop.vue'
       Copyright Ben Nichols
     </span>
 
-    <GoToTop class="footer-col col-6"></GoToTop>
-
-    <div class="darkWrapper col-2 footer-col float-end">
-      <button @click="toggleDark" type="button" class="button dark-toggle">
-        <i
-            v-if="! darkMode()"
-            aria-hidden="true"
-            class="bi-moon"
-            title="Toggle between dark and light mode"
-        ></i>
-        <i
-            v-if="darkMode()"
-            aria-hidden="true"
-            class="bi-sun"
-            title="Toggle between dark and light mode"
-        ></i>
-
-      </button>
+    <GoToTop class="footer-col col-5"></GoToTop>
+    <div class="footer-col col-3">
+      <ToggleButton v-on:change="darkEventHandler" :defaultState="darkMode()" ref="mychild">
+        <template #rhs>
+          <i
+              aria-hidden="true"
+              class="bi-moon"
+              title="Toggle between dark and light mode"
+          ></i>
+        </template>
+        <template #lhs>
+          <i
+              aria-hidden="true"
+              class="bi-sun"
+              title="Toggle between dark and light mode"
+          ></i>
+        </template>
+      </ToggleButton>
     </div>
+
   </footer>
 </template>
 
@@ -77,6 +79,13 @@ export default defineComponent({
   computed: {
   },
   methods: {
+    darkEventHandler(value) {
+      if (value === true){
+        this.setScheme("dark")
+      } else if (value == false){
+        this.setScheme("light")
+      }
+    },
     darkMode(){
       return this.getScheme() == "dark" ;
     },
