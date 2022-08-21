@@ -28,13 +28,21 @@
      inkscape:cx="123.75605"
      inkscape:cy="559.5168"
      inkscape:window-width="3440"
-     inkscape:window-height="1410"
+     inkscape:window-height="1350"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
      id="defs153">
+    <linearGradient
+       id="linearGradient2023"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#1a24ff;stop-opacity:1;"
+         offset="0"
+         id="stop2021" />
+    </linearGradient>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient40511"
@@ -57,7 +65,7 @@
        id="linearGradient64387"
        inkscape:swatch="solid">
       <stop
-         style="stop-color:#284566;stop-opacity:1;"
+         style="stop-color:#28759d;stop-opacity:1;"
          offset="0"
          id="stop64385" />
     </linearGradient>
@@ -67,15 +75,6 @@
        width="455.66489"
        height="129.26933"
        id="rect74895" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient64387"
-       id="linearGradient1299"
-       gradientUnits="userSpaceOnUse"
-       x1="172.80664"
-       y1="377.89691"
-       x2="258.55661"
-       y2="377.89691" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient40511"
@@ -101,6 +100,24 @@
        y1="608.83508"
        x2="1669.095"
        y2="608.83508" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient40511"
+       id="linearGradient2025"
+       x1="247.83955"
+       y1="57.069832"
+       x2="300.25476"
+       y2="57.069832"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient64387"
+       id="linearGradient2091"
+       gradientUnits="userSpaceOnUse"
+       x1="172.80664"
+       y1="377.89691"
+       x2="258.55661"
+       y2="377.89691" />
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -121,23 +138,23 @@
        d="m 9.690565,61.454543 46.700599,-0.51188" />
     <text
        xml:space="preserve"
-       transform="matrix(0.20202205,0,0,0.16988356,-8.306543,-16.122308)"
+       transform="matrix(0.20202205,0,0,0.16988356,-24.906325,-15.503794)"
        id="text74893"
-       style="font-size:85.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect74895);fill:url(#linearGradient1299);fill-opacity:1"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:85.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect74895);fill:url(#linearGradient2091);fill-opacity:1"><tspan
          x="169.18164"
          y="400.43856"
-         id="tspan1518">Ben</tspan></text>
+         id="tspan2201">Ben</tspan></text>
     <path
        id="path36400"
-       style="fill:none;fill-opacity:1;stroke:url(#linearGradient115219);stroke-width:7.66069;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:url(#linearGradient2025);fill-opacity:1.0;stroke:url(#linearGradient115219);stroke-width:7.66069;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 247.90554,57.520225 52.28325,-0.90079" />
     <text
        xml:space="preserve"
        transform="matrix(0.18347529,0,0,0.17849978,-19.516351,-38.846435)"
        id="text78261"
-       style="font-size:85.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect78263);fill:url(#linearGradient2269);fill-opacity:1"><tspan
+       style="font-size:85.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect78263);fill:url(#linearGradient2269);fill-opacity:1;-inkscape-font-specification:'sans-serif, Bold';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
          x="1454.0117"
          y="639.33505"
-         id="tspan1520">Nichols</tspan></text>
+         id="tspan2203">Nichols</tspan></text>
   </g>
 </svg>
