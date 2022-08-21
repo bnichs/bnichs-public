@@ -13,7 +13,6 @@
           </thead>
 
   </table>
-
 </template>
 
 <script lang="ts">

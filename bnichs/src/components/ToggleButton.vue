@@ -97,8 +97,8 @@ export default defineComponent({
   background: var(--color-icon-bg);
   box-shadow: inset 0 0 1px var(--color-icon-bg);
   position:relative;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
   transition: all .25s;
 }
 .toggle_button .toggle_switch::after,
