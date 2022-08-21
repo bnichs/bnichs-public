@@ -1,3 +1,5 @@
+<script setup lang="ts">
+</script>
 <template>
   <label :for="id + '_button'" :class="{'active': isActive}" class="toggle_button">
     <span v-if="true" class="toggle_label_lhs">
@@ -13,8 +15,10 @@
   </label>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import {defineComponent} from "vue";
+
+export default defineComponent({
   props: {
     disabled: {
       type: Boolean,
@@ -54,23 +58,23 @@ export default {
     isActive() {
       return this.currentState;
     },
-    enableText() {
-      return this.labelEnableText;
-    },
-    disabledText() {
-      return this.labelDisableText;
-    },
+    // enableText() {
+    //   return this.labelEnableText;
+    // },
+    // disabledText() {
+    //   return this.labelDisableText;
+    // },
     checkedValue: {
       get() {
         return this.currentState;
       },
-      set(newValue) {
+      set(newValue: boolean) {
         this.currentState = newValue;
         this.$emit('change', newValue);
       }
     }
   }
-}
+})
 </script>
 
 <style scoped>

@@ -81,7 +81,7 @@ export default defineComponent({
   computed: {
   },
   methods: {
-    darkEventHandler(value) {
+    darkEventHandler(value: Boolean) {
       if (value === true){
         this.setScheme("dark")
       } else if (value == false){
