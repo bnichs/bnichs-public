@@ -31,7 +31,7 @@ import ToggleButton from './components/ToggleButton.vue'
       Copyright Ben Nichols
     </span>
 
-    <GoToTop class="footer-col col-4"></GoToTop>
+    <GoToTop class="footer-col col-3"></GoToTop>
     <div class="footer-col col-4">
       <ToggleButton v-on:change="darkEventHandler" :defaultState="darkMode()" ref="mychild">
         <template #rhs>
