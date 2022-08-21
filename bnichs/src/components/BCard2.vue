@@ -129,9 +129,10 @@ export default {
 
 #bcard2 #card-title{
   /*border-top: var(--card-border);*/
-  padding: var(--gutter) var(--gutter) 0 calc(var(--gutter)*2);
+  padding: var(--gutter) var(--gutter) 0 calc(var(--gutter)*1.0);
   /*margin: 0 0 0 -.2in;*/
   /*height: 40%;*/
+  text-align: center;
 }
 
 #bcard2 #card-title h3 {
