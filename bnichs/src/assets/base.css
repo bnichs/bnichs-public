@@ -22,6 +22,9 @@
 
 
   --vt-c-purp: hsl(278, 45%, 43%);
+  --vt-c-light-blue: #28759dff;
+  --vt-c-dark-blue: #1a0c66ff;
+  --vt-c-logo-purp: #582875fe;
 }
 
 /* semantic color variables for this project */
@@ -35,11 +38,16 @@
 
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1);
-  --color-icon: var(--vt-c-text-light-1);
 
-  --color-title: var(--vt-c-purp);
 
-  --color-link: var(--vt-c-purp);
+  --color-icon-fg: var(--vt-c-text-light-1);
+  --color-icon-bg: var(--vt-c-text-light-2);
+  /*--color-icon: var(--vt-c-text-light-1);*/
+
+  /*--color-title: var(--vt-c-purp);*/
+  --color-title: var(--vt-c-logo-purp);
+
+  --color-link: var(--vt-c-light-blue);
 
   --section-gap: 160px;
 }
@@ -55,11 +63,12 @@
 
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
-    --color-icon: var(--vt-c-text-dark-2);
+    --color-icon-fg: var(--vt-c-text-dark-2);
+    --color-icon-bg: var(--vt-c-text-dark-2);
 
-    --color-title: var(--vt-c-text-light-1);
+  --color-title: var(--vt-c-logo-purp);
 
-    --color-link: var(--vt-c-purp);
+    --color-link: var(--vt-c-light-blue);
   }
 /*}*/
 

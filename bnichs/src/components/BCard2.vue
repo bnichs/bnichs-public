@@ -89,6 +89,7 @@ export default {
   /*width: 40%;*/
   grid-column: 1;
   width: var(--left-width);
+  /*background-color: rgba(122, 142, 164, 0.83);*/
 }
 
 

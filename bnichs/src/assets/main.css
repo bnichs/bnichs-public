@@ -40,7 +40,7 @@ main {
 
 
 button {
-  color: var(--color-icon);
+  color: var(--color-icon-fg);
   background-color: var(--color-background);
   border: 2px solid var(--color-border);
 }

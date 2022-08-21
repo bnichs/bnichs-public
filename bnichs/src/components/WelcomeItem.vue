@@ -14,7 +14,7 @@
 <style>
 
 i {
-  color: var(--color-icon);
+  color: var(--color-icon-fg);
 }
 </style>
 

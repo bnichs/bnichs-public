@@ -56,7 +56,7 @@ export default defineComponent({
 
 <style>
 .qrForeground{
-  color: var(--color-link);
+  color: var(--color-title);
 }
 
 .qrBackground{
