@@ -122,7 +122,7 @@ export default defineComponent({
 }
 
 body{
-  padding: 0 0 5vh 0;
+  /*padding: 0 0 5vh 0;*/
 }
 
 
@@ -130,13 +130,11 @@ footer{
   text-align: center;
   display: block;
   margin: 15vh 0 0 0 !important;
+  /*position: absolute;*/
 }
 
 .dark-toggle{
   float: right;
-  /*position: absolute;*/
-  /*right: 0px;*/
-  /*bottom: 0px;*/
 }
 
 .footer-col{
@@ -149,9 +147,6 @@ footer .goToTop {
 }
 
 .footer-text{
-  /*position: absolute;*/
-  /*left: 0px;*/
-  /*bottom: 0px;*/
 }
 
 .goToTop {
