@@ -76,6 +76,7 @@ h3 {
   /*text-align: center;*/
   width: fit-content;
   font-size: .6rem;
+  color: var(--color-subtitle);
 }
 
 /*.greetings h1,*/

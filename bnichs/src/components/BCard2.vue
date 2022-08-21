@@ -89,7 +89,7 @@ export default {
   /*width: 40%;*/
   grid-column: 1;
   width: var(--left-width);
-  /*background-color: rgba(122, 142, 164, 0.83);*/
+  background-color: var(--color-heading-bg);
 }
 
 
@@ -137,10 +137,12 @@ export default {
 
 #bcard2 #card-title h3 {
   font-size: .20in;
+  color: var(--color-title)
 }
 
 #bcard2 #card-title h5 {
   font-size: .1in;
+  color: var(--color-subtitle)
 }
 
 #bcard2 #card-contact{

@@ -22,7 +22,9 @@ import ToggleButton from './components/ToggleButton.vue'
   </header>
 
   <RouterView />
-  <div style="clear:both;"></div>
+  <div class="clearHeader" style="clear:both;">
+
+  </div>
 
   <footer class="row">
     <span class="footer-col col-4 footer-text">
@@ -114,6 +116,11 @@ export default defineComponent({
 
 <style>
 
+.clearHeader {
+  clear: both;
+  background-color: var(--color-heading-bg);
+}
+
 body{
   padding: 0 0 5vh 0;
 }
@@ -153,7 +160,9 @@ footer .goToTop {
 
 header {
   line-height: 1.5;
-  max-height: 100vh;
+  /*max-height: 100vh;*/
+  background-color: var(--color-heading-bg);
+  padding: 5vh 0 8vh 0;
 }
 
 
@@ -166,7 +175,7 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-heading);
+  color: var(--color-subtitle);
 }
 
 nav a.router-link-exact-active:hover {
@@ -185,7 +194,7 @@ nav a:first-of-type {
 }
 
 
-main{
+body{
   min-height: 100vh;
 }
 
@@ -201,14 +210,16 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     /*padding: 0 2rem;*/
-    margin: 15vh 8vw 0 8vw;
+    /*margin: 15vh 8vw 0 8vw;*/
   }
 
   header {
     /*margin: 15vh 0 0 0;*/
     display: flex;
     /*place-items: center;*/
-    padding-right: calc(var(--section-gap) / 4);
+    /*padding-right: calc(var(--section-gap) / 4);*/
+    padding: 20vh 0 0 5vw;
+    height: 100%;
   }
 
 
@@ -229,8 +240,8 @@ main{
 
 
   main{
-    margin: 15vh 0 10vh 0;
-    width: 50vw;
+    padding: 5vh 0 10vh 3vw;
+    width: 60vw;
   }
 
   .welcome-items {
@@ -244,12 +255,16 @@ main{
     padding: 0 0 1vh 0;
   }
 
+  header{
+    padding: 2vh 0 2vh 0;
+  }
+
   main{
-    padding: 1vh 0 0 0;
+    /*padding: 1vh 0 0 0;*/
+    padding: .5vh 6vw 0 6vw;
   }
 
   #app {
-    padding: 2vh 6vw 0 6vw;
   }
 
   .welcome-items {
@@ -257,7 +272,7 @@ main{
   }
 
   footer {
-    margin-top: 5vh !important;
+    margin-top: 80px !important;
   }
 
 }
