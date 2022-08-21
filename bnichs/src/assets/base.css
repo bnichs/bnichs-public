@@ -47,9 +47,7 @@
 
   --color-icon-fg: var(--vt-c-text-light-1);
   --color-icon-bg: var(--vt-c-text-light-2);
-  /*--color-icon: var(--vt-c-text-light-1);*/
 
-  /*--color-title: var(--vt-c-purp);*/
   --color-title: var(--vt-c-light-blue);
   --color-subtitle: var(--vt-c-light-green-blue);
 
@@ -61,11 +59,8 @@
   --section-gap: 160px;
 }
 
-/*@media (prefers-color-scheme: dark) {*/
 [data-theme="dark"] {
     --color-background: var(--vt-c-black-soft);
-    /*--color-background-soft: var(--vt-c-black-soft);*/
-    /*--color-background-mute: var(--vt-c-black-mute);*/
 
     --color-border: var(--vt-c-divider-dark-2);
     --color-border-hover: var(--vt-c-divider-dark-1);
@@ -75,13 +70,11 @@
     --color-icon-fg: var(--vt-c-text-dark-2);
     --color-icon-bg: var(--vt-c-text-dark-2);
 
-    --color-title: var(--vt-c-logo-purp);
-  --color-title: var(--vt-c-light-blue);
+    --color-title: var(--vt-c-light-blue);
     --color-subtitle: var(--vt-c-light-green-blue);
 
     --color-link: var(--vt-c-light-blue);
   }
-/*}*/
 
 *,
 *::before,

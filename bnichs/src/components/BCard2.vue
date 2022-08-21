@@ -2,7 +2,6 @@
 import BNLogo from '../components/BNLogo.vue'
 import QRCode from '../components/QRCode.vue'
 import ContactLinks from '../components/ContactLinks.vue'
-import QrcodeVue from 'qrcode.vue'
 
 import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
 </script>
@@ -31,7 +30,6 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
 
         <div class="qr-wrapper">
           <QRCode></QRCode>
-<!--          <qrcode-vue id="qr-box" :value="value" :size="size" level="H" />-->
         </div>
 
       </div>
@@ -79,14 +77,11 @@ export default {
   border: var(--card-border);
   display: grid;
 
-  /*background-color: white;*/
-  /*color: black;*/
 }
 
 
 #bcard2 #card-left{
   padding: 0px;
-  /*width: 40%;*/
   grid-column: 1;
   width: var(--left-width);
   background-color: var(--color-heading-bg);
@@ -94,7 +89,6 @@ export default {
 
 
 #bcard2 .bn-logo {
-  /*margin: .05in 0 0 .1in;*/
   text-align: center;
   width: var(--left-width);
   height: 1.0in;
@@ -120,18 +114,12 @@ export default {
 
 
 #bcard2 #card-right{
-  /*padding: .1in 0 0 .2in;*/
-  /*border-left: var(--card-border);*/
-  /*float: left;*/
   width: var(--right-width);
   grid-column: 2;
 }
 
 #bcard2 #card-title{
-  /*border-top: var(--card-border);*/
   padding: var(--gutter) var(--gutter) 0 calc(var(--gutter)*1.0);
-  /*margin: 0 0 0 -.2in;*/
-  /*height: 40%;*/
   text-align: center;
 }
 
@@ -148,9 +136,6 @@ export default {
 #bcard2 #card-contact{
   padding: var(--gutter) 0 0 calc(var(--gutter)*1.5);
   margin: 0 0 0 0 ;
-  /*border-left: 1px solid green;*/
-  /*height: 60%;*/
-  /*width: 110px;*/
 }
 
 
