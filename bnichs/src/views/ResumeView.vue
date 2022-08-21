@@ -215,7 +215,7 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
       <a id="showMoreJobsButton" class="" @click="toggleMore">
         Show older jobs....
       </a>
-      <div v-html="goToTop"/>
+<!--      <div v-html="goToTop"/>-->
 
       <div style="clear:both;"></div>
 
@@ -398,7 +398,7 @@ export default defineComponent({
 }
 
 .goToTop {
-  margin: 5px 0 0 30px;
+  margin: 10px 0 0 30px;
   float: left;
 }
 
@@ -421,7 +421,7 @@ export default defineComponent({
 
 #ResumePrintHeader{
   border-bottom: 1px solid var(--color-border);
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 5vh;
 }
 

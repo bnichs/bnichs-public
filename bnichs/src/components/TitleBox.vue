@@ -59,7 +59,7 @@ h3 {
 }
 
 .greetings{
-  margin: 0 0 8vh 0;
+  margin: 0 0 20px 0;
   width: fit-content;
 }
 
@@ -109,9 +109,9 @@ h3 {
     margin: 0 0 0vh 5vw;
   }
 
-  .greetings{
-    margin: 0 0 3vh 0;
-  }
+  /*.greetings{*/
+  /*  margin: 0 0 3vh 0;*/
+  /*}*/
 
 }
 
