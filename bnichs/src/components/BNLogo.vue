@@ -42,8 +42,8 @@ export default {
 }
 
 .bn-logo {
-  width: var(--logo-width);
-  height: var(--logo-height);
+  /*width: var(--logo-width);*/
+  /*height: var(--logo-height);*/
   /*margin: 0 auto 0 18vw;*/
 
 }
@@ -69,8 +69,8 @@ export default {
 
 
 #logoImg{
-  width: var(--logo-width);
-  height: var(--logo-height);
+  /*width: var(--logo-width);*/
+  /*height: var(--logo-height);*/
 
 }
 

@@ -157,13 +157,17 @@ header {
   line-height: 1.5;
   /*max-height: 100vh;*/
   background-color: var(--color-heading-bg);
-  padding: 5vh 0 8vh 0;
+  /*padding: 5vh 0 8vh 0;*/
+}
+
+header .wrapper {
+  margin: 30vh auto 0 auto;
 }
 
 
 nav {
   /*width: 100%;*/
-  font-size: 12px;
+  font-size: .9em;
   text-align: center;
   margin-top: 2rem;
   display: inline;
@@ -171,6 +175,7 @@ nav {
 
 nav a.router-link-exact-active {
   color: var(--color-subtitle);
+  text-decoration: underline;
 }
 
 nav a.router-link-exact-active:hover {
@@ -193,11 +198,15 @@ body{
   min-height: 100vh;
 }
 
+main {
+  min-height: 100vh
+}
+
 
 
 @media (min-width: 1024px) {
   body {
-    display: flex;
+    /*display: flex;*/
     place-items: center;
   }
 
@@ -213,7 +222,7 @@ body{
     display: flex;
     /*place-items: center;*/
     /*padding-right: calc(var(--section-gap) / 4);*/
-    padding: 20vh 0 0 5vw;
+    /*padding: 20vh 0 0 5vw;*/
     height: 100%;
   }
 
@@ -222,12 +231,13 @@ body{
     /*display: flex;*/
     /*place-items: flex-start;*/
     /*flex-wrap: wrap;*/
+    font-size: 1.6rem;
   }
 
   nav {
     text-align: left;
     margin-left: -1rem;
-    font-size: .8rem;
+    font-size: .8em;
 
     padding: 1rem 0;
     margin-top: -150px;
@@ -251,7 +261,17 @@ body{
   }
 
   header{
-    padding: 2vh 0 4vh 0;
+    /*padding: 2vh 0 4vh 0;*/
+  }
+
+  header .wrapper {
+    /*padding-top: 5vh;*/
+  }
+  header .wrapper {
+    margin: 0;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    font-size: 1.0rem;
   }
 
   main{

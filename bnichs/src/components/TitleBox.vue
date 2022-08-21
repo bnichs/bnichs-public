@@ -32,11 +32,17 @@ import BNLogo from './BNLogo.vue'
 <script lang="ts">
 </script>
 
+
 <style scoped>
 
 .logoWrapper{
   width: fit-content;
 }
+
+/*.bn-logo, .bn-logo #logoImg {*/
+/*  width: .1em;*/
+/*  height: .1em;*/
+/*}*/
 
 /*.title-box {*/
 /*  padding: 4vh 0 0 0;*/
@@ -50,12 +56,12 @@ import BNLogo from './BNLogo.vue'
 
 h1 {
   font-weight: 500;
-  font-size: 2.2rem;
+  font-size: 2.2em;
   /*top: -10px;*/
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 .greetings{
@@ -69,13 +75,13 @@ h3 {
 
 .the-name{
   width: fit-content;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 .the-subtitle{
   /*text-align: center;*/
   width: fit-content;
-  font-size: .6rem;
+  font-size: .6em;
   color: var(--color-subtitle);
 }
 
@@ -97,7 +103,7 @@ h3 {
     min-width: 290px;
   }
   .title-box{
-    margin: 0 0 0vh 2vw;
+    margin: 1.0em 0 0vh 2vw;
   }
 }
 
@@ -107,7 +113,7 @@ h3 {
   }
 
   .title-box{
-    margin: 0 0 0vh 5vw;
+    margin: 1.0em 0 0vh 5vw;
   }
 
   /*.greetings{*/
@@ -116,4 +122,15 @@ h3 {
 
 }
 
+</style>
+
+
+<style>
+/*.bn-logo {*/
+/*  width: 10em;*/
+/*}*/
+#logoImg {
+  width: 8em;
+  height: 5em;
+}
 </style>
