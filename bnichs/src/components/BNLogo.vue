@@ -1,10 +1,8 @@
 
 <template>
-  <div class="bn-logo logo">
-    <object id="logoImg" data="/bn-logo-full.svg" alt="BN Logo"
-            type="image/svg+xml" >
-      <h3>fallback</h3>
-    </object>
+  <div class="bn-logo logo" onload="canvg()">
+    <img id="logoImg" src="/bn-logo-full.png" alt="BN Logo"
+             />
   </div>
 </template>
 
@@ -68,10 +66,9 @@ export default {
 }
 
 
-#logoImg{
-  /*width: var(--logo-width);*/
-  /*height: var(--logo-height);*/
-
+#logoImg {
+  width: 8em;
+  height: 3.5em;
 }
 
 .flip_H{

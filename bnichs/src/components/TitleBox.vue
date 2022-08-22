@@ -103,7 +103,7 @@ h3 {
     min-width: 290px;
   }
   .title-box{
-    margin: 1.0em 0 0vh 2vw;
+    margin: .3em 0 0vh 2vw;
   }
 }
 
@@ -113,7 +113,7 @@ h3 {
   }
 
   .title-box{
-    margin: 1.0em 0 0vh 5vw;
+    margin: .3em 0 0vh 5vw;
   }
 
   /*.greetings{*/
@@ -129,8 +129,5 @@ h3 {
 /*.bn-logo {*/
 /*  width: 10em;*/
 /*}*/
-#logoImg {
-  width: 8em;
-  height: 5em;
-}
+
 </style>
