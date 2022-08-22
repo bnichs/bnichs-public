@@ -5,13 +5,13 @@
    inkscape:export-ydpi="96"
    inkscape:export-xdpi="96"
    inkscape:export-filename="/home/ben/workplace/bnichs.github.io/bnichs/public/bn-logo-full.png"
-   sodipodi:docname="bn-logo-full-emb.svg"
+   sodipodi:docname="bn-logo-full.svg"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    id="svg156"
    version="1.1"
-   viewBox="0 0 309 130"
+   viewBox="0 0 316 130"
    height="130mm"
-   width="309mm"
+   width="316mm"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -27,9 +27,9 @@
      inkscape:pagecheckerboard="true"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.57370932"
-     inkscape:cx="123.75605"
-     inkscape:cy="559.5168"
+     inkscape:zoom="1.1114514"
+     inkscape:cx="532.187"
+     inkscape:cy="53.983466"
      inkscape:window-width="2880"
      inkscape:window-height="1530"
      inkscape:window-x="0"
@@ -83,7 +83,7 @@
        xlink:href="#linearGradient40511"
        id="linearGradient115219"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.5616883,0,0,1.0448056,87.411126,-72.3337)"
+       gradientTransform="matrix(0.6167239,0.00542522,-0.01112661,1.0404604,79.929837,-73.598205)"
        x1="8.9323874"
        y1="125.13589"
        x2="378.86444"
@@ -96,22 +96,14 @@
        id="rect78263" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient64387"
-       id="linearGradient2269"
-       gradientUnits="userSpaceOnUse"
-       x1="1459.72"
-       y1="608.83508"
-       x2="1669.095"
-       y2="608.83508" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient40511"
        id="linearGradient2025"
        x1="247.83955"
        y1="57.069832"
        x2="300.25476"
        y2="57.069832"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0979825,0.00965878,-0.01064946,0.99584113,-16.816365,-2.4096153)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient64387"
@@ -144,7 +136,7 @@
        x2="95.225868"
        y2="60.874451"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(2.2313824,0,0,1,-51.027027,2.7147536)" />
+       gradientTransform="matrix(2.2313824,0,0,1.0377458,-51.027027,2.5816387)" />
     <linearGradient
        id="linearGradient64387-0"
        inkscape:swatch="solid">
@@ -156,7 +148,17 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient44957"
-       id="linearGradient3494"
+       id="linearGradient3888"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.8989268,0,0,0.89892681,-3.0730747,-53.153303)"
+       x1="191.39738"
+       y1="129.02437"
+       x2="289.92719"
+       y2="129.02437" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient44957"
+       id="linearGradient3890"
        gradientUnits="userSpaceOnUse"
        x1="103.18948"
        y1="541.04285"
@@ -164,14 +166,13 @@
        y2="541.04285" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient44957"
-       id="linearGradient3498"
+       xlink:href="#linearGradient64387"
+       id="linearGradient3930"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.8989268,0,0,0.89892681,-3.0342229,-57.199709)"
-       x1="191.39738"
-       y1="129.02437"
-       x2="289.92719"
-       y2="129.02437" />
+       x1="1459.72"
+       y1="608.83508"
+       x2="1669.095"
+       y2="608.83508" />
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -185,48 +186,48 @@
        xml:space="preserve"
        transform="matrix(0.20202205,0,0,0.16988356,-24.906325,-15.503794)"
        id="text74893"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:85.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect74895);fill:url(#linearGradient2091);fill-opacity:1"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:84.346px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect74895);fill:url(#linearGradient2091);fill-opacity:1"><tspan
          x="169.18164"
-         y="400.43856"
-         id="tspan3536">Ben</tspan></text>
+         y="398.30891"
+         id="tspan3968">Ben</tspan></text>
     <path
        id="path36400"
-       style="fill:url(#linearGradient2025);fill-opacity:1.0;stroke:url(#linearGradient115219);stroke-width:7.66069;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 247.90554,57.520225 52.28325,-0.90079" />
+       style="fill:url(#linearGradient2025);fill-opacity:1;stroke:url(#linearGradient115219);stroke-width:8.01089;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 254.76705,57.265856 57.41568,-0.392052" />
     <text
        xml:space="preserve"
-       transform="matrix(0.18347529,0,0,0.17849978,-19.516351,-38.846435)"
+       transform="matrix(0.18347529,0,0,0.17849978,-13.16635,-38.846435)"
        id="text78261"
-       style="font-size:85.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect78263);fill:url(#linearGradient2269);fill-opacity:1;-inkscape-font-specification:'sans-serif, Bold';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:86.344px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect78263);fill:url(#linearGradient3930);fill-opacity:1"><tspan
          x="1454.0117"
-         y="639.33505"
-         id="tspan3538">Nichols</tspan></text>
+         y="638.97572"
+         id="tspan3970">Nichols</tspan></text>
     <text
        xml:space="preserve"
-       transform="matrix(-0.21983297,0,0,0.25727614,170.68846,-75.605263)"
+       transform="matrix(-0.24242906,0,0,0.25727614,173.13789,-68.726095)"
        id="text17545"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:666.669px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect17547);fill:url(#linearGradient3494);fill-opacity:1;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:666.7px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect17547);fill:url(#linearGradient3890);fill-opacity:1;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none"><tspan
          x="48.501953"
-         y="770.3742"
-         id="tspan3540">B</tspan></text>
+         y="760.59806"
+         id="tspan3972">B</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:158.561px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient3498);fill-opacity:1;stroke-width:0.238332;stroke-miterlimit:4;stroke-dasharray:none"
-       x="156.01068"
-       y="113.32788"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:158.554px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient3888);fill-opacity:1;stroke-width:0.238332;stroke-miterlimit:4;stroke-dasharray:none"
+       x="155.97183"
+       y="117.37426"
        id="text33472"
        transform="scale(0.92446972,1.0817012)"><tspan
          sodipodi:role="line"
          id="tspan33470"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:158.562px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient3498);fill-opacity:1;stroke-width:0.238332;stroke-miterlimit:4;stroke-dasharray:none"
-         x="156.01068"
-         y="113.32788">N</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:158.554px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient3888);fill-opacity:1;stroke-width:0.238332;stroke-miterlimit:4;stroke-dasharray:none"
+         x="155.97183"
+         y="117.37426">N</tspan></text>
     <rect
-       style="fill:url(#linearGradient2473);fill-opacity:1;stroke-width:0.393195"
+       style="fill:url(#linearGradient2473);fill-opacity:1;stroke-width:0.400547"
        id="rect2363"
        width="16.762821"
-       height="117.99364"
+       height="122.4474"
        x="144.69547"
-       y="4.5923905" />
+       y="4.5301485" />
   </g>
 </svg>
