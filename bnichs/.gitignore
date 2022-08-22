@@ -32,3 +32,5 @@ dist/
 
 # Ignore the built files, just let them get copied to dist
 public/blog_out/*
+public/bn-logo-full.png
+public/favicon.png
