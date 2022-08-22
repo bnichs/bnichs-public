@@ -32,14 +32,6 @@ import {setScheme} from "@/dark";
 import html2canvas from "html2canvas";
 
 
-// Fix ts errors for ms
-declare global {
-  interface Navigator {
-    msSaveBlob?: (blob: any, defaultName?: string) => boolean
-    msSaveOrOpenBlob?: (blob: any, defaultName?: string) => boolean
-  }
-}
-
 export default {
   data() {
     return {
@@ -49,24 +41,6 @@ export default {
   },
   methods: {
     async saveCard(){
-      // Initiate download of blob
-      function download(
-          filename: string, // string
-          blob: Blob // Blob
-      ) {
-        if (window.navigator.msSaveBlob !== undefined && window.navigator.msSaveOrOpenBlob) {
-          window.navigator.msSaveBlob(blob, filename);
-        } else {
-          const elem = window.document.createElement('a');
-          elem.href = window.URL.createObjectURL(blob);
-          elem.download = filename;
-          document.body.appendChild(elem);
-          elem.click();
-          document.body.removeChild(elem);
-        }
-      }
-
-      console.log("Saving...")
       setScheme("light")
       await this.$forceUpdate()
 
