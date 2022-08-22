@@ -44,7 +44,7 @@ function convertImages () {
             width: metadata.width,
             height: metadata.height,
           })
-          .extract({ left: 160, top: 0, width: 542, height: metadata.height})
+          .extract({ left: 160, top: 0, width: 550, height: metadata.height})
           .png()
           .toFile("public/favicon.png")
           .then(function(info) {
