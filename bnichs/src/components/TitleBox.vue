@@ -39,15 +39,6 @@ import BNLogo from './BNLogo.vue'
   width: fit-content;
 }
 
-/*.bn-logo, .bn-logo #logoImg {*/
-/*  width: .1em;*/
-/*  height: .1em;*/
-/*}*/
-
-/*.title-box {*/
-/*  padding: 4vh 0 0 0;*/
-/*}*/
-
 .the-name{
   text-align: center;
   color: var(--color-title);
@@ -85,16 +76,8 @@ h3 {
   color: var(--color-subtitle);
 }
 
-/*.greetings h1,*/
-/*.greetings h3 {*/
-/*  text-align: center;*/
-/*}*/
 
 @media (min-width: 1024px) {
-  /*.greetings h1,*/
-  /*.greetings h3 {*/
-  /*  text-align: left;*/
-  /*}*/
   .row .bn-logo{
     --bs-gutter-x: 0;
   }
@@ -116,9 +99,6 @@ h3 {
     margin: .3em 0 0vh 5vw;
   }
 
-  /*.greetings{*/
-  /*  margin: 0 0 3vh 0;*/
-  /*}*/
 
 }
 
@@ -126,8 +106,5 @@ h3 {
 
 
 <style>
-/*.bn-logo {*/
-/*  width: 10em;*/
-/*}*/
 
 </style>
