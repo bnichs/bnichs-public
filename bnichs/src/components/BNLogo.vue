@@ -1,6 +1,6 @@
 
 <template>
-  <div class="bn-logo logo" onload="canvg()">
+  <div class="bn-logo logo">
     <img id="logoImg" src="/bn-logo-full.png" alt="BN Logo"
              />
   </div>
