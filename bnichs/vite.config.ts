@@ -57,6 +57,10 @@ function convertImages () {
       const metadata = await sharp(input).metadata();
 
       sharp(input)
+          .resize({
+            width: metadata.width,
+            height: metadata.height,
+          })
           .png()
           .toFile("public/bn-logo-full.png")
           .then(function(info) {
@@ -67,6 +71,10 @@ function convertImages () {
           })
 
       sharp(input)
+          .resize({
+            width: metadata.width,
+            height: metadata.height,
+          })
           .extract({ left: 160, top: 0, width: 542, height: metadata.height})
           .png()
           .toFile("public/favicon.png")
