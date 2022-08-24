@@ -55,11 +55,18 @@ export default defineComponent({
 
 
 <style>
+
+
+.qr-box canvas{
+  color: rgba(0,0,0,0.0);
+}
+
 .qrForeground{
   color: var(--color-title);
 }
 
 .qrBackground{
-  color: var(--color-background);
+  color: rgba(0,0,0,0.0);
+ /*var(--color-background);*/
 }
 </style>
