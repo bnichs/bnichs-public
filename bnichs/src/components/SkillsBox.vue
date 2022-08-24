@@ -60,6 +60,12 @@ export default defineComponent({
 
 <style>
 
+.dataTable-wrapper {
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 100%;
+}
+
 .table {
   color: var(--color-text);
   border: 1px solid var(--color-border);

@@ -1,7 +1,7 @@
 <template>
   <div class="job">
     <div class="row job-header">
-      <div class="col-8">
+      <div class="col-7">
         <span class="team-role">
           <slot name="role"></slot>
         </span>
@@ -11,7 +11,7 @@
           <slot name="company"></slot>
         </span>
       </div>
-      <div class="where-and-when col-4">
+      <div class="where-and-when col-5">
         <h5 class="job-location">
           <slot name="location"></slot>
         </h5>
@@ -104,18 +104,18 @@
 @media not print and (max-width: 1024px){
 
   .job {
-    margin: 3vh 0 0 0;
+    margin: 1vh 0 0 0;
   }
 }
 
 @media not print and (min-width: 1024px){
 
   .job-header {
-    padding: 2vh 2vw 0 1vw;
+    padding: .5em 2vw 0 .5em;
   }
 
   .skill-box {
-    margin: 5vh 1vw 0 1vw;
+    margin: 1em 1vw 0 1em;
   }
 
 }

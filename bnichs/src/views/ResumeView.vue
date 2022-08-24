@@ -334,7 +334,7 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
         </template>
       </JobBox>
 
-      <div v-html="goToTop"/>
+<!--      <div v-html="goToTop"/>-->
       <div style="clear:both;"></div>
     </template>
   </MainBox>
@@ -403,6 +403,11 @@ export default defineComponent({
 }
 
 
+.goToTop, #ResumeSkills h3 {
+  margin-top: 2em;
+}
+
+
 #ResumeHeader {
   /*float: left;*/
   width: 30%;
@@ -422,7 +427,7 @@ export default defineComponent({
 #ResumePrintHeader{
   border-bottom: 1px solid var(--color-border);
   margin-top: 10px;
-  margin-bottom: 5vh;
+  margin-bottom: 1vh;
 }
 
 #ResumePrintHeader .col-md-auto {

@@ -5,7 +5,7 @@
 <template>
   <div class="team-box">
     <div class="row">
-      <div class="col">
+      <div class="col-7">
         <h4 class="team-name">
           <slot name="team-name"></slot>
         </h4>
@@ -17,7 +17,7 @@
         </h4>
       </div>
 
-      <div class="col-md-4 where-and-when">
+      <div class="col-5 where-and-when">
         <span class="team-dates">
           <slot name="dates"></slot>
         </span>
@@ -78,7 +78,7 @@
 @media (max-width: 1024px) {
 
   .team-box{
-    padding: 2vh 3vw 1vh 3vw;
+    padding: 1em 3vw 1vh 3vw;
     /*margin: 4vh 1vw 0 1vw;*/
   }
 
