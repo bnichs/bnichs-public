@@ -93,6 +93,9 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
             <template #team-name>
               Threat and Vulnerability Management
             </template>
+            <template #dates>
+              Oct 2018 - Nov 2019<br>1 yrs 1 mos
+            </template>
             <template #projects>
               <li>
                 Built an ETL system for managing security data used for remediation
@@ -108,6 +111,9 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
           <TeamBox>
             <template #team-name>
               Security Infrastructure (SIEM)
+            </template>
+            <template #dates>
+              Nov 2019 - Jan 2022<br>2 yrs 3 mos
             </template>
             <template #projects>
               <li>
