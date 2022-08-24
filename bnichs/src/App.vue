@@ -115,10 +115,14 @@ export default defineComponent({
 </script>
 
 <style>
+:root{
+  --header-border: 3px ridge var(--color-border)
+}
 
 .clearHeader {
   clear: both;
   background-color: var(--color-heading-bg);
+  border-right: var(--header-border)
 }
 
 body{
@@ -130,6 +134,8 @@ footer{
   text-align: center;
   display: block;
   margin: 15vh 0 0 0 !important;
+  border-top: var(--header-border);
+  padding-top: 15px;
   /*position: absolute;*/
 }
 
@@ -224,6 +230,7 @@ main {
     /*padding-right: calc(var(--section-gap) / 4);*/
     /*padding: 20vh 0 0 5vw;*/
     height: 100%;
+    border-right: var(--header-border)
   }
 
 
@@ -245,7 +252,7 @@ main {
 
 
   main{
-    padding: 5vh 0 10vh 3vw;
+    padding: 5vh 3vw 10vh 3vw;
     width: 60vw;
   }
 
@@ -262,6 +269,7 @@ main {
 
   header{
     /*padding: 2vh 0 4vh 0;*/
+    border-bottom: var(--header-border)
   }
 
   header .wrapper {
@@ -270,7 +278,7 @@ main {
   header .wrapper {
     margin: 0;
     padding-top: 2vh;
-    padding-bottom: 5vh;
+    padding-bottom: 2.5vh;
     font-size: 1.0rem;
   }
 

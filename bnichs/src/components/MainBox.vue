@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>
+    <h1 class="pageTitle">
       <slot name="title"></slot>
     </h1>
 
@@ -13,4 +13,8 @@
 </template>
 
 <style>
+
+.pageTitle {
+  /*border-bottom: 1px solid black;*/
+}
 </style>
