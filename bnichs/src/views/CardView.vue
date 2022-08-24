@@ -15,10 +15,10 @@ import MainBox from '@/components/MainBox.vue'
         Save card
       </button>
 
-      <BCard1>
-      </BCard1>
+<!--      <BCard1>-->
+<!--      </BCard1>-->
 
-      <br><br>
+<!--      <br><br>-->
 
       <BCard2>
       </BCard2>
@@ -46,6 +46,8 @@ export default {
 
 
       const el = document.getElementById("bcard2")!
+
+      el.classList.add("printMode")
       // const el = document.body //getElementById("bcard2")
 
       html2canvas(el, {
@@ -53,7 +55,21 @@ export default {
         useCORS: true,
         logging: true,
       }).then(function(canvas) {
-        let imageData = canvas.toDataURL("image/png");
+        let width = canvas.width
+        let height = canvas.height
+        console.log(width, height)
+        let scale = 8
+
+        let sWidth = width * scale
+        let sHeight = height * scale
+
+        let extra_canvas = document.createElement("canvas");
+        extra_canvas.setAttribute('width',sWidth.toString());
+        extra_canvas.setAttribute('height',sHeight.toString());
+        let ctx = extra_canvas.getContext('2d')!;
+        ctx.drawImage(canvas,0,0,canvas.width, canvas.height,0,0, sWidth, sHeight);
+
+        let imageData = extra_canvas.toDataURL("image/png");
         console.log(imageData)
         var newData = imageData.replace(/^data:image\/png/, "data:application/octet-stream");
 

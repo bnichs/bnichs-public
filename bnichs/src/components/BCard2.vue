@@ -7,33 +7,40 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
 </script>
 
 <template>
+  <div class="cardWrapper">
+
     <div id="bcard2">
+      <div id="safeLeft">
 
-      <div id="card-left">
-        <BNLogo width="150" height="100"></BNLogo>
-
-        <div id="card-title">
-          <h3>
-            {{ PERSON_NAME }}
-          </h3>
-
-          <h5>
-            {{ PERSON_SUBTITLE }}
-          </h5>
-        </div>
       </div>
-      <div id="card-right">
-        <div id="card-contact">
-          <ContactLinks :showLinkedin="false" :showCard="false" :showGitHub="false">
-          </ContactLinks>
-        </div>
+      <div id="cardSafe">
+        <div id="card-left">
+          <BNLogo width="150" height="100"></BNLogo>
 
-        <div class="qr-wrapper">
-          <QRCode></QRCode>
+          <div id="card-title">
+            <h3>
+              {{ PERSON_NAME }}
+            </h3>
+
+            <h5>
+              {{ PERSON_SUBTITLE }}
+            </h5>
+          </div>
+        </div>
+        <div id="card-right">
+          <div id="card-contact">
+            <ContactLinks :showLinkedin="false" :showCard="false" :showGitHub="false">
+            </ContactLinks>
+          </div>
+
+          <div class="qr-wrapper">
+            <QRCode></QRCode>
+          </div>
         </div>
 
       </div>
     </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -57,26 +64,62 @@ export default {
 
 
 :root{
---card-width: 3.5in;
---card-height: 2in;
---left-width: calc(var(--card-width) *.55);
---right-width: calc(var(--card-width) *.45);
+--safe-card-width: 3.75in;
+--safe-card-height: 2.25in;
+--card-width: 3.25in;
+--card-height: 1.75in;
+--card-dh: calc(var(--safe-card-height) - var(--card-height));
+--card-dw: calc(var(--safe-card-width) - var(--card-width));
+
+--left-pct: .45;
+--right-pct: calc(1 - var(--left-pct));
+
+--left-width: calc(var(--card-width) * var(--left-pct));
+--right-width: calc(var(--card-width) * var(--right-pct));
+
+--left-safe-width: calc(var(--left-width) + var(--card-dw)/2 + 1px);
 
 --gutter: .2in;
---card-border: 1px solid green;
+--card-border: 1px dashed black;
 
+}
+
+.cardWrapper {
+  margin: 4vh auto 10vh auto;
+  border: var(--card-border);
+  width: fit-content;
+  height: fit-content;
+}
+
+#safeLeft {
+  width: var(--left-safe-width);
+  height: var(--safe-card-height);
+  background-color: var(--color-heading-bg);
+  z-index: 0
 }
 
 
 #bcard2 {
-  margin: 4vh auto 10vh auto;
+  z-index: 2;
+  width: var(--safe-card-width);
+  height: var(--safe-card-height);
 
+
+  font-family: "Open Sans", sans-serif;
+
+}
+
+
+#cardSafe {
   width: var(--card-width);
   height: var(--card-height);
-
   border: var(--card-border);
   display: grid;
+  margin: calc(var(--card-dh)/2) auto auto auto;
 
+  position: absolute;
+  top: 0;
+  left: calc(var(--card-dw)/2);
 }
 
 
@@ -85,19 +128,21 @@ export default {
   grid-column: 1;
   width: var(--left-width);
   background-color: var(--color-heading-bg);
+  height: fit-content;
 }
 
 
 #bcard2 .bn-logo {
   text-align: center;
   width: var(--left-width);
-  height: 1.0in;
+  /*height: 1.0in;*/
+  /*padding-top: .08in;*/
 }
 
 #bcard2 #logoImg {
-  width: 1.5in;
-  height: 0.7in;
-  margin: .2in 0 .2in 0;
+  width: 1.2in;
+  /*height: 0.6in;*/
+  margin: .15in 0 .1in 0;
 }
 
 
@@ -119,7 +164,8 @@ export default {
 }
 
 #bcard2 #card-title{
-  padding: var(--gutter) var(--gutter) 0 calc(var(--gutter)*1.0);
+  /*padding: calc(var(--gutter)*.5) var(--gutter) 0 calc(var(--gutter)*1.0);*/
+  padding: .2in 0 0 0;
   text-align: center;
 }
 
@@ -130,12 +176,14 @@ export default {
 
 #bcard2 #card-title h5 {
   font-size: .1in;
-  color: var(--color-subtitle)
+  color: var(--color-subtitle);
+  margin: .1in auto auto auto;
 }
 
 #bcard2 #card-contact{
-  padding: var(--gutter) 0 0 calc(var(--gutter)*1.5);
+  padding: calc(var(--gutter)*.7) calc(var(--gutter)*0) 0 calc(var(--gutter)*1.5);
   margin: 0 0 0 0 ;
+  line-height: 1.0;
 }
 
 
@@ -174,6 +222,12 @@ export default {
 
 #bcard2 .contact .text{
   font-size: .1in;
+  font-weight: bold;
+}
+
+
+.printMode #cardSafe{
+  border: none
 }
 
 
@@ -181,5 +235,12 @@ export default {
   header, footer {
     display: none !important;
   }
+
+  #cardSafe {
+    border: none
+  }
 }
+
+
+
 </style>
