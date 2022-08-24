@@ -241,6 +241,10 @@ main {
     font-size: 1.6rem;
   }
 
+  header .greetings {
+    min-width: 514px;
+  }
+
   nav {
     text-align: left;
     margin-left: -1rem;
