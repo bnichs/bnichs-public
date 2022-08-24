@@ -431,6 +431,7 @@ export default defineComponent({
 
 .resumeTitle {
   width: 35%;
+  padding-top: 1.1em !important;
 }
 
 .resumeTitle h1{
