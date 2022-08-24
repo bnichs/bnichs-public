@@ -68,7 +68,7 @@ export default {
 
 #logoImg {
   width: 8em;
-  height: 3.5em;
+  height: 3.0em;
 }
 
 .flip_H{
