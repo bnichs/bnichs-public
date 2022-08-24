@@ -7,6 +7,13 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 import './assets/main.css'
 
+import {
+    disable as disableDarkMode,
+} from 'darkreader';
+
+disableDarkMode()
+
+
 
 const app = createApp(App)
 

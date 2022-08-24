@@ -12,6 +12,7 @@
   "dependencies": {
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
+    "darkreader": "^4.9.57",
     "datatables.net-bs5": "^1.12.1",
     "datatables.net-vue3": "^1.0.0",
     "html2canvas": "^1.4.1",
