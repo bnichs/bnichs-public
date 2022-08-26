@@ -1,75 +1,100 @@
 [
-    {
-      "name": "python",
-      "years": "11",
-      "years_prof": "8",
-      "desc": "Favorite and most proficient language. Used for scripting, building systems, and everything in between "
-    },
-    {
-      "name": "bash",
-      "years": "9",
-      "years_prof": "8",
-      "desc": "Love/Hate relationship but absolutely unavoidable."
-    },
-    {
-      "name": "java",
-      "years": "5",
-      "years_prof": "1",
-      "desc": "First language learned but quickly lost out to python"
-    },
+  {
+    "name": "python",
+    "years": "11",
+    "years_prof": "8",
+    "desc": "Favorite and most proficient language. Used for scripting, building systems, and everything in between."
+  },
+  {
+    "name": "bash",
+    "years": "9",
+    "years_prof": "8",
+    "desc": "Goto glue language despite its quirks (arrays, syntax, etc)."
+  },
+  {
+    "name": "Linux/UNIX",
+    "years": "12",
+    "years_prof": "8",
+    "desc": "Both my daily driver (kubuntu) and used in all professional contexts (RHEL)."
+  },
+  {
+    "name": "git",
+    "years": "12",
+    "years_prof": "10",
+    "desc": "Favorite tool and I'm usually the one in the office who people ask to fix their broken tree."
+  },
+  {
+    "name": "docker",
+    "years": "5",
+    "years_prof": "3",
+    "desc": "Used both in development context and for deployment using compose and proprietary CI/CD."
+  },
+  {
+    "name": "terraform",
+    "years": "3",
+    "years_prof": "3",
+    "desc": "Used to automate infrastructure and deployment for multiple different fleets and services."
+  },
+  {
+    "name": "AWS",
+    "years": "4",
+    "years_prof": "4",
+    "desc": "Intimate knowledge of how this cloud works on the backend and have experience with all the major services."
+  },
+  {
+    "name": "scala",
+    "years": "2",
+    "years_prof": "1",
+    "desc": "My goto typed language. Used to build an infrastructure metadata service among other things."
+  },
 
-    {
-      "name": "javascript",
-      "years": "6",
-      "years_prof": "2",
-      "desc": "Love/hate relationship but hard to avoid"
-    },
-    {
-      "name": "VueJS",
-      "years": "1",
-      "years_prof": "1",
-      "desc": "Everyone needs a framework and this one seemed like the least bad"
-    },
-    {
-      "name": "scala",
-      "years": "2",
-      "years_prof": "1",
-      "desc": "My goto typed language. Used to build an infrastructure metadata service among other things."
-    },
-    {
-      "name": "git",
-      "years": "12",
-      "years_prof": "10",
-      "desc": "Favorite tool and I'm usually the one in the office who people ask to fix their broken tree."
-    },
-    {
-      "name": "terraform",
-      "years": "3",
-      "years_prof": "3",
-      "desc": "Used to automate infrastructure and deployment for multiple different fleets and services"
-    },
-    {
-      "name": "Load Balancing",
-      "years": "3",
-      "years_prof": "3",
-      "desc": "Wrote services and managed both proprietary LBs and Netscalers."
-    },
-    {
-      "name": "IPV6",
-      "years": "1",
-      "years_prof": "1",
-      "desc": "Wrote the IPv6 addressing scheme for AWS - S3"
-    },
-    {
-      "name": "Linux/UNIX",
-      "years": "12",
-      "years_prof": "8",
-      "desc": "Both my daily driver (kubuntu) and used in all professional contexts (RHEL)."
-    },
-    {
-      "name": "PHP",
-      "years": "2",
-      "years_prof": "2",
-      "desc": "Used to build websites before I knew any better"
-    }
+  {
+    "name": "django",
+    "years": "3",
+    "years_prof": "0",
+    "desc": "Goto python framework and used for both website hosting and REST services."
+  },
+  {
+    "name": "javascript",
+    "years": "6",
+    "years_prof": "2",
+    "desc": "Love/hate relationship but hard to avoid so I've made an effort to get it on my toolbelt."
+  },
+  {
+    "name": "VueJS",
+    "years": "1",
+    "years_prof": "1",
+    "desc": "Everyone needs a framework and this one seemed like the best balance of features, speed, and sanity."
+  },
+  {
+    "name": "OCI",
+    "years": "3",
+    "years_prof": "3",
+    "desc": "Intimate knowledge of how the cloud works on the backend and have experience with all the major services."
+  },
+  {
+    "name": "java",
+    "years": "5",
+    "years_prof": "1",
+    "desc": "First language learned but quickly lost out to python"
+  },
+  {
+    "name": "Load Balancing",
+    "years": "3",
+    "years_prof": "3",
+    "desc": "Wrote services for and managed both proprietary LBs and Netscalers. Also worked heavily in network topology and architecture."
+  },
+  {
+    "name": "IPV6",
+    "years": "2",
+    "years_prof": "2",
+    "desc": "Wrote the IPv6 addressing scheme for AWS - S3."
+  },
+  {
+    "name": "PHP",
+    "years": "2",
+    "years_prof": "2",
+    "desc": "Used to build websites before I moved on to Django/Flask.",
+    "show": false
+  }
 ]
