@@ -3,7 +3,7 @@
     "name": "python",
     "years": "11",
     "years_prof": "8",
-    "desc": "Favorite and most proficient language. Used for scripting, building systems, and everything in between."
+    "desc": "Favorite and most proficient language. Used for scripting, building systems, and everything else."
   },
   {
     "name": "bash",
@@ -39,7 +39,7 @@
     "name": "AWS",
     "years": "4",
     "years_prof": "4",
-    "desc": "Intimate knowledge of how this cloud works on the backend and have experience with all the major services."
+    "desc": "Intimate knowledge of how this cloud works and have experience with all the major services."
   },
   {
     "name": "scala",
@@ -64,13 +64,13 @@
     "name": "VueJS",
     "years": "1",
     "years_prof": "1",
-    "desc": "Everyone needs a framework and this one seemed like the best balance of features, speed, and sanity."
+    "desc": "Goto framework that seemed like the best balance of features, speed, and sanity."
   },
   {
     "name": "OCI",
     "years": "3",
     "years_prof": "3",
-    "desc": "Intimate knowledge of how the cloud works on the backend and have experience with all the major services."
+    "desc": "Intimate knowledge of how the cloud works and have experience with all the major services."
   },
   {
     "name": "java",
@@ -79,10 +79,10 @@
     "desc": "First language learned but quickly lost out to python"
   },
   {
-    "name": "Load Balancing",
+    "name": "Load Balancer",
     "years": "3",
     "years_prof": "3",
-    "desc": "Wrote services for and managed both proprietary LBs and Netscalers. Also worked heavily in network topology and architecture."
+    "desc": "Wrote services for and managed both proprietary LBs and Netscalers. Worked heavily in network topology and architecture."
   },
   {
     "name": "IPV6",

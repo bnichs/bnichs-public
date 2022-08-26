@@ -30,10 +30,10 @@ import MainBox from '../components/MainBox.vue'
           <li>Oncall responses for repeat problems</li>
         </ul>
         <p>
-          I specialize in taking manually processes and human-based systems and turning them into well oiled, configuration driven machines.
+          I specialize in taking manual processes and human-based systems and turning them into well oiled, configuration driven machines.
         </p>
         <p>
-          No matter the task, it can be automated. Break the cycle of manual work and free your employees to do something they enjoy.
+          No matter the task, it can be automated. Break the cycle of manual work and free your employees to do more important work.
         </p>
       </WelcomeItem>
 
@@ -44,9 +44,12 @@ import MainBox from '../components/MainBox.vue'
         <template #heading>
           Tooling
         </template>
-        Whether it be a single tool meant to simplify your sales workflow or a full fledged service to encompass an entire work day, tooling is needed everywhere.
-
-        No matter the task, it can be automated.
+        <p>
+          Whether it be a single tool meant to simplify your sales workflow or a full fledged service to encompass an entire work day, tooling is needed everywhere. Not only does it simplify the work being done, but tooling provides a full-view into actions being made and allows for version-control to keep things in check.
+        </p>
+        <p>
+          In previous jobs the rule of thumb has been if any task have three or more steps and needs to be done three or more times, there should be a tool to do it. Replace complicated runbooks with dedicated and precise tooling.
+        </p>
       </WelcomeItem>
 
       <WelcomeItem>
@@ -56,7 +59,18 @@ import MainBox from '../components/MainBox.vue'
         <template #heading>
           Service Design / Architecture
         </template>
-        No house is built without a blueprint (At least none that is still standing). Start from the ground up with a custom tailored service design to fit your business needs.
+        <p>
+        No house is built without a blueprint (at least none that is still standing). Start from the ground up with a custom tailored service design to fit your business needs.
+        </p>
+        <p>
+         Services include:
+        </p>
+        <ul>
+          <li>Network design</li>
+          <li>Deployment architecture</li>
+          <li>Service design</li>
+          <li>Cost minimization</li>
+        </ul>
 
       </WelcomeItem>
 
@@ -80,13 +94,14 @@ import MainBox from '../components/MainBox.vue'
         <template #heading>
           Training
         </template>
-
-        No organization can survive without sharing knowledge. All of the services and skill provided here are easily transferable to teams via training.
+        <p>
+        No organization can survive without sharing knowledge. All of the services and skill provided here are easily transferable to teams via training and documentation.
+        </p>
       </WelcomeItem>
 
 
       <p class="closer">
-        If you're interested in any of these services or seeing what can be done to improve your business, <RouterLink to="/contact">reach out for a consultation </RouterLink>
+        If you're interested in any of these services or seeing what can be done to improve your business, <RouterLink to="/contact">reach out for a consultation. </RouterLink>
       </p>
     </template>
   </MainBox>

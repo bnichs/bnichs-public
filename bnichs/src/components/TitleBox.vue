@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {PERSON_SUBTITLE, PERSON_NAME} from "@/config"
+import {PERSON_OBJECTIVE, PERSON_NAME} from "@/config"
 import BNLogo from './BNLogo.vue'
 // defineProps<{
 //   // msg: string
@@ -21,7 +21,7 @@ import BNLogo from './BNLogo.vue'
           {{ PERSON_NAME }}
         </span>
         <span class="row the-subtitle">
-          {{ PERSON_SUBTITLE }}
+          {{ PERSON_OBJECTIVE }}
         </span>
 
 <!--      </div>-->

@@ -100,16 +100,16 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
             </template>
             <template #projects>
               <li>
-                Redesigned the deployment process for the org's log management system, transitioned the team from manual deployments all done by hand for hundreds of hosts, to an automated system using a complete CI/CD pipeline
+                Redesigned the deployment process for the org's log management system, transitioned the team from manual deployments all done by hand for hundreds of hosts, to an automated system using a complete CI/CD pipeline.
               </li>
               <li>
                 Built automation for migrating between logging systems including automated deployments, data transfer/ingestion, and integrating compliance requirements.
               </li>
               <li>
-
+                Wrote a debugging tool for clients to provide better information during incidents.
               </li>
               <li>
-                Built tooling and testing methodologies for enabling and monitoring Selinux on the fleet
+                Built tooling and testing methodologies for enabling and monitoring Selinux on the fleet.
               </li>
             </template>
           </TeamBox>
@@ -123,13 +123,13 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
             </template>
             <template #projects>
               <li>
-                Built an ETL system for managing security data used for remediation
+                Built an ETL system for managing security data used for remediation. Ingested data from various security tools into our vulnerability database.
               </li>
               <li>
-                Built various tools for managing the fleet handling security data
+                Built various tools for managing the fleet handling security data including deployment and debugging.
               </li>
               <li>
-                Performed various operational duties to help harden the fleet and ensure security posture
+                Performed operational duties to help harden the fleet and ensure security posture.
               </li>
             </template>
           </TeamBox>
@@ -175,22 +175,22 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
             </template>
             <template #projects>
               <li>
-                Built a monitoring system used to provide operational data used to help optimize the fleet
+                Built a monitoring system used to provide operational data used to help optimize the fleet.
               </li>
               <li>
-                Maintained the S3 Border toolchain including 30+ packages and ensured the tools we well tested and available for operational needs
+                Maintained the S3 Border toolchain including 30+ packages and ensured the tools we well tested and available for operational needs.
               </li>
               <li>
-                Designed the IP allocation scheme for IPV6 for S3 and built the toolchain for its rollout
+                Designed the IP allocation scheme for IPV6 for S3 and built the toolchain for its rollout.
               </li>
               <li>
-                Designed and built the new DNS control plane for managing to vast scale of the border fleet
+                Designed and built the new DNS control plane for managing to vast scale of the border fleet.
               </li>
               <li>
-                Team lead and scrum master, assisted in onboarding and training engineers
+                Team lead and scrum master, onboarding and training engineers
               </li>
               <li>
-                Assisted in hiring and building out the team
+                Assisted in interviewing, hiring, and building out the team
               </li>
             </template>
           </TeamBox>
@@ -209,16 +209,16 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
             </template>
             <template #projects>
               <li>
-                Designed and developed automation for provisioning new hardware
+                Designed and developed automation for provisioning new hardware.
               </li>
               <li>
-                Designed and developed automation for managing IP addresses and allocating subnets
+                Designed and developed automation for managing IP addresses and allocating subnets.
               </li>
               <li>
-                Assisted in the launch of VPC Endpoints for S3 including building the toolchain as well as various operational services
+                Worked on the launch of VPC Endpoints for S3 including building the toolchain as well as various operational services.
               </li>
               <li>
-                Co-Developed a metadata service for managing the frontend fleet and enabling a complete world view of the fleet and its assets
+                Co-Developed a metadata service for managing the frontend fleet and enabling a complete world view of the fleet and its assets.
               </li>
             </template>
           </TeamBox>
@@ -345,6 +345,7 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
           Andover, MA
         </template>
         <template #job-description>
+          Heavy math and science focus. First learned programming on a Ti-84 and then decided to teach myself java after liking it so much.
         </template>
       </JobBox>
 
