@@ -228,7 +228,6 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
       <a id="showMoreJobsButton" class="" @click="toggleMore">
         Show older jobs....
       </a>
-<!--      <div v-html="goToTop"/>-->
 
       <div style="clear:both;"></div>
 
@@ -303,15 +302,23 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
       </div>
 
       <hr>
-      <h3 class="resumeHeading" id="ResumeSkills">Skills</h3>
-      <GoToTop></GoToTop>
+      <div class="resumeHeading" id="ResumeSkills">
+        <h3>Skills</h3>
+        <GoToTop></GoToTop>
+      </div>
+<!--      <h3 class="resumeHeading" id="ResumeSkills">Skills</h3>-->
 
       <div style="clear:both;"></div>
       <SkillsBox></SkillsBox>
 
       <hr>
-      <h3 class="resumeHeading" id="ResumeEducation">Education</h3>
-      <GoToTop></GoToTop>
+<!--      <h3 class="resumeHeading" id="ResumeEducation">Education</h3>-->
+<!--      <GoToTop></GoToTop>-->
+
+      <div class="resumeHeading" id="ResumeEducation">
+        <h3>Education</h3>
+        <GoToTop></GoToTop>
+      </div>
       <div style="clear:both;"></div>
       <JobBox>
         <template #company>
@@ -362,7 +369,7 @@ import {setScheme} from "@/dark";
 export default defineComponent({
   data() {
     return {
-      goToTop: '<div class="goToTop"><p>Go to\n      <a href="/resume/#ResumeHeader">top</a>.\n    </p></div>',
+      // goToTop: '<div class="goToTop"><p>Go to\n      <a href="/resume/#ResumeHeader">top</a>.\n    </p></div>',
       showMoreJobs: false,
       // displayExtraJobs: "none",
     };
@@ -412,13 +419,13 @@ export default defineComponent({
 }
 
 .goToTop {
-  margin: 10px 0 0 30px;
+  /*margin: 10px 0 0 30px;*/
   float: left;
 }
 
 
 .goToTop, .resumeHeading h3 {
-  margin-top: 2em;
+  /*margin-top: 1em;*/
 }
 
 
@@ -433,9 +440,17 @@ export default defineComponent({
 }
 
 .resumeHeading{
-  width: fit-content;
-  float: left;
+  /*width: fit-content;*/
+  /*float: left;*/
   margin: 3vh 0 0 0;
+}
+
+.resumeHeading .goToTop{
+  float: right
+}
+
+.resumeHeading h3{
+  float: left;
 }
 
 #ResumePrintHeader{
@@ -450,7 +465,7 @@ export default defineComponent({
 
 .resumeTitle {
   width: 35%;
-  padding-top: 1.1em !important;
+  /*padding-top: 1.1em !important;*/
 }
 
 .resumeTitle h1{
