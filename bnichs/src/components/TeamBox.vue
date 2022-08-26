@@ -78,7 +78,7 @@
 @media (max-width: 1024px) {
 
   .team-box{
-    padding: 1em 3vw 1vh 3vw;
+    padding: 1em 1vw 1vh 1vw;
     /*margin: 4vh 1vw 0 1vw;*/
   }
 

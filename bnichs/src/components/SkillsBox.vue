@@ -139,4 +139,23 @@ export default defineComponent({
   text-align: center;
 }
 
+@media print {
+  .dataTable-wrapper {
+    overflow-x: auto;
+    white-space: break-spaces;
+    width: 100%;
+  }
+
+  .table td:nth-child(5){
+    font-size: .65em;
+  }
+
+  .table td:nth-child(4){
+    min-width: 7em;
+  }
+
+  .table td:nth-child(2){
+    min-width: 8em;
+  }
+}
 </style>

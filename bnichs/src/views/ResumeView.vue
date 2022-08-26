@@ -442,7 +442,7 @@ export default defineComponent({
 .resumeHeading{
   /*width: fit-content;*/
   /*float: left;*/
-  margin: 3vh 0 0 0;
+  margin: 2vh 0 0 0;
 }
 
 .resumeHeading .goToTop{
@@ -509,6 +509,10 @@ export default defineComponent({
 .resume-nav li {
   display: inline;
   margin: 10px;
+}
+
+.project-list li {
+  page-break-inside: avoid;
 }
 
 
@@ -594,7 +598,7 @@ export default defineComponent({
   }
 
   .job{
-    margin-top: .1in !important;
+    margin-top: .05in !important;
     /*page-break-after: avoid;*/
   }
 
@@ -624,7 +628,7 @@ export default defineComponent({
 
   }
   #ResumeSkills{
-    margin: .3in 0 0 0 ;
+    /*margin: .3in 0 0 0 ;*/
   }
 
   .team-box {

@@ -349,7 +349,7 @@ export default defineComponent({
   }
 
 
-  .pageTitle, .pageTitleLine, .saveButton {
+  .pageTitle, .pageTitleLine, .saveButton, .gridButton {
     display: none;
   }
   header, footer {
