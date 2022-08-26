@@ -51,7 +51,7 @@ export default {
       // const el = document.body //getElementById("bcard2")
 
       html2canvas(el, {
-        allowTaint: true,
+        // allowTaint: true,
         useCORS: true,
         logging: true,
       }).then(function(canvas) {
