@@ -5,6 +5,7 @@
   <table id="skillTable" class="display table table-bordered">
           <thead>
           <tr>
+            <th>Preference</th>
             <th>Name</th>
             <th title="Years used">Years</th>
             <th data-type="Number" title="Years used professionally">Years Prof.</th>
@@ -31,25 +32,36 @@ export default defineComponent({
         paging: false,
         columns: [
           // Sort the second column in ascending order
-          { select: [1,2] , type: Number },
-          { select: [0, 1, 2], sortable: true },
+          { select: [0, 2, 3] , type: Number },
+          { select: [0, 1, 2, 3], sortable: true },
 
 
           // Disable sorting on the fourth and fifth columns
-          { select: [3], sortable: false },
+          { select: [4], sortable: false },
 
         ]
       });
 
       fetch("/skills.json").then((resp) =>{
-        resp.text().then((data) => {
+        resp.text().then((jStr) => {
+          let data = JSON.parse(jStr)
+
           console.log(data)
+
+          data.forEach((item, ind, arr) => {
+            item["preference"] = ind.toString()
+          })
+
+          console.log(data)
+
+          let j = JSON.stringify(data)
+          console.log(j)
+
           dataTable.import({
             type: "json",
-            data: data
+            data: JSON.stringify(data)
           })
         })
-        console.log("Imported")
       })
     }
 
