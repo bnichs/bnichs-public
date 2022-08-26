@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import JobBox from '@/components/JobBox.vue'
+import GoToTop from '@/components/GoToTop.vue'
 import TeamBox from '@/components/TeamBox.vue'
 import SkillsBox from '@/components/SkillsBox.vue'
 import MainBox from '@/components/MainBox.vue'
@@ -297,13 +298,14 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
 
       <hr>
       <h3 class="resumeHeading" id="ResumeSkills">Skills</h3>
-      <div v-html="goToTop"/>
+      <GoToTop></GoToTop>
+
       <div style="clear:both;"></div>
       <SkillsBox></SkillsBox>
 
       <hr>
       <h3 class="resumeHeading" id="ResumeEducation">Education</h3>
-      <div v-html="goToTop"/>
+      <GoToTop></GoToTop>
       <div style="clear:both;"></div>
       <JobBox>
         <template #company>
@@ -340,7 +342,6 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
         </template>
       </JobBox>
 
-<!--      <div v-html="goToTop"/>-->
       <div style="clear:both;"></div>
     </template>
   </MainBox>
@@ -409,7 +410,7 @@ export default defineComponent({
 }
 
 
-.goToTop, #ResumeSkills h3 {
+.goToTop, .resumeHeading h3 {
   margin-top: 2em;
 }
 
