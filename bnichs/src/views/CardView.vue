@@ -11,7 +11,7 @@ import MainBox from '@/components/MainBox.vue'
     </template>
     <template #content>
 
-      <button @click="saveCard">
+      <button class="saveButton" @click="saveCard">
         Save card
       </button>
 
