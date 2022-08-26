@@ -58,7 +58,7 @@ export default {
         let width = canvas.width
         let height = canvas.height
         console.log(width, height)
-        let scale = 8
+        let scale = 4
 
         let sWidth = width * scale
         let sHeight = height * scale
