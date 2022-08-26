@@ -90,6 +90,30 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
         </template>
 
         <template #teams>
+
+          <TeamBox>
+            <template #team-name>
+              Security Infrastructure (SIEM)
+            </template>
+            <template #dates>
+              Nov 2019 - Jan 2022<br>2 yrs 3 mos
+            </template>
+            <template #projects>
+              <li>
+                Redesigned the deployment process for the org's log management system, transitioned the team from manual deployments all done by hand for hundreds of hosts, to an automated system using a complete CI/CD pipeline
+              </li>
+              <li>
+                Built automation for migrating between logging systems including automated deployments, data transfer/ingestion, and integrating compliance requirements.
+              </li>
+              <li>
+
+              </li>
+              <li>
+                Built tooling and testing methodologies for enabling and monitoring Selinux on the fleet
+              </li>
+            </template>
+          </TeamBox>
+
           <TeamBox>
             <template #team-name>
               Threat and Vulnerability Management
@@ -109,25 +133,7 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
               </li>
             </template>
           </TeamBox>
-          <TeamBox>
-            <template #team-name>
-              Security Infrastructure (SIEM)
-            </template>
-            <template #dates>
-              Nov 2019 - Jan 2022<br>2 yrs 3 mos
-            </template>
-            <template #projects>
-              <li>
-                Redesigned the deployment process for the org's log management system, transitioned the team from manual deployments all done by hand for hundreds of hosts, to an automated system using a complete CI/CD pipeline
-              </li>
-              <li>
-                Designed and built an automated backup system for log data
-              </li>
-              <li>
-                Built tooling and testing methodologies for enabling and monitoring Selinux on the fleet
-              </li>
-            </template>
-          </TeamBox>
+
         </template>
       </JobBox>
 
