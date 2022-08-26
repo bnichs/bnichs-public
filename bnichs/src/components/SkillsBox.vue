@@ -22,6 +22,19 @@
 import {defineComponent} from "vue";
 import {DataTable} from "simple-datatables"
 
+
+interface Skill {
+  name: string,
+  years: string,
+  years_prof: string,
+  desc: string,
+  show?: Partial<Boolean>
+}
+
+interface RatedSkill extends Skill{
+  preference: string,
+}
+
 export default defineComponent({
   mounted() {
     const myTable = document.querySelector("#skillTable");
@@ -36,31 +49,41 @@ export default defineComponent({
           { select: [0, 1, 2, 3], sortable: true },
 
 
-          // Disable sorting on the fourth and fifth columns
           { select: [4], sortable: false },
 
         ]
       });
 
+
       fetch("/skills.json").then((resp) =>{
         resp.text().then((jStr) => {
           let data = JSON.parse(jStr)
 
-          console.log(data)
+          let newData: Skill[] = []
+          data.forEach((item: Skill, ind: Number, arr: Skill[]) => {
+            let newItem: RatedSkill = {
+              preference: ind.toString(),
+              ...item
+            }
 
-          data.forEach((item, ind, arr) => {
-            item["preference"] = ind.toString()
+            if (newItem.hasOwnProperty("show")){
+              console.log(newItem)
+              if (newItem.show === true){
+                delete newItem.show
+                newData.push(newItem)
+              }
+            } else {
+              newData.push(newItem)
+            }
           })
 
-          console.log(data)
-
-          let j = JSON.stringify(data)
-          console.log(j)
+          let j = JSON.stringify(newData)
 
           dataTable.import({
             type: "json",
-            data: JSON.stringify(data)
+            data: j
           })
+
         })
       })
     }
@@ -85,6 +108,10 @@ export default defineComponent({
   width: 100% !important;
 }
 
+.table tr {
+  padding: 0px;
+}
+
 .table th{
   font-weight: bold;
   cursor: pointer;
@@ -97,12 +124,19 @@ export default defineComponent({
 }
 
 .table td{
-  padding: 5px;
+  padding: 2px;
 }
 
 .table th:nth-child(3){
   /* third column */
   width: 5.5rem !important;
+}
+
+
+.table td:nth-child(1),
+.table td:nth-child(3),
+.table td:nth-child(4){
+  text-align: center;
 }
 
 </style>
