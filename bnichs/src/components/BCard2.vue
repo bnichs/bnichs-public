@@ -241,7 +241,7 @@ export default defineComponent({
 
 #bcard2 #card-title{
   /*padding: calc(var(--gutter)*.5) var(--gutter) 0 calc(var(--gutter)*1.0);*/
-  padding: .17in 0 0 0;
+  padding: 1em 0 0 0;
   text-align: center;
 }
 
@@ -262,7 +262,7 @@ export default defineComponent({
 #bcard2 #card-title .person-objective {
   font-size: .12in;
   color: var(--color-subtitle);
-  margin: .21in auto auto auto;
+  margin: 1.8em auto auto auto;
 }
 
 
