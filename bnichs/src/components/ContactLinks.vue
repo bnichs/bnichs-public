@@ -56,7 +56,7 @@ import WelcomeItem from '../components/WelcomeItem.vue'
   </div>
 
   <div v-if="showWebsite" class="contact">
-    <a :href="websiteAddress" target="_blank">
+    <a :href="websiteAddressFull" target="_blank">
       <WelcomeItem>
         <template #icon>
           <i class="bi bi-globe"></i>
@@ -99,8 +99,13 @@ import {PERSON_WEBSITE} from "@/config";
 export default {
   data() {
     return {
-      websiteAddress: PERSON_WEBSITE,
+      websiteAddressFull: PERSON_WEBSITE,
       size: 30,
+    }
+  },
+  computed: {
+    websiteAddress(){
+      return PERSON_WEBSITE.replace("https://", "")
     }
   },
   props: {

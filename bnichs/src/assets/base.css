@@ -19,9 +19,11 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --vt-c-text-dark-2: rgba(255, 255, 255, 0.85);
 
 
   --vt-c-light-green-blue: rgb(62, 156, 148);
+  --vt-c-light-green-blue: rgb(84, 212, 201);
 
   --vt-c-purp: hsl(278, 45%, 43%);
   --vt-c-light-blue: #2f8ab9;
@@ -30,6 +32,7 @@
 
 
   --vt-c-dark-green-blue: #132b3c;
+  --vt-c-dark-green-blue: #1f445f;
 
   --vt-c-logo-dark-blue: #1a0c66ff;
 }

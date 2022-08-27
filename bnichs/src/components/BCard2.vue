@@ -19,8 +19,8 @@ import {PERSON_NAME, PERSON_SUBTITLE, PERSON_OBJECTIVE} from "@/config";
     <div id="bcard2">
       <div id="safeLeft">
       </div>
-      <div id="safeLeft2">
-      </div>
+<!--      <div id="safeLeft2">-->
+<!--      </div>-->
       <div v-if="grid" id="thirds">
         <div v-for="i in 9">
 
@@ -46,7 +46,7 @@ import {PERSON_NAME, PERSON_SUBTITLE, PERSON_OBJECTIVE} from "@/config";
                 Consulting
               </li>
               <li>
-                ○
+                <strong>○</strong>
               </li>
               <li>
                 Contracting
@@ -134,14 +134,14 @@ export default defineComponent({
 
 #safeLeft {
   width: calc(var(--left-safe-width) - 1px);
-  height: calc(var(--card-dh)/2 + var(--card-height) - var(--corner-radius));
+  height: calc(var(--card-dh) + var(--card-height));
   background-color: var(--color-heading-bg);
   z-index: 0;
   border: none;
 }
 
 #safeLeft2 {
-  width: calc(var(--left-safe-width) - var(--corner-radius));
+  width: calc(var(--left-safe-width));
   height: calc(var(--corner-radius) + var(--card-dh)/2);
   background-color: var(--color-heading-bg);
   z-index: 0;
@@ -216,8 +216,8 @@ export default defineComponent({
 }
 
 #bcard2 #logoImg {
-  width: .9in;
-  height: 0.35in;
+  width: 1.1in;
+  height: auto;
   margin: .15in 0 0in 0;
 }
 
@@ -253,21 +253,21 @@ export default defineComponent({
 }
 
 #bcard2 #card-title .person-subtitle {
-  font-size: .07in;
+  font-size: .08in;
   color: var(--color-subtitle);
   color: var(--vt-c-text-dark-2);
 }
 
 
 #bcard2 #card-title .person-objective {
-  font-size: .1in;
+  font-size: .12in;
   color: var(--color-subtitle);
-  margin: .25in auto auto auto;
+  margin: .21in auto auto auto;
 }
 
 
 #bcard2 .person-goals {
-  font-size: .08in;
+  font-size: .09in;
   /*margin: 0px;*/
   padding: 0px;
   margin: .03in auto 0 auto;
