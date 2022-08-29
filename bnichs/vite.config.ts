@@ -3,6 +3,7 @@ import { fileURLToPath, URL } from 'node:url'
 import {defineConfig, splitVendorChunkPlugin} from 'vite'
 import vue from '@vitejs/plugin-vue'
 import {buildManifest} from "./build/build_blog";
+import vitePrerender from "vite-plugin-prerender";
 
 
 function buildBlog () {
@@ -77,10 +78,38 @@ export function CustomHmr() {
   }
 }
 
+const path = require('path');
+// const PrerenderSpaPlugin = require('prerender-spa-plugin');
+
+// let prerenderSpa = new PrerenderSpaPlugin({
+//   staticDir: path.join(__dirname, 'dist'),
+//   routes: ['/', '/about'],
+//   renderer: new PrerenderSpaPlugin.PuppeteerRenderer({
+//     // We need to inject a value so we're able to
+//     // detect if the page is currently pre-rendered.
+//     inject: {},
+//     // Our view component is rendered after the API
+//     // request has fetched all the necessary data,
+//     // so we create a snapshot of the page after the
+//     // `data-view` attribute exists in the DOM.
+//     renderAfterElementExists: '[data-view]',
+//   }),
+// })
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    vitePrerender({
+      // Required - The path to the vite-outputted app to prerender.
+      staticDir: path.join(__dirname, 'dist'),
+      // Required - Routes to render.
+      routes: [
+          '/', '/about', '/contact', '/resume',
+          '/services', '/contact', '/card'
+      ],
+      indexPath: path.join(__dirname, 'dist', 'index.html'),
+    }),
+      // prerenderSpa,
       vue(),
     buildBlog(),
       convertImages(),
