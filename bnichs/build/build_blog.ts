@@ -70,10 +70,10 @@ function gen_preview(doc: String){
 
     let txt = ""
     for (let i = 0; i < pars.length; i++) {
-        console.log(pars[i].textContent)
+        // console.log(pars[i].textContent)
         txt += pars[i].outerHTML
     }
-    console.log(txt)
+    // console.log(txt)
 
     return txt
 }
@@ -83,14 +83,14 @@ export function buildManifest(){
         let data = fs.readFileSync(fil, {encoding:'utf8', flag:'r'});
         const renderedDocument =  md.render(data)
         let meta = md.meta as PostInfo
-        console.log(meta)
+        // console.log(meta)
 
-        console.log(blogOutDir)
+        // console.log(blogOutDir)
         const f_out_path = path.join(blogOutDir, "posts", meta.ref) + ".html"
         const f_out_dir = path.dirname(f_out_path)
         fs.mkdirSync(f_out_dir, {recursive: true})
 
-        console.log(f_out_path)
+        console.log(`Rendered ${f_out_path}`)
         fs.writeFileSync(f_out_path, renderedDocument, {encoding:'utf8'})
 
 
@@ -113,7 +113,7 @@ export function buildManifest(){
     let manifest = {
         posts: posts
     }
-    console.log(manifest)
+    // console.log(manifest)
     let jstr = JSON.stringify(manifest, null, 4)
     fs.writeFileSync(manifestPath, jstr, {encoding:'utf8'})
     return
