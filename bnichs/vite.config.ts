@@ -104,7 +104,10 @@ export default defineConfig({
       staticDir: path.join(__dirname, 'dist'),
       // Required - Routes to render.
       routes: [
-          '/', '/about', '/contact', '/resume',
+          '/',
+        '/about',
+        '/contact',
+        '/resume',
           '/services', '/contact', '/card'
       ],
       indexPath: path.join(__dirname, 'dist', 'index.html'),
