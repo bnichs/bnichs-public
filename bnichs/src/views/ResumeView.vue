@@ -23,18 +23,18 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
 
     <template #content>
       <div id="ResumePrintHeader" class="row">
-        <div class="resumeTitle col-md-auto">
+        <div class="resumeTitle col-4">
           <h1>
             {{ PERSON_NAME }}
           </h1>
         </div>
 
-        <div class="resumeContact col-md-auto">
+        <div class="resumeContact col-6">
           <ContactLinks :showLinkedin="false" :showCard="false" :showGitHub="false">
           </ContactLinks>
         </div>
 
-        <div class="resumeQR col-md-auto">
+        <div class="resumeQR col-2">
           <QRCode :size="150"></QRCode>
         </div>
 
@@ -410,9 +410,11 @@ export default defineComponent({
 
 <style>
 #resume{
-  font-size: 1.4rem;
+  /*font-size: 1.4em;*/
   /*page-break-inside: avoid;*/
 }
+
+
 
 #resume .main-content {
   margin: 3em auto auto auto;
@@ -468,7 +470,7 @@ export default defineComponent({
 }
 
 .resumeTitle {
-  width: 35%;
+  /*width: 35%;*/
   /*padding-top: 1.1em !important;*/
 }
 
@@ -477,17 +479,17 @@ export default defineComponent({
 }
 
 .resumeContact {
-  width: 55%;
+  /*width: 55%;*/
   font-size: .9em;
 }
 
 .resumeContact .contact {
   display: inline-block;
-  margin: 0 0 0 1rem;
+  margin: 0 0 0 1em;
 }
 
 .resumeContact .details{
-  margin-left: .5rem;
+  margin-left: .5em;
 }
 
 
@@ -500,14 +502,14 @@ export default defineComponent({
 }
 
 .resumeQR {
-  width: 10%;
-  float: right;
+  /*width: 10%;*/
 }
 
 .resumeQR canvas {
   width: 3.5em !important;
   /*min-width: 1in !important;*/
   height: auto !important;
+  float: right;
 }
 
 .resume-nav{
@@ -527,6 +529,18 @@ export default defineComponent({
 
 
 @media (max-width: 1024px){
+  .resumeTitle h1 {
+    font-size: 1.5em;
+  }
+
+  .resumeContact .details h3{
+    font-size: 1.1em;
+  }
+
+  .resumeContact .details .text{
+    font-size: .8em;
+  }
+
   .where-and-when {
     padding: 1vh 0 0 0;
   }

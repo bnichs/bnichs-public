@@ -26,7 +26,7 @@ import MainBox from '../components/MainBox.vue'
 
 
 #contactList {
-  font-size: 1rem;
+  /*font-size: 1rem;*/
 }
 
 #contactList .contact h3{
@@ -58,7 +58,7 @@ import MainBox from '../components/MainBox.vue'
 
 
 #contactList .contact .details{
-  margin: 0 0 1vh 3vw;
+  margin: 0 0 1vh 2em;
 }
 
 </style>
