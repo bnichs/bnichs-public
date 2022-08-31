@@ -238,7 +238,7 @@ main {
     /*display: flex;*/
     /*place-items: flex-start;*/
     /*flex-wrap: wrap;*/
-    font-size: 1.6rem;
+    font-size: 2.0rem;
   }
 
   header .greetings {

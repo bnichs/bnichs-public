@@ -11,8 +11,8 @@ import MainBox from '../components/MainBox.vue'
       Home
     </template>
     <template #content>
-      <AboutBox></AboutBox>
-      <TheWelcome />
+      <AboutBox :include-first-impression="true"></AboutBox>
+<!--      <TheWelcome />-->
     </template>
   </MainBox>
 </template>

@@ -4,6 +4,7 @@ import QRCode from '../components/QRCode.vue'
 import ContactLinks from '../components/ContactLinks.vue'
 
 import {PERSON_NAME, PERSON_SUBTITLE, PERSON_OBJECTIVE} from "@/config";
+
 </script>
 
 <template>
@@ -241,7 +242,7 @@ export default defineComponent({
 
 #bcard2 #card-title{
   /*padding: calc(var(--gutter)*.5) var(--gutter) 0 calc(var(--gutter)*1.0);*/
-  padding: 1em 0 0 0;
+  padding: .65em 0 0 0;
   text-align: center;
 }
 
@@ -262,7 +263,7 @@ export default defineComponent({
 #bcard2 #card-title .person-objective {
   font-size: .12in;
   color: var(--color-subtitle);
-  margin: 1.8em auto auto auto;
+  margin: 1.6em auto auto auto;
 }
 
 
@@ -311,6 +312,7 @@ export default defineComponent({
 
 #bcard2 .contact .details {
   margin: 0 0px .1in 0;
+  line-height: .4em;
 }
 
 

@@ -32,7 +32,7 @@ import WelcomeItem from './WelcomeItem.vue'
           <i class="bi bi-file-earmark-person"></i>
         </template>
         <template #heading>Resume</template>
-        See an official looking resume with past employers and skills
+        See my official resume with past employers and skills
       </WelcomeItem>
     </RouterLink>
 

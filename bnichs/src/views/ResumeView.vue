@@ -15,9 +15,9 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
 <template>
   <MainBox id="resume">
     <template #title>
-      <div id="ResumeHeader">
-        Resume
-      </div>
+      Resume
+<!--      <div id="ResumeHeader">-->
+<!--      </div>-->
 
     </template>
 
@@ -35,7 +35,7 @@ import {PERSON_NAME, PERSON_SUBTITLE} from "@/config";
         </div>
 
         <div class="resumeQR col-md-auto">
-          <QRCode :size="40"></QRCode>
+          <QRCode :size="150"></QRCode>
         </div>
 
 
@@ -410,8 +410,12 @@ export default defineComponent({
 
 <style>
 #resume{
-  font-size: .8rem;
+  font-size: 1.4rem;
   /*page-break-inside: avoid;*/
+}
+
+#resume .main-content {
+  margin: 3em auto auto auto;
 }
 
 #printButton{
@@ -432,7 +436,7 @@ export default defineComponent({
 #ResumeHeader {
   /*float: left;*/
   width: 30%;
-  display: none;
+  /*display: none;*/
 }
 
 .pageTitleLine {
@@ -469,12 +473,12 @@ export default defineComponent({
 }
 
 .resumeTitle h1{
-  font-size: 1.3rem;
+  font-size: 1.7em;
 }
 
 .resumeContact {
   width: 55%;
-  font-size: 9pt;
+  font-size: .9em;
 }
 
 .resumeContact .contact {
@@ -498,6 +502,12 @@ export default defineComponent({
 .resumeQR {
   width: 10%;
   float: right;
+}
+
+.resumeQR canvas {
+  width: 3.5em !important;
+  /*min-width: 1in !important;*/
+  height: auto !important;
 }
 
 .resume-nav{
