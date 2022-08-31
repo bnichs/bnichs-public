@@ -505,7 +505,7 @@ export default defineComponent({
   /*width: 10%;*/
 }
 
-.resumeQR canvas {
+.resumeQR svg {
   width: 3.5em !important;
   /*min-width: 1in !important;*/
   height: auto !important;

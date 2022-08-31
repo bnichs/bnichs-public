@@ -3,7 +3,7 @@ import QrcodeVue from 'qrcode.vue'
 </script>
 
 <template>
-    <qrcode-vue class="qr-box" :value="value" :size="size" :foreground="fgColor" :background="bgColor" level="H" />
+    <qrcode-vue class="qr-box" :value="value" :size="size" :foreground="fgColor" :background="bgColor" level="H" :renderAs='"svg"' />
 </template>
 
 <script lang="ts">
