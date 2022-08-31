@@ -59,42 +59,7 @@ function convertImages () {
 }
 
 
-export function CustomHmr() {
-  return {
-    name: 'custom-hmr',
-    enforce: 'post',
-    // HMR
-    handleHotUpdate({ file, server }) {
-      console.log(file)
-      if (file.endsWith('.md')) {
-        console.log('reloading md file...');
-
-        server.ws.send({
-          type: 'full-reload',
-          path: '*'
-        });
-      }
-    },
-  }
-}
-
 const path = require('path');
-// const PrerenderSpaPlugin = require('prerender-spa-plugin');
-
-// let prerenderSpa = new PrerenderSpaPlugin({
-//   staticDir: path.join(__dirname, 'dist'),
-//   routes: ['/', '/about'],
-//   renderer: new PrerenderSpaPlugin.PuppeteerRenderer({
-//     // We need to inject a value so we're able to
-//     // detect if the page is currently pre-rendered.
-//     inject: {},
-//     // Our view component is rendered after the API
-//     // request has fetched all the necessary data,
-//     // so we create a snapshot of the page after the
-//     // `data-view` attribute exists in the DOM.
-//     renderAfterElementExists: '[data-view]',
-//   }),
-// })
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -104,20 +69,20 @@ export default defineConfig({
       staticDir: path.join(__dirname, 'dist'),
       // Required - Routes to render.
       routes: [
-          '/',
+        '/',
         '/about',
         '/contact',
         '/resume',
-          '/services', '/contact', '/card'
+        '/services',
+        '/contact',
+        '/card'
       ],
       indexPath: path.join(__dirname, 'dist', 'index.html'),
     }),
-      // prerenderSpa,
-      vue(),
+    vue(),
     buildBlog(),
-      convertImages(),
+    convertImages(),
     splitVendorChunkPlugin(),
-      // CustomHmr(),
   ],
   resolve: {
     alias: {
