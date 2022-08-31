@@ -516,7 +516,7 @@ export default defineComponent({
   width: fit-content;
   float: left;
   padding: 5px 0 0 0;
-  font-size: 1em;
+  font-size: .9em;
 }
 
 .resume-nav li {
