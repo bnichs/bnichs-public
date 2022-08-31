@@ -516,6 +516,7 @@ export default defineComponent({
   width: fit-content;
   float: left;
   padding: 5px 0 0 0;
+  font-size: 1em;
 }
 
 .resume-nav li {
@@ -539,6 +540,10 @@ export default defineComponent({
 
   .resumeContact .details .text{
     font-size: .8em;
+  }
+
+  .resumeContact .contact{
+    margin: 0;
   }
 
   .where-and-when {
