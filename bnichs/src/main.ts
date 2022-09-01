@@ -14,6 +14,14 @@ import {
 disableDarkMode()
 
 
+// Spell check
+if (process.env.NODE_ENV === 'development'){
+    document.designMode = "on"
+} else {
+    document.designMode = "off"
+}
+
+
 
 const app = createApp(App)
 
