@@ -4,6 +4,7 @@ export class PostInfo {
     preview: string
     title: string
     path: string
+    fetch_path: string
     ref: string
     tags: Array<string>
 
@@ -12,6 +13,7 @@ export class PostInfo {
         this.preview = payload.preview || ""
         this.permalink = payload.permalink || ""
         this.path = payload.path || ""
+        this.fetch_path = payload.fetch_path || ""
         this.ref = payload.ref || ""
         this.tags = payload.tags || Array<string>()
     }

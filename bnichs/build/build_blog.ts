@@ -95,6 +95,7 @@ export function buildManifest(){
 
 
         meta['path'] = `/${f_out_path}`
+        meta['fetch_path'] = meta.path.replace("/public", "")
         meta['preview'] = gen_preview(renderedDocument)
         return meta
     }).map(md => {
@@ -116,5 +117,6 @@ export function buildManifest(){
     // console.log(manifest)
     let jstr = JSON.stringify(manifest, null, 4)
     fs.writeFileSync(manifestPath, jstr, {encoding:'utf8'})
+    console.log(`Wrote manifest to ${manifestPath}`)
     return
 }

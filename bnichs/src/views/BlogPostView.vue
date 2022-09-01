@@ -41,7 +41,7 @@ export default defineComponent({
       console.log(this.postInfo)
       return this.postInfo
     }).then(pInfo => {
-      fetchPost(pInfo.path).then(pText => {
+      fetchPost(pInfo.fetch_path).then(pText => {
         console.log(pText)
         this.htmlSource = pText
       })
