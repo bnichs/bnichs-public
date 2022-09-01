@@ -1,4 +1,6 @@
 import vitePrerender from "vite-plugin-prerender";
+import {buildManifest} from "./build_blog";
+
 const path = require('path');
 const Renderer = vitePrerender.PuppeteerRenderer
 
@@ -49,4 +51,56 @@ export function prerender(){
 
     })
     return res
+}
+
+export function buildBlog() {
+    return {
+        name: 'build-blog', // this name will show up in warnings and errors
+        buildStart(opts) {
+            buildManifest()
+        },
+    };
+}
+
+// Convert svg to pngs and favicon
+export function convertImages() {
+    return {
+        name: 'convert-images', // this name will show up in warnings and errors
+        async buildStart(opts) {
+            const sharp = require("sharp")
+
+            let input = "public/bn-logo-full.svg"
+
+            const metadata = await sharp(input).metadata();
+
+            sharp(input)
+                .resize({
+                    width: metadata.width,
+                    height: metadata.height,
+                })
+                .png()
+                .toFile("public/bn-logo-full.png")
+                .then(function (info) {
+                    // console.log(info)
+                })
+                .catch(function (err) {
+                    console.log(err)
+                })
+
+            sharp(input)
+                .resize({
+                    width: metadata.width,
+                    height: metadata.height,
+                })
+                .extract({left: 160, top: 0, width: 550, height: metadata.height})
+                .png()
+                .toFile("public/favicon.png")
+                .then(function (info) {
+                    // console.log(info)
+                })
+                .catch(function (err) {
+                    console.log(err)
+                })
+        },
+    };
 }
