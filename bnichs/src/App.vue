@@ -14,7 +14,7 @@ import ToggleButton from './components/ToggleButton.vue'
       <nav class="row justify-content-center">
         <RouterLink to="/resume">Resume</RouterLink>
         <RouterLink to="/services">Services</RouterLink>
-        <RouterLink to="/blog">Blog</RouterLink>
+<!--        <RouterLink to="/blog">Blog</RouterLink>-->
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
       </nav>
