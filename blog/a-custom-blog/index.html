@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.png" color="#FFFFFF" type="image/png">
+    <link rel="shortcut icon" href="/favicon.png" color="#FFFFFF" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Nichols - Blog_post</title>
+
+    <script type="module" crossorigin="" src="/assets/index.97048f92.js"></script>
+    <link rel="stylesheet" href="/assets/index.77e85e0d.css">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FDL41WYVBE"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FDL41WYVBE');
+  </script><link rel="modulepreload" as="script" crossorigin="" href="/assets/BlogPostView.70942342.js"><link rel="stylesheet" href="/assets/BlogPostView.3e1835cf.css"><link rel="modulepreload" as="script" crossorigin="" href="/assets/blog.2a3e4a99.js"></head>
+
+  
+  
+  <body>
+  <div id="app" data-v-app=""><header><div class="wrapper"><div class="greetings row mx-auto" data-v-86bf0e6c=""><div class="col-md-auto logoWrapper" data-v-86bf0e6c=""><a href="/" class="" data-v-86bf0e6c=""><div class="bn-logo logo" data-v-53d356c1="" data-v-86bf0e6c=""><img id="logoImg" src="/bn-logo-full.png" alt="BN Logo" data-v-53d356c1=""></div></a></div><div class="col col-md-auto title-box" data-v-86bf0e6c=""><span class="row the-name" data-v-86bf0e6c="">Ben Nichols</span><span class="row the-subtitle" data-v-86bf0e6c="">System Development &amp; Automation</span></div></div><nav class="row justify-content-center"><a href="/resume" class="">Resume</a><a href="/services" class="">Services</a><a href="/about" class="">About</a><a href="/contact" class="">Contact</a></nav></div></header><main><h1 class="pageTitle">How I built my Blog</h1><div class="main-content"><span class="blogPost"><h1>Intro text</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Volutpat maecenas volutpat blandit aliquam etiam erat. Duis at tellus at urna condimentum mattis. Dignissim enim sit amet venenatis urna cursus eget nunc scelerisque. Pretium aenean pharetra magna ac. Nibh cras pulvinar mattis nunc sed. Euismod quis viverra nibh cras. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. A iaculis at erat pellentesque adipiscing commodo elit. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. In ante metus dictum at tempor commodo. Dolor morbi non arcu risus quis varius quam quisque id. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Aliquam etiam erat velit scelerisque in dictum. Enim lobortis scelerisque fermentum dui faucibus in. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Enim ut tellus elementum sagittis vitae. Curabitur vitae nunc sed velit dignissim sodales ut eu.</p>
+<h4>Tiny tiny</h4>
+<p>Nunc faucibus a pellentesque sit amet. Tristique risus nec feugiat in fermentum posuere. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat. Bibendum neque egestas congue quisque egestas diam. In fermentum et sollicitudin ac orci phasellus egestas. Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi. Sit amet commodo nulla facilisi. Non tellus orci ac auctor augue mauris augue. Varius vel pharetra vel turpis nunc eget lorem dolor. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Justo donec enim diam vulputate ut.</p>
+<h1>But here's some code</h1>
+<p>agian</p>
+<p>I really tryes</p>
+<h2>H2 works as well i think</h2>
+<p>fuck js</p>
+<h3>The code</h3>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">PostInfo</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">"../src/blog"</span>;
+
+
+<span class="hljs-comment">// const Walk = require('@root/walk');</span>
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">MarkdownIt</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'markdown-it'</span>)
+<span class="hljs-keyword">const</span> meta = <span class="hljs-built_in">require</span>(<span class="hljs-string">'markdown-it-meta'</span>)
+<span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>)
+<span class="hljs-keyword">const</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">'util'</span>);
+
+<span class="hljs-comment">// Make new instance</span>
+<span class="hljs-comment">// const md = new MarkdownIt()</span>
+<span class="hljs-comment">// // Add markdown-it-meta</span>
+<span class="hljs-comment">// md.use(meta)</span>
+
+<span class="hljs-keyword">const</span> hljs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'highlight.js/lib/core'</span>)
+
+hljs.<span class="hljs-title function_">registerLanguage</span>(
+    <span class="hljs-string">'javascript'</span>,
+    <span class="hljs-built_in">require</span>(<span class="hljs-string">'highlight.js/lib/languages/javascript'</span>)
+)
+
+<span class="hljs-keyword">const</span> md = <span class="hljs-built_in">require</span>(<span class="hljs-string">'markdown-it'</span>)()
+    .<span class="hljs-title function_">use</span>(<span class="hljs-built_in">require</span>(<span class="hljs-string">'markdown-it-highlightjs'</span>), { hljs })
+    .<span class="hljs-title function_">use</span>(<span class="hljs-built_in">require</span>(<span class="hljs-string">'markdown-it-meta'</span>))
+
+
+<span class="hljs-comment">// directory path</span>
+<span class="hljs-keyword">const</span> blogDir = <span class="hljs-string">'./public/blog'</span>;
+<span class="hljs-keyword">const</span> blogOutDir = <span class="hljs-string">'./public/blog_out'</span>;
+<span class="hljs-keyword">const</span> postsDir = path.<span class="hljs-title function_">join</span>(blogDir, <span class="hljs-string">'posts'</span>)
+<span class="hljs-keyword">const</span> manifestName = <span class="hljs-string">"manifest.json"</span>
+<span class="hljs-keyword">const</span> manifestPath = path.<span class="hljs-title function_">join</span>(blogDir, manifestName)
+
+
+<span class="hljs-comment">// async function getFile(fileName: string) {</span>
+<span class="hljs-comment">//     // return new Promise((resolve, reject) =&gt; {</span>
+<span class="hljs-comment">//     return fs.readFile(fileName, (err, data) =&gt; {</span>
+<span class="hljs-comment">//             if (err) {</span>
+<span class="hljs-comment">//                 // reject(err); // calling `reject` will cause the promise to fail with or without the error passed as an argument</span>
+<span class="hljs-comment">//                 return; // and we don't want to go any further</span>
+<span class="hljs-comment">//             }</span>
+<span class="hljs-comment">//             return data;</span>
+<span class="hljs-comment">//         });</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// };</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// async function processMd(path: string){</span>
+<span class="hljs-comment">//     console.log(`Processing ${path}`)</span>
+<span class="hljs-comment">//     // const renderedDocument =  md.render(path)</span>
+<span class="hljs-comment">//     // console.log(renderedDocument)</span>
+<span class="hljs-comment">//     const fsPromises = require('fs').promises;</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">//     const res = fs.promises.readFile(path, 'utf8', function (err,data) {</span>
+<span class="hljs-comment">//         if (err) {</span>
+<span class="hljs-comment">//             return console.log(err);</span>
+<span class="hljs-comment">//         }</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">//         const renderedDocument =  md.render(data)</span>
+<span class="hljs-comment">//         // console.log(renderedDocument);</span>
+<span class="hljs-comment">//         // console.log(md.meta);</span>
+<span class="hljs-comment">//         return md.meta</span>
+<span class="hljs-comment">//     });</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">//     // return new Promise( (resolve, reject) =&gt; {</span>
+<span class="hljs-comment">//     //     resolve(res)</span>
+<span class="hljs-comment">//     // })</span>
+<span class="hljs-comment">//     return res;</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">//     return res</span>
+<span class="hljs-comment">// }</span>
+
+
+<span class="hljs-comment">// https://stackoverflow.com/questions/5827612/node-js-fs-readdir-recursive-directory-search</span>
+<span class="hljs-comment">// thank god for this person</span>
+<span class="hljs-keyword">let</span> walk = <span class="hljs-keyword">function</span>(<span class="hljs-params">dir: string</span>) {
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">results</span>: <span class="hljs-title class_">Array</span>&lt;string&gt; = [];
+    <span class="hljs-keyword">let</span> list = fs.<span class="hljs-title function_">readdirSync</span>(dir);
+    list.<span class="hljs-title function_">forEach</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params">file: string</span>) {
+        file = path.<span class="hljs-title function_">join</span>(dir, file)
+        <span class="hljs-keyword">let</span> stat = fs.<span class="hljs-title function_">lstatSync</span>(file);
+        <span class="hljs-keyword">if</span> (stat &amp;&amp; stat.<span class="hljs-title function_">isDirectory</span>()) {
+            <span class="hljs-comment">/* Recurse into a subdirectory */</span>
+            results = results.<span class="hljs-title function_">concat</span>(<span class="hljs-title function_">walk</span>(file));
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-comment">/* Is a file */</span>
+            results.<span class="hljs-title function_">push</span>(file);
+        }
+    });
+    <span class="hljs-keyword">return</span> results;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">validateMeta</span>(<span class="hljs-params">md: <span class="hljs-built_in">Object</span></span>){
+    <span class="hljs-keyword">const</span> reqKeys = [<span class="hljs-string">"title"</span>, <span class="hljs-string">"tags"</span>]
+    reqKeys.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">key</span> =&gt;</span> {
+        <span class="hljs-keyword">if</span> (! md.<span class="hljs-title function_">hasOwnProperty</span>(key)){
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">`Missing key "<span class="hljs-subst">${key}</span> in <span class="hljs-subst">${md.path}</span>"`</span>)
+        }
+    })
+    <span class="hljs-comment">// // for (let key in ["title"]){</span>
+    <span class="hljs-comment">// // }</span>
+    <span class="hljs-comment">// console.log(foo)</span>
+}
+
+
+
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">buildManifest</span>(<span class="hljs-params"></span>){
+    <span class="hljs-keyword">let</span> res = <span class="hljs-title function_">walk</span>(postsDir).<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">fil</span> =&gt;</span>{
+        <span class="hljs-comment">// const md = new MarkdownIt()</span>
+        <span class="hljs-comment">// // Add markdown-it-meta</span>
+        <span class="hljs-comment">// md.use(meta)</span>
+        <span class="hljs-keyword">let</span> data = fs.<span class="hljs-title function_">readFileSync</span>(fil, {<span class="hljs-attr">encoding</span>:<span class="hljs-string">'utf8'</span>, <span class="hljs-attr">flag</span>:<span class="hljs-string">'r'</span>});
+        <span class="hljs-comment">// console.log(data)</span>
+        <span class="hljs-keyword">const</span> renderedDocument =  md.<span class="hljs-title function_">render</span>(data)
+        <span class="hljs-keyword">let</span> meta = md.<span class="hljs-property">meta</span> <span class="hljs-keyword">as</span> <span class="hljs-title class_">PostInfo</span>
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(renderedDocument)
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(meta)
+
+        <span class="hljs-keyword">let</span> ref = meta.<span class="hljs-property">ref</span> <span class="hljs-keyword">as</span> <span class="hljs-title class_">String</span>
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(ref)
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(blogOutDir)
+        <span class="hljs-keyword">const</span> f_out_path = path.<span class="hljs-title function_">join</span>(blogOutDir, <span class="hljs-string">"posts"</span>, ref) + <span class="hljs-string">".html"</span>
+        <span class="hljs-keyword">const</span> f_out_dir = path.<span class="hljs-title function_">dirname</span>(f_out_path)
+        fs.<span class="hljs-title function_">mkdirSync</span>(f_out_dir, {<span class="hljs-attr">recursive</span>: <span class="hljs-literal">true</span>})
+
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(f_out_path)
+        fs.<span class="hljs-title function_">writeFileSync</span>(f_out_path, renderedDocument, {<span class="hljs-attr">encoding</span>:<span class="hljs-string">'utf8'</span>})
+
+
+        <span class="hljs-comment">// console.log(renderedDocument);</span>
+        <span class="hljs-comment">// console.log(md.meta);</span>
+        <span class="hljs-comment">// meta['path'] = `/${fil}`</span>
+        meta[<span class="hljs-string">'path'</span>] = <span class="hljs-string">`/<span class="hljs-subst">${f_out_path}</span>`</span>
+        <span class="hljs-comment">// meta['permalink'] = "a-perma"</span>
+        meta[<span class="hljs-string">'preview'</span>] = <span class="hljs-string">"A preview"</span>
+        <span class="hljs-keyword">return</span> meta
+    }).<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">md</span> =&gt;</span> {
+        <span class="hljs-title function_">validateMeta</span>(md)
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(md)
+        <span class="hljs-keyword">return</span> md
+    })
+
+    <span class="hljs-keyword">let</span> posts = {}
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> ind <span class="hljs-keyword">in</span> res){
+        <span class="hljs-keyword">const</span> md = res[ind]
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(md)
+        posts[md.<span class="hljs-property">ref</span>] = md
+    }
+
+    <span class="hljs-keyword">let</span> manifest = {
+        <span class="hljs-attr">posts</span>: posts
+    }
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(manifest)
+    <span class="hljs-keyword">let</span> jstr = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(manifest, <span class="hljs-literal">null</span>, <span class="hljs-number">4</span>)
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(jstr)
+
+    fs.<span class="hljs-title function_">writeFileSync</span>(manifestPath, jstr, {<span class="hljs-attr">encoding</span>:<span class="hljs-string">'utf8'</span>})
+
+    <span class="hljs-keyword">return</span>
+    <span class="hljs-comment">//</span>
+    <span class="hljs-comment">// const proms = []</span>
+    <span class="hljs-comment">// async function walkFunc(err, pathname, dirent) {</span>
+    <span class="hljs-comment">//     if (err) {</span>
+    <span class="hljs-comment">//         throw err;</span>
+    <span class="hljs-comment">//     }</span>
+    <span class="hljs-comment">//</span>
+    <span class="hljs-comment">//     if (dirent.isDirectory() &amp;&amp; dirent.name.startsWith('.')) {</span>
+    <span class="hljs-comment">//         return Promise.resolve(false);</span>
+    <span class="hljs-comment">//     }</span>
+    <span class="hljs-comment">//     // console.log('name:', dirent.name, 'in', path.dirname(pathname));</span>
+    <span class="hljs-comment">//</span>
+    <span class="hljs-comment">//     if (dirent.isFile() &amp;&amp; dirent.name.endsWith('.md')) {</span>
+    <span class="hljs-comment">//         const ftext = await getFile(pathname)</span>
+    <span class="hljs-comment">//         proms.push(ftext)</span>
+    <span class="hljs-comment">//         console.log(ftext)</span>
+    <span class="hljs-comment">//         //</span>
+    <span class="hljs-comment">//         // return ftext</span>
+    <span class="hljs-comment">//         // const meta = processMd(pathname)</span>
+    <span class="hljs-comment">//         // console.log(Promise.resolve(meta))</span>
+    <span class="hljs-comment">//         return Promise.resolve(meta);</span>
+    <span class="hljs-comment">//     }</span>
+    <span class="hljs-comment">//     return Promise.resolve(false);</span>
+    <span class="hljs-comment">//</span>
+    <span class="hljs-comment">//     return meta</span>
+    <span class="hljs-comment">//         }</span>
+    <span class="hljs-comment">//</span>
+    <span class="hljs-comment">//     // return new Promise((resolve, reject) =&gt; {</span>
+    <span class="hljs-comment">//     //         resolve(meta)</span>
+    <span class="hljs-comment">//     //     }</span>
+    <span class="hljs-comment">// const res = await Walk.walk(postsDir, walkFunc,</span>
+    <span class="hljs-comment">// ).then(function (meta) {</span>
+    <span class="hljs-comment">//     console.log('Done');</span>
+    <span class="hljs-comment">//     console.log(proms);</span>
+    <span class="hljs-comment">//     console.log(meta);</span>
+    <span class="hljs-comment">//     return meta</span>
+    <span class="hljs-comment">// });</span>
+    <span class="hljs-comment">// console.log("proms again")</span>
+    <span class="hljs-comment">// console.log(proms);</span>
+    <span class="hljs-comment">//</span>
+    <span class="hljs-comment">// console.log("result")</span>
+    <span class="hljs-comment">// console.log(res)</span>
+    <span class="hljs-comment">// // list all files in the directory</span>
+    <span class="hljs-comment">// fs.readdir(dir, (err, files) =&gt; {</span>
+    <span class="hljs-comment">//     if (err) {</span>
+    <span class="hljs-comment">//         throw err;</span>
+    <span class="hljs-comment">//     }</span>
+    <span class="hljs-comment">//</span>
+    <span class="hljs-comment">//     // files object contains all files names</span>
+    <span class="hljs-comment">//     // log them on console</span>
+    <span class="hljs-comment">//     files.forEach(file =&gt; {</span>
+    <span class="hljs-comment">//         console.log(file);</span>
+    <span class="hljs-comment">//     });</span>
+    <span class="hljs-comment">// });</span>
+}
+
+</code></pre>
+<p>hello</p>
+</span></div></main><div class="clearHeader" style="clear: both;"></div><footer class="row"><span class="footer-col col-4 footer-text"> Copyright Ben Nichols </span><div class="goToTop footer-col col-4" data-v-f5d3bd39=""><p data-v-f5d3bd39=""><a data-v-f5d3bd39=""> Go to top </a></p></div><div class="footer-col col-4"><label for="primary_button" class="active toggle_button" data-v-8d404080=""><span class="toggle_label_lhs" data-v-8d404080=""><i aria-hidden="true" class="bi-sun" title="Toggle between dark and light mode"></i></span><input type="checkbox" id="primary_button" data-v-8d404080=""><span class="toggle_switch" data-v-8d404080=""></span><span class="toggle_label_rhs" data-v-8d404080=""><i aria-hidden="true" class="bi-moon" title="Toggle between dark and light mode"></i></span></label></div></footer></div>
+    
+    <noscript>
+        <h5>
+            No-JS mode so some functions may not work.
+        </h5>
+    </noscript>
+  
+
+</body></html>
