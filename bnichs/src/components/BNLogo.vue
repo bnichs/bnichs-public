@@ -68,15 +68,7 @@ export default {
 
 #logoImg {
   width: 8em;
-  height: 3.0em;
-}
-
-.flip_H{
-  transform: scale(-1, 1);
-}
-.flip_V{
-  transform: scale(1, -1);
-  color:green;
+  /*height: 3.0em;*/
 }
 
 

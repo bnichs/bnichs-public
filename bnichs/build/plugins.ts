@@ -87,12 +87,14 @@ export function convertImages() {
                     console.log(err)
                 })
 
+
+            let top_crop = 0
             sharp(input)
                 .resize({
                     width: metadata.width,
                     height: metadata.height,
                 })
-                .extract({left: 160, top: 0, width: 550, height: metadata.height})
+                .extract({left: 160, top: top_crop, width: 565, height: metadata.height-top_crop})
                 .png()
                 .toFile("public/favicon.png")
                 .then(function (info) {
