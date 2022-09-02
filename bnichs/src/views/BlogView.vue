@@ -120,7 +120,7 @@ export default defineComponent({
 .postPreviewText{
   /*font-size: 1.5em;*/
   overflow-y: hidden;
-  max-height: 60vh;
+  max-height: 10em;
   display: inline-block;
 }
 
