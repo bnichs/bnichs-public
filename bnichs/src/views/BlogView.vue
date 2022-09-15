@@ -135,8 +135,9 @@ export default defineComponent({
 .postPreview {
   margin: 0 0 5vh 0;
   border: 1px solid var(--color-border);
-  padding: 5vh 1vw 10vh 2vw;
+  padding: 5vh 1vw 0vh 2vw;
 }
+
 .postPreviewText{
   /*font-size: 1.5em;*/
   overflow-y: hidden;
