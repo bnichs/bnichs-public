@@ -193,6 +193,7 @@ nav a {
   width: fit-content !important;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
+  cursor: pointer;
 }
 
 nav a:first-of-type {
