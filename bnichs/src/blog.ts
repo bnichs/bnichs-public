@@ -43,8 +43,6 @@ export declare interface PostManifestI {
 
 export class PostManifest {
     public posts: Map<string, PostInfo>;
-    // bam: string;
-
 
     loaded(){
         return this.posts.size > 0
@@ -56,13 +54,8 @@ export class PostManifest {
         const entries = Object.entries(payload.posts || new Map())
 
         entries.forEach( ([key, val]) =>{
-            // console.log(key)
-            // console.log(val)
             const post: PostInfo = new PostInfo(val)
-            console.log(post)
             this.posts.set(key, post);
-            // const post = this.posts.get(key)
-            // console.log(post)
         })
     }
 }

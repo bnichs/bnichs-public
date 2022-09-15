@@ -89,7 +89,7 @@ export default defineComponent({
       )
     },
     posts(){
-      console.log(this.tag)
+      // console.log(this.tag)
       if (! this.tag){
         return this.allPosts
       } else {
