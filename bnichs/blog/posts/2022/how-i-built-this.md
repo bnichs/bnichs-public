@@ -4,11 +4,12 @@ title: How I built this website
 tags: 
     - js
     - vue
-publish_date: 2022-09-01
+published_date: 2022-09-05
 ---
 
 
 # How I made my website
+
 
 # Main takeaways
 

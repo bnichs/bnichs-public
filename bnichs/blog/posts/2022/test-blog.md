@@ -3,6 +3,7 @@ ref: test-blog
 title: A test file
 tags: 
     - None
+published_date: 9999-01-01
 ---
 
 

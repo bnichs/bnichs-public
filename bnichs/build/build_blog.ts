@@ -55,7 +55,7 @@ let walk = function(dir: string) {
 }
 
 function validateMeta(md: Object){
-    const reqKeys = ["title", "tags"]
+    const reqKeys = ["title", "tags", "published_date"]
     reqKeys.forEach(key => {
         if (! md.hasOwnProperty(key)){
             throw new Error(`Missing key "${key} in ${md.path}"`)
@@ -81,6 +81,7 @@ function gen_preview(doc: String){
 export function buildManifest(){
     let res = walk(postsDir).map(fil =>{
         let data = fs.readFileSync(fil, {encoding:'utf8', flag:'r'});
+        let stat = fs.statSync(fil)
         const renderedDocument =  md.render(data)
         let meta = md.meta as PostInfo
         // console.log(meta)
@@ -93,10 +94,12 @@ export function buildManifest(){
         console.log(`Rendered ${f_out_path}`)
         fs.writeFileSync(f_out_path, renderedDocument, {encoding:'utf8'})
 
-
         meta['path'] = `/${f_out_path}`
         meta['fetch_path'] = meta.path.replace("/public", "")
         meta['preview'] = gen_preview(renderedDocument)
+
+        meta['published_date'] = meta.published_date
+        meta['updated_date'] = stat.mtime
         return meta
     }).map(md => {
         validateMeta(md)

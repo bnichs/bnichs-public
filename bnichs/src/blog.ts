@@ -7,6 +7,8 @@ export class PostInfo {
     fetch_path: string
     ref: string
     tags: Array<string>
+    published_date: Date;
+    updated_date: Date;
 
     constructor(payload: Partial<PostInfo>) {
         this.title = payload.title || ""
@@ -16,6 +18,20 @@ export class PostInfo {
         this.fetch_path = payload.fetch_path || ""
         this.ref = payload.ref || ""
         this.tags = payload.tags || Array<string>()
+
+        this.published_date = this.parseDate(payload.published_date)
+        this.updated_date = this.parseDate(payload.updated_date)
+    }
+
+
+    parseDate(d: Date | string | undefined){
+        if (d instanceof Date){
+            return d
+        } else if (typeof d === "string"){
+            return new Date(Date.parse(d))
+        } else {
+            return new Date()
+        }
     }
 }
 

@@ -72,13 +72,21 @@ export default defineComponent({
     manifestLoaded(){
       return this.manifest.loaded()
     },
+    allPosts(){
+      let now = new Date()
+      return new Map(
+          Array.from(this.manifest.posts).filter( ([ref, post]) => {
+            return (post.published_date < now)
+          })
+      )
+    },
     posts(){
       console.log(this.tag)
       if (! this.tag){
-        return this.manifest.posts
+        return this.allPosts
       } else {
         return new Map(
-            Array.from(this.manifest.posts).filter(([ref, post]) => {
+            Array.from(this.allPosts).filter(([ref, post]) => {
               if (! post.tags.includes(this.tag)){
                 return false
               }
