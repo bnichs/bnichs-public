@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import MainBox from '../components/MainBox.vue'
+import BlogPostInfo from '../components/BlogPostInfo.vue'
 </script>
 
 <template>
@@ -8,6 +9,8 @@ import MainBox from '../components/MainBox.vue'
       {{ postInfo.title }}
     </template>
     <template #content>
+      <BlogPostInfo :published="postInfo.published_date" :updated="postInfo.updated_date">
+      </BlogPostInfo>
 
       <span class="blogPost" v-html="htmlSource"></span>
 
@@ -62,6 +65,25 @@ export default defineComponent({
 </script>
 
 <style>
+
+.blogInfo {
+  border: 1px solid var(--color-border);
+  display: block;
+  padding: .8em;
+  width: fit-content;
+  margin-bottom: 2em;
+}
+
+.blogInfo ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+
+.blogPost{
+  display: inline-block;
+  margin-bottom: 5em;
+}
 
 .blogPost p {
   font-size: 1.4rem;

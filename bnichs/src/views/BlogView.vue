@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import MainBox from '@/components/MainBox.vue'
 import TagBox from '@/components/TagBox.vue'
+import BlogPostInfo from '../components/BlogPostInfo.vue'
 </script>
 
 <template>
@@ -28,11 +29,18 @@ import TagBox from '@/components/TagBox.vue'
         <TagBox :tags="post.tags">
         </TagBox>
 
-            <span class="postPreviewText" v-html="post.preview"></span>
+        <span class="postPreviewText" v-html="post.preview"></span>
 
-        <RouterLink :to="{ name: 'blog_post', params: { ref: ref } }">
-          <span class="viewPostButton">View Post...</span>
-        </RouterLink>
+        <div class="previewFooter">
+<!--          {{ post }}-->
+
+          <BlogPostInfo :published="post.published_date" :updated="post.updated_date">
+          </BlogPostInfo>
+
+          <RouterLink class="viewPostButton" :to="{ name: 'blog_post', params: { ref: ref } }">
+            <span>View Post...</span>
+          </RouterLink>
+        </div>
       </div>
       <div v-if="!posts">
         No posts found...
@@ -132,9 +140,30 @@ export default defineComponent({
   display: inline-block;
 }
 
+.previewFooter {
+  display: inline-block;
+  width: 100%;
+  margin: 2em 0 1em 0;
+}
+
 .viewPostButton {
   font-size: 1.5em;
   float: right;
+}
+
+.blogInfo {
+  float: left;
+  margin-bottom: 0;
+}
+
+
+.blogInfo ul li{
+  display: inline;
+  margin: 0 1em 0 0;
+}
+
+.blogInfo ul {
+  margin-bottom: 0;
 }
 
 @media (max-width: 1024px) {
