@@ -121,6 +121,10 @@ export default defineComponent({
 }
 
 
+.tagBox {
+  float: right;
+}
+
 .postPreviewTitle {
   /*font-size: 2.5em;*/
   margin: 0 0 4vh 0;

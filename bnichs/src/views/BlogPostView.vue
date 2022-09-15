@@ -7,6 +7,9 @@ import BlogPostInfo from '../components/BlogPostInfo.vue'
   <MainBox v-if="manifestLoaded">
     <template #title>
       {{ postInfo.title }}
+      <div class="backToPosts">
+        <router-link to="/blog">Back to posts</router-link>
+      </div>
     </template>
     <template #content>
       <BlogPostInfo :published="postInfo.published_date" :updated="postInfo.updated_date">
@@ -14,6 +17,9 @@ import BlogPostInfo from '../components/BlogPostInfo.vue'
 
       <span class="blogPost" v-html="htmlSource"></span>
 
+      <div class="backToPosts">
+        <router-link to="/blog">Back to posts</router-link>
+      </div>
     </template>
   </MainBox>
 </template>
@@ -65,6 +71,12 @@ export default defineComponent({
 </script>
 
 <style>
+
+
+.backToPosts{
+  float: right;
+  font-size: 1.8rem;
+}
 
 .blogInfo {
   border: 1px solid var(--color-border);
