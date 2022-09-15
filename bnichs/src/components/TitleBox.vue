@@ -85,8 +85,14 @@ h3 {
   header{
     min-width: 290px;
   }
+
   .title-box{
     margin: .3em 0 0vh 2vw;
+    width: 20vw;
+  }
+
+  .bn-logo #logoImg{
+    width: 15vw !important;
   }
 }
 
@@ -96,7 +102,13 @@ h3 {
   }
 
   .title-box{
-    margin: .3em 0 0vh 5vw;
+    margin: 0em 0 0vh 5vw;
+    font-size: 1.4rem;
+  }
+
+  .greetings{
+
+    padding: .3em 0 0 0 ;
   }
 
 
@@ -107,4 +119,10 @@ h3 {
 
 <style>
 
+@media (min-width: 1024px) {
+  .bn-logo #logoImg{
+    width: 6em;
+    padding: .5em 0 0 0;
+  }
+}
 </style>
