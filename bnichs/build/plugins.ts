@@ -42,7 +42,7 @@ export function prerender(){
             renderAfterTime: 1000,
 
             consoleHandler: function(route, message){
-                console.log(`${route} - ${message._text}`)
+                // console.log(`${route} - ${message._text}`)
             }
 
             // Optional - Wait to render until the specified element is detected using `document.querySelector`
