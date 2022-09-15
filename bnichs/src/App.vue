@@ -116,7 +116,9 @@ export default defineComponent({
 
 <style>
 :root{
-  --header-border: 3px ridge var(--color-border)
+  --header-border: 3px ridge var(--color-border);
+  --main-width: 60vw;
+  --header-width: calc(100vw - var(--main-width))
 }
 
 .clearHeader {
@@ -240,6 +242,7 @@ main {
     /*place-items: flex-start;*/
     /*flex-wrap: wrap;*/
     font-size: 2.0rem;
+    min-width: var(--header-width)
   }
 
   header .greetings {
@@ -258,7 +261,7 @@ main {
 
   main{
     padding: 5vh 3vw 10vh 3vw;
-    width: 60vw;
+    width: var(--main-width);
   }
 
   .welcome-items {
